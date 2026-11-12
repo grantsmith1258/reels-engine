@@ -14,7 +14,7 @@ for f in ne_50m_admin_0_countries ne_10m_admin_0_countries ne_10m_admin_1_states
 done
 [ -s fonts/Anton-Regular.ttf ] || curl -sSfL -o fonts/Anton-Regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf
 cp fonts/Anton-Regular.ttf ~/.fonts/ && fc-cache -f >/dev/null
-fc-list | grep -qi "Inter" || echo "WARNING: Inter font missing; captions will fall back to a default sans font"
+fc-list : family | grep -i "inter" >/dev/null || echo "WARNING: Inter font missing; captions will fall back to a default sans font"
 
 if [ "${1:-}" = "--kokoro" ]; then
   pip install --break-system-packages -q kokoro-onnx 2>&1 | grep -v -i warning || true
