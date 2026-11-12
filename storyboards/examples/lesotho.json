@@ -1,0 +1,444 @@
+{
+ "title": "Why is Lesotho completely surrounded by South Africa? (re-render test)",
+ "admin1_borders": [
+  "ZAF"
+ ],
+ "scenes": [
+  {
+   "vo": "This is Lesotho: a whole country sealed inside one other country: South Africa.",
+   "camera": {
+    "center": [
+     26.5,
+     -29.0
+    ],
+    "zoom": 55
+   },
+   "highlight": [
+    {
+     "iso": [
+      "ZAF"
+     ],
+     "color": "orange",
+     "fill": 0.55,
+     "label": "SOUTH AFRICA",
+     "label_at": [
+      23.0,
+      -30.5
+     ],
+     "delay": 0.1
+    },
+    {
+     "iso": [
+      "LSO"
+     ],
+     "color": "green",
+     "pulse": true,
+     "label": "LESOTHO",
+     "label_at": [
+      28.25,
+      -29.55
+     ],
+     "delay": 0.6
+    }
+   ]
+  },
+  {
+   "vo": "So how does a kingdom end up locked inside its neighbor?",
+   "camera": {
+    "center": [
+     28.2,
+     -29.5
+    ],
+    "zoom": 150
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "iso": [
+      "ZAF"
+     ],
+     "color": "orange",
+     "fill": 0.45
+    },
+    {
+     "iso": [
+      "LSO"
+     ],
+     "color": "green",
+     "label": "LESOTHO",
+     "label_at": [
+      28.25,
+      -29.55
+     ]
+    }
+   ],
+   "word": {
+    "text": "LOCKED IN",
+    "sub": "100% SURROUNDED",
+    "delay": 0.8,
+    "size": 140
+   }
+  },
+  {
+   "vo": "In the 1820s, King Moshoeshoe gathered people fleeing war onto a flat-topped mountain fortress, Thaba Bosiu.",
+   "camera": {
+    "center": [
+     27.75,
+     -29.4
+    ],
+    "zoom": 420
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "LSO"
+     ],
+     "color": "green",
+     "fill": 0.45
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      27.68,
+      -29.35
+     ],
+     "label": "THABA BOSIU",
+     "side": "right",
+     "delay": 1.2,
+     "color": "accent"
+    }
+   ],
+   "stamp": {
+    "text": "1820s",
+    "delay": 0.5
+   }
+  },
+  {
+   "vo": "Then Boer settlers founded the Orange Free State next door, and three wars over land followed.",
+   "camera": {
+    "center": [
+     27.2,
+     -28.9
+    ],
+    "zoom": 85
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "iso": [
+      "LSO"
+     ],
+     "color": "green",
+     "fill": 0.6,
+     "residual": 0.35
+    },
+    {
+     "admin1": [
+      "ZA-FS"
+     ],
+     "color": "orange",
+     "label": "ORANGE FREE STATE",
+     "label_at": [
+      26.3,
+      -28.4
+     ],
+     "delay": 0.6
+    }
+   ],
+   "word": {
+    "text": "3 WARS",
+    "sub": "OVER LAND",
+    "delay": 2.2,
+    "size": 150
+   }
+  },
+  {
+   "vo": "By 1868, the Boers had overrun almost everything except that mountain. So Moshoeshoe asked Britain for protection.",
+   "camera": {
+    "center": [
+     15,
+     8
+    ],
+    "zoom": 7.5
+   },
+   "camera_move": 1.6,
+   "highlight": [
+    {
+     "iso": [
+      "GBR"
+     ],
+     "color": "blue",
+     "label": "BRITAIN",
+     "label_at": [
+      -2,
+      57
+     ],
+     "delay": 1.6
+    },
+    {
+     "iso": [
+      "LSO"
+     ],
+     "color": "green",
+     "fill": 0.9
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       28.2,
+       -29.5
+      ],
+      [
+       12,
+       -5
+      ],
+      [
+       -0.13,
+       51.5
+      ]
+     ],
+     "delay": 1.6,
+     "draw": 2.0,
+     "color": "accent",
+     "scene_only": true
+    }
+   ],
+   "stamp": {
+    "text": "1868",
+    "delay": 0.4
+   }
+  },
+  {
+   "vo": "Britain agreed and the fighting stopped. But the farmland west of the Caledon River was lost for good.",
+   "camera": {
+    "center": [
+     27.6,
+     -29.2
+    ],
+    "zoom": 150
+   },
+   "camera_move": 1.6,
+   "highlight": [
+    {
+     "iso": [
+      "LSO"
+     ],
+     "color": "green",
+     "fill": 0.6
+    },
+    {
+     "admin1": [
+      "ZA-FS"
+     ],
+     "color": "red",
+     "fill": 0.5,
+     "label": "LOST FARMLAND",
+     "label_at": [
+      27.0,
+      -28.75
+     ],
+     "delay": 1.6
+    }
+   ]
+  },
+  {
+   "vo": "In 1871 Britain handed it to the Cape Colony. The Basotho revolted in the Gun War, and London took it back in 1884.",
+   "camera": {
+    "center": [
+     24.5,
+     -31.0
+    ],
+    "zoom": 48
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "admin1": [
+      "ZA-WC",
+      "ZA-EC",
+      "ZA-NC"
+     ],
+     "color": "purple",
+     "fill": 0.55,
+     "label": "CAPE COLONY",
+     "label_at": [
+      21.5,
+      -32.3
+     ],
+     "delay": 0.3
+    },
+    {
+     "iso": [
+      "LSO"
+     ],
+     "color": "green",
+     "fill": 0.8
+    }
+   ],
+   "stamp": {
+    "text": "1871",
+    "delay": 0.5
+   },
+   "word": {
+    "text": "GUN WAR",
+    "sub": "BACK TO LONDON \u00b7 1884",
+    "delay": 3.2,
+    "size": 140
+   }
+  },
+  {
+   "vo": "So when South Africa formed in 1910, Basutoland stayed outside, and Britain later refused to hand it over.",
+   "camera": {
+    "center": [
+     25.5,
+     -29.0
+    ],
+    "zoom": 55
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "iso": [
+      "ZAF"
+     ],
+     "color": "orange",
+     "fill": 0.6,
+     "label": "UNION OF SOUTH AFRICA",
+     "label_at": [
+      23.0,
+      -30.8
+     ],
+     "delay": 0.4
+    },
+    {
+     "iso": [
+      "LSO"
+     ],
+     "color": "green",
+     "pulse": true,
+     "label": "BASUTOLAND",
+     "label_at": [
+      28.25,
+      -29.55
+     ],
+     "delay": 1.0
+    }
+   ],
+   "stamp": {
+    "text": "1910",
+    "delay": 0.4
+   }
+  },
+  {
+   "vo": "In 1966 it became independent Lesotho: the mountains, without the lowlands.",
+   "camera": {
+    "center": [
+     28.2,
+     -29.55
+    ],
+    "zoom": 160
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "iso": [
+      "ZAF"
+     ],
+     "color": "orange",
+     "fill": 0.4
+    },
+    {
+     "iso": [
+      "LSO"
+     ],
+     "color": "green",
+     "label": "LESOTHO",
+     "label_at": [
+      28.25,
+      -29.55
+     ]
+    }
+   ],
+   "word": {
+    "text": "LESOTHO",
+    "sub": "INDEPENDENT \u00b7 1966",
+    "delay": 0.4,
+    "size": 160
+   }
+  },
+  {
+   "vo": "Even its lowest point is 1,400 meters above sea level, the highest low point of any country.",
+   "camera": {
+    "center": [
+     27.9,
+     -29.9
+    ],
+    "zoom": 230
+   },
+   "camera_move": 1.0,
+   "highlight": [
+    {
+     "iso": [
+      "LSO"
+     ],
+     "color": "green",
+     "fill": 0.6
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      27.55,
+      -30.36
+     ],
+     "label": "LOWEST POINT",
+     "side": "right",
+     "delay": 0.8,
+     "color": "accent"
+    }
+   ],
+   "word": {
+    "text": "1,400 m",
+    "sub": "ITS LOWEST POINT",
+    "delay": 1.4,
+    "size": 160
+   }
+  },
+  {
+   "vo": "Follow for more places where the map got weird.",
+   "camera": {
+    "center": [
+     24,
+     -28
+    ],
+    "zoom": 22
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "ZAF"
+     ],
+     "color": "orange",
+     "fill": 0.5
+    },
+    {
+     "iso": [
+      "LSO"
+     ],
+     "color": "green",
+     "pulse": true,
+     "label": "LESOTHO",
+     "label_at": [
+      28.25,
+      -29.55
+     ]
+    }
+   ]
+  }
+ ]
+}

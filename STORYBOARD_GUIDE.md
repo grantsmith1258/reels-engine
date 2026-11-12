@@ -1,0 +1,44 @@
+# Storyboard guide (Reels Engine)
+
+You turn a finished, fact-checked script into `storyboards/<slug>.json`, render previews, check them, then render the video.
+Style: animated dark map explainer. Every scene is the map; the story is told by camera moves, highlighted places, routes, pins, date stamps and big key-word cards. Captions of the full script appear automatically at the top middle.
+
+## 1. One scene per script paragraph
+- `scenes[i].vo` = paragraph *i* of the script, **exactly as written in Airtable's Script field** (captions are made from it, and the voiceover pauses between paragraphs are used to time scenes). Same number of scenes as paragraphs, same order.
+- Optional `say`: only for Kokoro (free voice) pronunciation fixes. Ignored with the vidIQ voiceover.
+
+## 2. Scene fields
+| field | what it does |
+|---|---|
+| `camera` `{center:[lon,lat], zoom}` | **required**. zoom = pixels per degree of longitude. Frame is 1080 px wide: zoom 7 ≈ Europe+Africa, 13 ≈ Europe+Middle East, 22 ≈ western US / southern Africa, 50 ≈ one mid-size country (Yemen, Ethiopia), 150 ≈ Lesotho fills the frame, 400 ≈ 2.5° wide, 900+ ≈ a town. Rule of thumb: `zoom ≈ 800 / width_in_degrees` to fit something with margin. The camera glides from the previous scene's camera over `camera_move` seconds (default 1.1). |
+| `highlight` `[{iso:[...], admin1:[...], shape:[[lon,lat],...], color, fill, label, label_at:[lon,lat], label_scale, pulse, residual, delay}]` | fills places with a glow. `iso` = ISO-3 country codes as Natural Earth spells them (ADM0_A3: USA, CAN, GBR, FRA, DEU, RUS, CHN, IND, ZAF, LSO, EGY, CHL, ARG...; check `data/ne_10m_admin_0_countries.geojson` if unsure). `admin1` = ISO 3166-2 state/province codes (US-WA, ZA-FS, CA-BC...). `shape` = your own polygon: **only when you are sure of the coordinates** (never guess a river or a historical border; use admin1 areas, pins or labels instead). `fill` 0-1 (default 0.78; use ~0.45-0.6 for big background countries). `pulse: true` for the place the story is about. `residual: 0.25` leaves a faint fill after the scene. |
+| `pins` `[{at:[lon,lat], label, side: right/left/above/below, color, delay}]` | dot with pulse ring and label. Use for towns, battles, river mouths, a "you are here". |
+| `labels` `[{at, text, size, color, delay}]` | text placed on the map (sea names, "CANADA", "USA"). |
+| `routes` `[{points:[[lon,lat],...], color, delay, draw, scene_only}]` | animated dashed path with a travelling head (trade routes, migrations, a drive). Curves smoothly through the points. Stays on screen for the rest of the video unless `scene_only: true` (use that for one-off long arcs). |
+| `lines` `[{points, color, label, label_at, delay, draw, persist}]` | straight dashed line (a parallel, a treaty line, a border), shown during its scene only unless `persist: true`. |
+| `stamp` `{text, x, y, color, delay}` | slammed date stamp ("1846", "1500s"). Default position x 830, y 640; move it if it covers the focus. One per scene max. |
+| `word` `{text, sub, size, color, delay, y}` | the key term or number, big and yellow, lower-middle (y 1440), with a small `sub` line above. "QAHWA" / "ARABIC", "1,400 m" / "ITS LOWEST POINT". Keep `text` ≤ 14 characters at size 150 (it shrinks to fit). |
+| `delay` (any item) | seconds after the scene starts before the item appears. Time items to the moment the voiceover says them (scene length ≈ chars/15 s). |
+
+Top level: `title`, `admin1_borders: ["USA"]` (faint dashed state lines for those countries; use when states matter), `outro_hold` (seconds).
+
+Identical items in consecutive scenes (same JSON) stay on screen instead of re-popping, so copy a highlight exactly to keep it.
+
+Colors: names `red, green, orange, blue, purple, teal, accent (yellow), white` or `#hex`. Keep one color per side of the story and reuse it all video (e.g. the place the video is about = green, its neighbour = orange).
+
+## 3. What makes it good (retention rules)
+- **Scene 1 (hook)** must show the payoff map within 1 second: the place highlighted, the surprising contrast visible. No slow zoom from space.
+- A **visual change every 3-5 seconds**: new highlight, pin, route, stamp or word card inside long scenes (use `delay`).
+- Use `word` for the 3-5 most memorable terms or numbers only, not every scene.
+- Use `stamp` for dates the script says aloud.
+- Go wide for context, then close for the detail, alternate; don't stay at one zoom for 3 scenes.
+- Last scene (the follow line): pull out to the wide context with the main place pulsing.
+- Never show something false: no invented borders, no guessed coordinates, no labels the script doesn't support. If the map can't show a claim accurately, show a pin, label or word card instead.
+
+## 4. Check before rendering (required)
+1. `python3 engine/render.py storyboards/<slug>.json /tmp/x.mp4 --audio build/vo.mp3 --preview auto` prints each scene's timing and writes `build/<slug>/contact_sheet.png` (one frame per scene).
+2. Open the contact sheet with Read and check every frame: the subject is visible and inside the frame, labels readable and not overlapping each other, the stamp, word card or captions, nothing important under the top captions (y < 450) or the bottom 250 px (app buttons), and colors consistent.
+3. Fix and preview again (max 3 rounds), then render: `python3 engine/render.py storyboards/<slug>.json build/<slug>.mp4 --audio build/vo.mp3`. Takes about 12-14 minutes for 70 s.
+
+## 5. Example
+`storyboards/examples/` has full examples (Lesotho with a vidIQ voiceover, Point Roberts, coffee).

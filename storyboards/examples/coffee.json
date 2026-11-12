@@ -1,0 +1,500 @@
+{
+ "title": "Every time you order a coffee, you're speaking Arabic",
+ "voice": "am_michael",
+ "speed": 1.1,
+ "outro_hold": 0.2,
+ "scenes": [
+  {
+   "vo": "Every time you order a coffee, you're speaking Arabic.",
+   "camera": {
+    "center": [
+     22,
+     33
+    ],
+    "zoom": 13
+   },
+   "headline": {
+    "lines": [
+     {
+      "text": "EVERY TIME YOU ORDER A COFFEE",
+      "size": 84
+     },
+     {
+      "text": "YOU'RE SPEAKING ARABIC",
+      "color": "accent",
+      "size": 112,
+      "delay": 0.9
+     }
+    ]
+   },
+   "highlight": [
+    {
+     "iso": [
+      "SAU",
+      "YEM",
+      "OMN",
+      "ARE",
+      "QAT",
+      "KWT",
+      "BHR",
+      "IRQ",
+      "SYR",
+      "JOR",
+      "LBN",
+      "PSX",
+      "ISR",
+      "EGY",
+      "LBY",
+      "TUN",
+      "DZA",
+      "MAR",
+      "SDN"
+     ],
+     "color": "#c0392b",
+     "label": "ARABIC",
+     "label_at": [
+      42,
+      24
+     ],
+     "delay": 1.4,
+     "label_scale": 1.5
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -0.13,
+      51.5
+     ],
+     "label": "YOU",
+     "delay": 0.3
+    }
+   ]
+  },
+  {
+   "vo": "It starts in the highlands of Ethiopia, where coffee grew wild.",
+   "camera": {
+    "center": [
+     39.5,
+     10
+    ],
+    "zoom": 46
+   },
+   "camera_move": 1.3,
+   "headline": {
+    "lines": [
+     {
+      "text": "WHERE IT ALL STARTED",
+      "size": 80
+     }
+    ]
+   },
+   "highlight": [
+    {
+     "iso": [
+      "ETH"
+     ],
+     "color": "#2e9e5b",
+     "label": "ETHIOPIA",
+     "label_at": [
+      40,
+      8.6
+     ],
+     "residual": 0.25,
+     "delay": 0.6
+    }
+   ]
+  },
+  {
+   "vo": "By the fourteen hundreds, Sufi monks in Yemen were brewing it to stay awake through night prayers.",
+   "camera": {
+    "center": [
+     43.5,
+     13
+    ],
+    "zoom": 52
+   },
+   "highlight": [
+    {
+     "iso": [
+      "YEM"
+     ],
+     "color": "#c0392b",
+     "label": "YEMEN",
+     "label_at": [
+      47,
+      16
+     ],
+     "residual": 0.25,
+     "delay": 0.4
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       37.5,
+       9.2
+      ],
+      [
+       41.5,
+       12.4
+      ],
+      [
+       44.2,
+       15.35
+      ]
+     ],
+     "delay": 0.2,
+     "draw": 1.6
+    }
+   ],
+   "stamp": {
+    "text": "1400s"
+   }
+  },
+  {
+   "vo": "They called it qahwa, a word that may once have meant wine.",
+   "say": "They called it kahwa, a word that may once have meant wine.",
+   "camera": {
+    "center": [
+     44,
+     14
+    ],
+    "zoom": 60
+   },
+   "camera_move": 1.6,
+   "highlight": [
+    {
+     "iso": [
+      "YEM"
+     ],
+     "color": "#c0392b",
+     "label": "YEMEN",
+     "label_at": [
+      47,
+      16
+     ],
+     "residual": 0.25,
+     "delay": 0.4
+    }
+   ],
+   "word": {
+    "text": "QAHWA",
+    "sub": "ARABIC"
+   }
+  },
+  {
+   "vo": "And the port they shipped it from? Mokha. Yes, that mocha.",
+   "camera": {
+    "center": [
+     43.6,
+     13.6
+    ],
+    "zoom": 110
+   },
+   "highlight": [
+    {
+     "iso": [
+      "YEM"
+     ],
+     "color": "#c0392b",
+     "label": "YEMEN",
+     "label_at": [
+      47,
+      16
+     ],
+     "residual": 0.25,
+     "delay": 0.4
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      43.25,
+      13.32
+     ],
+     "label": "MOKHA",
+     "side": "left",
+     "delay": 0.6
+    }
+   ],
+   "word": {
+    "text": "MOKHA = MOCHA",
+    "sub": "THE PORT",
+    "size": 120,
+    "delay": 1.6
+   }
+  },
+  {
+   "vo": "The Ottomans fell in love with it, and in Turkish, qahwa became kahve.",
+   "say": "The Ottomans fell in love with it, and in Turkish, kahwa became kahveh.",
+   "camera": {
+    "center": [
+     36,
+     29
+    ],
+    "zoom": 21
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "TUR"
+     ],
+     "color": "#e67e22",
+     "label": "TURKISH",
+     "label_at": [
+      34,
+      39
+     ],
+     "residual": 0.25,
+     "delay": 0.8
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       43.25,
+       13.32
+      ],
+      [
+       39.8,
+       21.4
+      ],
+      [
+       36.3,
+       33.5
+      ],
+      [
+       32.5,
+       37.8
+      ],
+      [
+       28.98,
+       41.01
+      ]
+     ],
+     "delay": 0.3,
+     "draw": 2.0
+    }
+   ],
+   "stamp": {
+    "text": "1500s",
+    "delay": 1.2
+   },
+   "word": {
+    "text": "KAHVE",
+    "sub": "TURKISH",
+    "delay": 2.2
+   }
+  },
+  {
+   "vo": "Venetian merchants carried it west, and kahve became caffè.",
+   "say": "Venetian merchants carried it west, and kahveh became caffay.",
+   "camera": {
+    "center": [
+     19.5,
+     42
+    ],
+    "zoom": 28
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "#3b8fd9",
+     "label": "ITALIAN",
+     "label_at": [
+      14.5,
+      41.8
+     ],
+     "residual": 0.25,
+     "delay": 0.8
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       28.98,
+       41.01
+      ],
+      [
+       25.8,
+       39.3
+      ],
+      [
+       24.0,
+       36.6
+      ],
+      [
+       20.5,
+       37.4
+      ],
+      [
+       18.9,
+       40.3
+      ],
+      [
+       15.3,
+       43.2
+      ],
+      [
+       12.33,
+       45.44
+      ]
+     ],
+     "delay": 0.2,
+     "draw": 1.9
+    }
+   ],
+   "stamp": {
+    "text": "1600s",
+    "delay": 1.2
+   },
+   "word": {
+    "text": "CAFFÈ",
+    "sub": "ITALIAN",
+    "delay": 1.8
+   }
+  },
+  {
+   "vo": "In Dutch, it turned into koffie,",
+   "say": "In Dutch, it turned into koffee,",
+   "camera": {
+    "center": [
+     6,
+     49
+    ],
+    "zoom": 30
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "iso": [
+      "NLD"
+     ],
+     "color": "#e67e22",
+     "label": "DUTCH",
+     "label_at": [
+      5.6,
+      53.5
+     ],
+     "residual": 0.25,
+     "delay": 0.7
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       12.33,
+       45.44
+      ],
+      [
+       10.5,
+       48.5
+      ],
+      [
+       8.0,
+       50.5
+      ],
+      [
+       4.9,
+       52.37
+      ]
+     ],
+     "delay": 0.1,
+     "draw": 1.2
+    }
+   ],
+   "word": {
+    "text": "KOFFIE",
+    "sub": "DUTCH",
+    "delay": 0.9
+   }
+  },
+  {
+   "vo": "and in English, it finally became coffee.",
+   "camera": {
+    "center": [
+     2,
+     50.5
+    ],
+    "zoom": 32
+   },
+   "camera_move": 0.9,
+   "highlight": [
+    {
+     "iso": [
+      "GBR"
+     ],
+     "color": "#c0392b",
+     "label": "ENGLISH",
+     "label_at": [
+      -1.6,
+      53.2
+     ],
+     "residual": 0.25,
+     "delay": 0.5
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       4.9,
+       52.37
+      ],
+      [
+       2.2,
+       52.0
+      ],
+      [
+       -0.13,
+       51.5
+      ]
+     ],
+     "delay": 0.1,
+     "draw": 0.9
+    }
+   ],
+   "word": {
+    "text": "COFFEE",
+    "sub": "ENGLISH",
+    "delay": 1.1,
+    "size": 170
+   }
+  },
+  {
+   "vo": "Five languages, one cup. So every time you order a coffee...",
+   "camera": {
+    "center": [
+     22,
+     33
+    ],
+    "zoom": 13
+   },
+   "camera_move": 1.6,
+   "headline": {
+    "lines": [
+     {
+      "text": "5 LANGUAGES. 1 CUP.",
+      "color": "accent",
+      "size": 100
+     }
+    ]
+   },
+   "word": {
+    "text": "QAHWA · KAHVE · CAFFÈ · KOFFIE · COFFEE",
+    "sub": "THE JOURNEY",
+    "size": 70,
+    "delay": 0.4
+   }
+  }
+ ]
+}
