@@ -6,7 +6,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 NE=https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson
 
-pip install --break-system-packages -q pycairo soundfile numpy pillow 2>&1 | grep -v -i warning || true
+python3 -m pip install --break-system-packages -q pycairo soundfile numpy pillow 2>&1 | grep -v -i warning || true
 
 mkdir -p data fonts ~/.fonts
 for f in ne_50m_admin_0_countries ne_10m_admin_0_countries ne_10m_admin_1_states_provinces; do

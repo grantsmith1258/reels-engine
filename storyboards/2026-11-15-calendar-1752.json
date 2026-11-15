@@ -1,0 +1,547 @@
+{
+ "title": "The 11 days that never happened (Britain and America, 1752)",
+ "admin1_borders": [
+  "USA"
+ ],
+ "scenes": [
+  {
+   "vo": "In September 1752, Britain and its American colonies deleted 11 days. Wednesday, September 2nd was followed by Thursday the 14th.",
+   "camera": {
+    "center": [
+     -38,
+     46
+    ],
+    "zoom": 9
+   },
+   "highlight": [
+    {
+     "iso": [
+      "GBR"
+     ],
+     "color": "green",
+     "pulse": true,
+     "label": "BRITAIN",
+     "label_at": [
+      -2,
+      54.5
+     ],
+     "delay": 0.1
+    },
+    {
+     "admin1": [
+      "US-NH",
+      "US-MA",
+      "US-RI",
+      "US-CT",
+      "US-NY",
+      "US-NJ",
+      "US-PA",
+      "US-DE",
+      "US-MD",
+      "US-VA",
+      "US-NC",
+      "US-SC",
+      "US-GA"
+     ],
+     "color": "green",
+     "label": "13 COLONIES",
+     "label_at": [
+      -79,
+      40.5
+     ],
+     "delay": 0.4
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -0.13,
+       51.5
+      ],
+      [
+       -35,
+       52
+      ],
+      [
+       -74,
+       40.7
+      ]
+     ],
+     "color": "accent",
+     "delay": 0.6,
+     "draw": 1.6,
+     "scene_only": true
+    }
+   ],
+   "stamp": {
+    "text": "1752",
+    "x": 830,
+    "y": 640,
+    "delay": 0.2
+   },
+   "word": {
+    "text": "-11 DAYS",
+    "sub": "SEPT 2 → SEPT 14",
+    "delay": 4.2,
+    "size": 150
+   }
+  },
+  {
+   "vo": "The problem was an old calendar. Julius Caesar's year ran about 11 minutes too long, so the dates slowly drifted from the seasons.",
+   "camera": {
+    "center": [
+     12,
+     45
+    ],
+    "zoom": 14
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "#56657a",
+     "fill": 0.35
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      12.5,
+      41.9
+     ],
+     "label": "ROME",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.5
+    }
+   ],
+   "word": {
+    "text": "+11 MIN",
+    "sub": "TOO LONG, EVERY YEAR",
+    "delay": 3.0,
+    "size": 150
+   }
+  },
+  {
+   "vo": "In 1582, Pope Gregory the Thirteenth fixed it. Italy, Spain, Portugal and Poland jumped from October 4th to October 15th.",
+   "camera": {
+    "center": [
+     6,
+     46
+    ],
+    "zoom": 13
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "blue",
+     "delay": 1.6,
+     "residual": 0.25
+    },
+    {
+     "iso": [
+      "ESP"
+     ],
+     "color": "blue",
+     "delay": 2.0,
+     "residual": 0.25
+    },
+    {
+     "iso": [
+      "PRT"
+     ],
+     "color": "blue",
+     "delay": 2.4,
+     "residual": 0.25
+    },
+    {
+     "iso": [
+      "POL"
+     ],
+     "color": "blue",
+     "delay": 2.8,
+     "residual": 0.25
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      12.5,
+      41.9
+     ],
+     "label": "ROME",
+     "side": "right",
+     "color": "accent"
+    }
+   ],
+   "stamp": {
+    "text": "1582",
+    "delay": 0.3
+   },
+   "word": {
+    "text": "OCT 4 → 15",
+    "sub": "10 DAYS GONE",
+    "delay": 4.6,
+    "size": 140
+   }
+  },
+  {
+   "vo": "But Protestant Britain refused to follow the Pope. For 170 years, crossing from England to France meant jumping 10, then 11 days ahead.",
+   "camera": {
+    "center": [
+     0.5,
+     50.5
+    ],
+    "zoom": 45
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "GBR"
+     ],
+     "color": "green",
+     "label": "ENGLAND",
+     "label_at": [
+      -1.6,
+      52.4
+     ],
+     "delay": 0.2
+    },
+    {
+     "iso": [
+      "FRA"
+     ],
+     "color": "blue",
+     "label": "FRANCE",
+     "label_at": [
+      2.5,
+      48.0
+     ],
+     "delay": 0.6
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -0.13,
+       51.5
+      ],
+      [
+       1.4,
+       50.6
+      ],
+      [
+       2.35,
+       48.86
+      ]
+     ],
+     "color": "accent",
+     "delay": 3.4,
+     "draw": 1.4,
+     "scene_only": true
+    }
+   ],
+   "word": {
+    "text": "+10 DAYS",
+    "sub": "JUST BY CROSSING",
+    "delay": 4.6,
+    "size": 150
+   }
+  },
+  {
+   "vo": "In 1752, Parliament gave in, for Britain, Ireland and the 13 colonies at once.",
+   "camera": {
+    "center": [
+     -40,
+     45
+    ],
+    "zoom": 9.5
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "GBR"
+     ],
+     "color": "green",
+     "pulse": true,
+     "label": "BRITAIN",
+     "label_at": [
+      5,
+      56
+     ],
+     "delay": 0.3
+    },
+    {
+     "iso": [
+      "IRL"
+     ],
+     "color": "green",
+     "label": "IRELAND",
+     "label_at": [
+      -15,
+      52
+     ],
+     "delay": 1.4
+    },
+    {
+     "admin1": [
+      "US-NH",
+      "US-MA",
+      "US-RI",
+      "US-CT",
+      "US-NY",
+      "US-NJ",
+      "US-PA",
+      "US-DE",
+      "US-MD",
+      "US-VA",
+      "US-NC",
+      "US-SC",
+      "US-GA"
+     ],
+     "color": "green",
+     "label": "13 COLONIES",
+     "label_at": [
+      -79,
+      40.5
+     ],
+     "delay": 2.2,
+     "pulse": true
+    }
+   ],
+   "stamp": {
+    "text": "1752",
+    "delay": 0.2
+   }
+  },
+  {
+   "vo": "The colonies also moved New Year's Day from March 25th to January 1st.",
+   "camera": {
+    "center": [
+     -77,
+     38
+    ],
+    "zoom": 40
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "admin1": [
+      "US-NH",
+      "US-MA",
+      "US-RI",
+      "US-CT",
+      "US-NY",
+      "US-NJ",
+      "US-PA",
+      "US-DE",
+      "US-MD",
+      "US-VA",
+      "US-NC",
+      "US-SC",
+      "US-GA"
+     ],
+     "color": "green",
+     "label": "13 COLONIES",
+     "label_at": [
+      -79,
+      40.5
+     ]
+    }
+   ],
+   "word": {
+    "text": "JAN 1",
+    "sub": "NEW YEAR (WAS MARCH 25)",
+    "delay": 1.8,
+    "size": 160
+   }
+  },
+  {
+   "vo": "So George Washington has two birthdays. He was born on February 11th, 1731. After the switch, that day became February 22nd, 1732.",
+   "camera": {
+    "center": [
+     -77.2,
+     38.3
+    ],
+    "zoom": 160
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "admin1": [
+      "US-VA"
+     ],
+     "color": "green",
+     "fill": 0.5,
+     "label": "VIRGINIA",
+     "label_at": [
+      -78.4,
+      37.6
+     ]
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -76.92,
+      38.19
+     ],
+     "label": "WASHINGTON BORN HERE",
+     "side": "left",
+     "color": "accent",
+     "delay": 0.6
+    }
+   ],
+   "stamp": {
+    "text": "FEB 11, 1731",
+    "delay": 2.4,
+    "x": 760
+   },
+   "word": {
+    "text": "FEB 22, 1732",
+    "sub": "SAME DAY, NEW CALENDAR",
+    "delay": 5.6,
+    "size": 130
+   }
+  },
+  {
+   "vo": "Russia held out until 1918, then skipped from January 31st to February 14th.",
+   "camera": {
+    "center": [
+     60,
+     56
+    ],
+    "zoom": 7
+   },
+   "camera_move": 1.5,
+   "highlight": [
+    {
+     "iso": [
+      "RUS"
+     ],
+     "color": "red",
+     "pulse": true,
+     "label": "RUSSIA",
+     "label_at": [
+      60,
+      61
+     ],
+     "delay": 0.3
+    }
+   ],
+   "stamp": {
+    "text": "1918",
+    "delay": 0.3,
+    "x": 300,
+    "y": 1220
+   },
+   "word": {
+    "text": "JAN 31 → FEB 14",
+    "sub": "13 DAYS GONE",
+    "delay": 2.4,
+    "size": 120
+   }
+  },
+  {
+   "vo": "Greece, the last in Europe, switched in 1923.",
+   "camera": {
+    "center": [
+     23,
+     39.5
+    ],
+    "zoom": 75
+   },
+   "camera_move": 1.5,
+   "highlight": [
+    {
+     "iso": [
+      "GRC"
+     ],
+     "color": "purple",
+     "pulse": true,
+     "label": "GREECE",
+     "label_at": [
+      22,
+      39.6
+     ],
+     "delay": 0.3
+    }
+   ],
+   "stamp": {
+    "text": "1923",
+    "delay": 0.3
+   },
+   "word": {
+    "text": "LAST",
+    "sub": "IN EUROPE",
+    "delay": 1.2,
+    "size": 160
+   }
+  },
+  {
+   "vo": "Follow for more places where the map got weird.",
+   "camera": {
+    "center": [
+     -30,
+     48
+    ],
+    "zoom": 8
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "admin1": [
+      "US-NH",
+      "US-MA",
+      "US-RI",
+      "US-CT",
+      "US-NY",
+      "US-NJ",
+      "US-PA",
+      "US-DE",
+      "US-MD",
+      "US-VA",
+      "US-NC",
+      "US-SC",
+      "US-GA"
+     ],
+     "color": "green",
+     "fill": 0.6
+    },
+    {
+     "iso": [
+      "GBR"
+     ],
+     "color": "green",
+     "pulse": true,
+     "label": "BRITAIN",
+     "label_at": [
+      5,
+      56
+     ]
+    },
+    {
+     "iso": [
+      "IRL"
+     ],
+     "color": "green",
+     "fill": 0.6,
+     "label": "IRELAND",
+     "label_at": [
+      -15,
+      52
+     ]
+    }
+   ]
+  }
+ ]
+}
