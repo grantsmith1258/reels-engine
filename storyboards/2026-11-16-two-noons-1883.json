@@ -1,0 +1,717 @@
+{
+ "title": "The day America had two noons (Nov 18, 1883)",
+ "admin1_borders": [
+  "USA"
+ ],
+ "outro_hold": 1.0,
+ "scenes": [
+  {
+   "vo": "On November 18, 1883, clocks across America struck noon twice in one day.",
+   "camera": {
+    "center": [
+     -96,
+     37.5
+    ],
+    "zoom": 18
+   },
+   "highlight": [
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "blue",
+     "fill": 0.55,
+     "pulse": true,
+     "delay": 0.0
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -74.0,
+      40.71
+     ],
+     "label": "NEW YORK",
+     "side": "below",
+     "delay": 0.6,
+     "color": "accent"
+    },
+    {
+     "at": [
+      -87.63,
+      41.88
+     ],
+     "label": "CHICAGO",
+     "side": "above",
+     "delay": 0.9,
+     "color": "accent"
+    },
+    {
+     "at": [
+      -90.2,
+      38.63
+     ],
+     "label": "ST. LOUIS",
+     "side": "below",
+     "delay": 1.2,
+     "color": "accent"
+    },
+    {
+     "at": [
+      -122.42,
+      37.77
+     ],
+     "label": "SAN FRANCISCO",
+     "side": "right",
+     "delay": 1.5,
+     "color": "accent"
+    }
+   ],
+   "stamp": {
+    "text": "NOV 18, 1883",
+    "x": 540,
+    "y": 620,
+    "delay": 0.2
+   },
+   "word": {
+    "text": "NOON ×2",
+    "sub": "IN ONE DAY",
+    "delay": 1.8,
+    "size": 160
+   }
+  },
+  {
+   "vo": "In Chicago, people wound their watches back nine and a half minutes and lived through noon again.",
+   "camera": {
+    "center": [
+     -88.6,
+     41.0
+    ],
+    "zoom": 120
+   },
+   "camera_move": 1.1,
+   "highlight": [
+    {
+     "admin1": [
+      "US-IL"
+     ],
+     "color": "green",
+     "fill": 0.45,
+     "label": "ILLINOIS",
+     "label_at": [
+      -89.3,
+      40.0
+     ],
+     "delay": 0.2
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -87.63,
+      41.88
+     ],
+     "label": "CHICAGO",
+     "side": "right",
+     "delay": 0.3,
+     "color": "accent"
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -87.2,
+      42.4
+     ],
+     "text": "LAKE MICHIGAN",
+     "size": 34,
+     "delay": 0.6
+    }
+   ],
+   "word": {
+    "text": "−9.5 MIN",
+    "sub": "WATCHES WOUND BACK",
+    "delay": 1.6,
+    "size": 150
+   }
+  },
+  {
+   "vo": "Before that day, every town set its clocks by the sun. Noon was whenever the sun was highest.",
+   "camera": {
+    "center": [
+     -87,
+     35.5
+    ],
+    "zoom": 30
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "blue",
+     "fill": 0.35
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -77.04,
+      38.91
+     ],
+     "label": "WASHINGTON",
+     "side": "left",
+     "delay": 0.8,
+     "color": "white"
+    },
+    {
+     "at": [
+      -87.63,
+      41.88
+     ],
+     "label": "CHICAGO",
+     "side": "left",
+     "delay": 1.4,
+     "color": "white"
+    },
+    {
+     "at": [
+      -84.39,
+      33.75
+     ],
+     "label": "ATLANTA",
+     "side": "right",
+     "delay": 2.0,
+     "color": "white"
+    },
+    {
+     "at": [
+      -90.07,
+      29.95
+     ],
+     "label": "NEW ORLEANS",
+     "side": "left",
+     "delay": 2.6,
+     "color": "white"
+    }
+   ],
+   "word": {
+    "text": "SUN TIME",
+    "sub": "NOON = SUN HIGHEST",
+    "delay": 3.2,
+    "size": 150
+   }
+  },
+  {
+   "vo": "So when it was noon in Chicago, it was 12:31 in Pittsburgh.",
+   "camera": {
+    "center": [
+     -84,
+     41.0
+    ],
+    "zoom": 75
+   },
+   "camera_move": 1.1,
+   "highlight": [
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "blue",
+     "fill": 0.35
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -87.63,
+      41.88
+     ],
+     "label": "CHICAGO 12:00",
+     "side": "above",
+     "delay": 0.2,
+     "color": "green"
+    },
+    {
+     "at": [
+      -80.0,
+      40.44
+     ],
+     "label": "PITTSBURGH 12:31",
+     "side": "below",
+     "delay": 1.6,
+     "color": "orange"
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -87.63,
+       41.88
+      ],
+      [
+       -80.0,
+       40.44
+      ]
+     ],
+     "color": "white",
+     "delay": 1.0,
+     "draw": 0.8
+    }
+   ]
+  },
+  {
+   "vo": "The railroads ran on more than 50 different times. Pittsburgh's stations alone juggled six.",
+   "camera": {
+    "center": [
+     -78.2,
+     40.6
+    ],
+    "zoom": 125
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "admin1": [
+      "US-PA"
+     ],
+     "color": "orange",
+     "fill": 0.4,
+     "label": "PENNSYLVANIA",
+     "label_at": [
+      -77.6,
+      41.3
+     ],
+     "delay": 0.2
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -80.0,
+      40.44
+     ],
+     "label": "PITTSBURGH",
+     "side": "right",
+     "delay": 0.3,
+     "color": "orange"
+    }
+   ],
+   "word": {
+    "text": "50+ TIMES",
+    "sub": "ON THE RAILROADS",
+    "delay": 0.6,
+    "size": 150
+   },
+   "stamp": {
+    "text": "6 IN PITTSBURGH",
+    "x": 540,
+    "y": 560,
+    "delay": 3.4
+   }
+  },
+  {
+   "vo": "So the railroads didn't wait for the government. They split the country into four time zones, each one hour wide.",
+   "camera": {
+    "center": [
+     -96,
+     38.5
+    ],
+    "zoom": 15
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "blue",
+     "fill": 0.35
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -75,
+       49.0
+      ],
+      [
+       -75,
+       26.0
+      ]
+     ],
+     "color": "accent",
+     "label": "EASTERN",
+     "label_at": [
+      -74.7,
+      27.6
+     ],
+     "delay": 2.4,
+     "draw": 1.0,
+     "persist": true
+    },
+    {
+     "points": [
+      [
+       -90,
+       49.0
+      ],
+      [
+       -90,
+       26.0
+      ]
+     ],
+     "color": "accent",
+     "label": "CENTRAL",
+     "label_at": [
+      -89.7,
+      27.6
+     ],
+     "delay": 2.8,
+     "draw": 1.0,
+     "persist": true
+    },
+    {
+     "points": [
+      [
+       -105,
+       49.0
+      ],
+      [
+       -105,
+       26.0
+      ]
+     ],
+     "color": "accent",
+     "label": "MOUNTAIN",
+     "label_at": [
+      -104.7,
+      27.6
+     ],
+     "delay": 3.2,
+     "draw": 1.0,
+     "persist": true
+    },
+    {
+     "points": [
+      [
+       -120,
+       49.0
+      ],
+      [
+       -120,
+       26.0
+      ]
+     ],
+     "color": "accent",
+     "label": "PACIFIC",
+     "label_at": [
+      -119.7,
+      27.6
+     ],
+     "delay": 3.6,
+     "draw": 1.0,
+     "persist": true
+    }
+   ],
+   "word": {
+    "text": "4 ZONES",
+    "sub": "1 HOUR APART",
+    "delay": 4.2,
+    "size": 160
+   }
+  },
+  {
+   "vo": "At noon on the 90th meridian, a telegraph signal from Pittsburgh told stations to reset.",
+   "camera": {
+    "center": [
+     -86,
+     39.5
+    ],
+    "zoom": 32
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "blue",
+     "fill": 0.35
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -90,
+       48.5
+      ],
+      [
+       -90,
+       29.0
+      ]
+     ],
+     "color": "accent",
+     "label": "90°W",
+     "label_at": [
+      -89.7,
+      30.3
+     ],
+     "delay": 0.2,
+     "draw": 0.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -80.0,
+      40.44
+     ],
+     "label": "PITTSBURGH",
+     "side": "right",
+     "delay": 1.4,
+     "color": "orange"
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -80.0,
+       40.44
+      ],
+      [
+       -84,
+       43.5
+      ],
+      [
+       -87.63,
+       41.88
+      ]
+     ],
+     "color": "accent",
+     "delay": 2.4,
+     "draw": 1.2,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -80.0,
+       40.44
+      ],
+      [
+       -85,
+       37.5
+      ],
+      [
+       -90.2,
+       38.63
+      ]
+     ],
+     "color": "accent",
+     "delay": 2.8,
+     "draw": 1.2,
+     "scene_only": true
+    }
+   ],
+   "stamp": {
+    "text": "12:00",
+    "x": 800,
+    "y": 620,
+    "delay": 0.6
+   }
+  },
+  {
+   "vo": "Towns running ahead of their zone turned their clocks back and hit noon a second time.",
+   "camera": {
+    "center": [
+     -88,
+     41.5
+    ],
+    "zoom": 70
+   },
+   "camera_move": 1.1,
+   "highlight": [
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "blue",
+     "fill": 0.35
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -90,
+       46.5
+      ],
+      [
+       -90,
+       36.5
+      ]
+     ],
+     "color": "accent",
+     "label": "90°W",
+     "label_at": [
+      -89.7,
+      37.0
+     ],
+     "delay": 0.0,
+     "draw": 0.6
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -87.63,
+      41.88
+     ],
+     "label": "CHICAGO",
+     "side": "right",
+     "delay": 0.6,
+     "color": "green"
+    }
+   ],
+   "word": {
+    "text": "NOON AGAIN",
+    "sub": "CLOCKS TURNED BACK",
+    "delay": 2.4,
+    "size": 150
+   }
+  },
+  {
+   "vo": "One paper mocked it: \"The sun will be requested to rise and set by railroad time.\" Detroit refused for years.",
+   "camera": {
+    "center": [
+     -85,
+     41.0
+    ],
+    "zoom": 110
+   },
+   "camera_move": 1.1,
+   "highlight": [
+    {
+     "admin1": [
+      "US-IN"
+     ],
+     "color": "purple",
+     "fill": 0.4,
+     "delay": 0.1
+    },
+    {
+     "admin1": [
+      "US-MI"
+     ],
+     "color": "red",
+     "fill": 0.4,
+     "delay": 4.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -86.16,
+      39.77
+     ],
+     "label": "INDIANAPOLIS",
+     "side": "right",
+     "delay": 0.3,
+     "color": "accent"
+    },
+    {
+     "at": [
+      -83.05,
+      42.33
+     ],
+     "label": "DETROIT",
+     "side": "right",
+     "delay": 4.8,
+     "color": "red"
+    }
+   ],
+   "word": {
+    "text": "RAILROAD TIME",
+    "sub": "\"THE SUN WILL BE REQUESTED…\"",
+    "delay": 1.4,
+    "size": 130
+   }
+  },
+  {
+   "vo": "The twist? None of it was law. Congress only made time zones official in 1918.",
+   "camera": {
+    "center": [
+     -96,
+     38.5
+    ],
+    "zoom": 15
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "blue",
+     "fill": 0.5
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -77.01,
+      38.89
+     ],
+     "label": "CONGRESS",
+     "side": "right",
+     "delay": 2.4,
+     "color": "accent"
+    }
+   ],
+   "stamp": {
+    "text": "1918",
+    "x": 540,
+    "y": 620,
+    "delay": 2.6
+   },
+   "word": {
+    "text": "NOT LAW",
+    "sub": "FOR 35 YEARS",
+    "delay": 0.6,
+    "size": 160
+   }
+  },
+  {
+   "vo": "Follow for more places where the map got weird.",
+   "camera": {
+    "center": [
+     -95,
+     39
+    ],
+    "zoom": 13
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "blue",
+     "fill": 0.5,
+     "pulse": true,
+     "label": "USA",
+     "label_at": [
+      -98,
+      35
+     ]
+    }
+   ]
+  }
+ ]
+}
