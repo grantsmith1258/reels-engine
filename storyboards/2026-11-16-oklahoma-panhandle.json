@@ -1,0 +1,683 @@
+{
+ "title": "Why does Oklahoma have a panhandle?",
+ "admin1_borders": [
+  "USA"
+ ],
+ "scenes": [
+  {
+   "vo": "For 40 years, this strip of America had no state, no laws and no courts.",
+   "camera": {
+    "center": [
+     -99.8,
+     36.0
+    ],
+    "zoom": 100
+   },
+   "highlight": [
+    {
+     "admin1": [
+      "US-OK"
+     ],
+     "color": "green",
+     "fill": 0.3,
+     "delay": 0.0
+    },
+    {
+     "shape": [
+      [
+       -103.0,
+       36.5
+      ],
+      [
+       -100.0,
+       36.5
+      ],
+      [
+       -100.0,
+       37.0
+      ],
+      [
+       -103.0,
+       37.0
+      ]
+     ],
+     "color": "green",
+     "pulse": true,
+     "fill": 0.9,
+     "label": "THIS STRIP",
+     "label_at": [
+      -101.5,
+      37.35
+     ],
+     "delay": 0.2
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -98.5,
+      37.8
+     ],
+     "text": "KANSAS",
+     "size": 40,
+     "delay": 0.5
+    },
+    {
+     "at": [
+      -100.8,
+      34.6
+     ],
+     "text": "TEXAS",
+     "size": 40,
+     "delay": 0.5
+    }
+   ],
+   "word": {
+    "text": "NO LAWS",
+    "sub": "NO STATE · NO COURTS",
+    "delay": 1.6,
+    "size": 150
+   }
+  },
+  {
+   "vo": "People built towns there, but none of them could legally own their land.",
+   "camera": {
+    "center": [
+     -101.5,
+     36.75
+    ],
+    "zoom": 220
+   },
+   "camera_move": 1.1,
+   "highlight": [
+    {
+     "shape": [
+      [
+       -103.0,
+       36.5
+      ],
+      [
+       -100.0,
+       36.5
+      ],
+      [
+       -100.0,
+       37.0
+      ],
+      [
+       -103.0,
+       37.0
+      ]
+     ],
+     "color": "green",
+     "fill": 0.7
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -100.519,
+      36.816
+     ],
+     "label": "BEAVER CITY",
+     "side": "above",
+     "color": "accent",
+     "delay": 0.8
+    }
+   ],
+   "word": {
+    "text": "NO OWNERS",
+    "sub": "NOT ONE LEGAL LAND TITLE",
+    "delay": 2.4,
+    "size": 150
+   }
+  },
+  {
+   "vo": "This is the Oklahoma panhandle, and it was created by a line about slavery.",
+   "camera": {
+    "center": [
+     -98.0,
+     35.4
+    ],
+    "zoom": 70
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "admin1": [
+      "US-OK"
+     ],
+     "color": "green",
+     "fill": 0.55,
+     "label": "OKLAHOMA",
+     "label_at": [
+      -97.2,
+      35.4
+     ],
+     "delay": 0.2
+    },
+    {
+     "shape": [
+      [
+       -103.0,
+       36.5
+      ],
+      [
+       -100.0,
+       36.5
+      ],
+      [
+       -100.0,
+       37.0
+      ],
+      [
+       -103.0,
+       37.0
+      ]
+     ],
+     "color": "green",
+     "pulse": true,
+     "fill": 0.9
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -109.5,
+       36.5
+      ],
+      [
+       -89.5,
+       36.5
+      ]
+     ],
+     "color": "red",
+     "label": "36°30′ N",
+     "label_at": [
+      -106.5,
+      36.0
+     ],
+     "delay": 2.6
+    }
+   ]
+  },
+  {
+   "vo": "In 1820, Congress drew a line at 36 degrees 30 minutes north. Out west, slavery was banned above it.",
+   "camera": {
+    "center": [
+     -97.0,
+     37.0
+    ],
+    "zoom": 26
+   },
+   "camera_move": 1.4,
+   "lines": [
+    {
+     "points": [
+      [
+       -109.5,
+       36.5
+      ],
+      [
+       -89.5,
+       36.5
+      ]
+     ],
+     "color": "red",
+     "label": "36°30′ N",
+     "label_at": [
+      -106.5,
+      36.0
+     ],
+     "delay": 0.6,
+     "draw": 1.6
+    }
+   ],
+   "stamp": {
+    "text": "1820",
+    "delay": 0.3
+   },
+   "word": {
+    "text": "NO SLAVERY",
+    "sub": "NORTH OF THE LINE · OUT WEST",
+    "delay": 3.6,
+    "size": 140
+   }
+  },
+  {
+   "vo": "Texas joined as a slave state, but its land reached far north of that line. In 1850, it sold everything above it for 10 million dollars.",
+   "camera": {
+    "center": [
+     -99.5,
+     34.0
+    ],
+    "zoom": 45
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "admin1": [
+      "US-TX"
+     ],
+     "color": "orange",
+     "fill": 0.55,
+     "label": "TEXAS",
+     "label_at": [
+      -99.0,
+      31.5
+     ],
+     "delay": 0.2
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -109.5,
+       36.5
+      ],
+      [
+       -89.5,
+       36.5
+      ]
+     ],
+     "color": "red",
+     "label": "36°30′ N",
+     "label_at": [
+      -106.5,
+      36.0
+     ]
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -100.5,
+      38.0
+     ],
+     "text": "SOLD TO THE US",
+     "size": 40,
+     "delay": 4.5
+    }
+   ],
+   "stamp": {
+    "text": "1850",
+    "delay": 3.8
+   },
+   "word": {
+    "text": "$10 MILLION",
+    "sub": "FOR THE LAND ABOVE THE LINE",
+    "delay": 5.8,
+    "size": 140
+   }
+  },
+  {
+   "vo": "Then in 1854, Kansas got its southern border at the 37th parallel, half a degree farther north.",
+   "camera": {
+    "center": [
+     -99.0,
+     36.6
+    ],
+    "zoom": 62
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "admin1": [
+      "US-TX"
+     ],
+     "color": "orange",
+     "fill": 0.45
+    },
+    {
+     "admin1": [
+      "US-KS"
+     ],
+     "color": "blue",
+     "fill": 0.55,
+     "label": "KANSAS",
+     "label_at": [
+      -99.0,
+      38.2
+     ],
+     "delay": 0.6
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -109.5,
+       36.5
+      ],
+      [
+       -89.5,
+       36.5
+      ]
+     ],
+     "color": "red",
+     "label": "36°30′ N",
+     "label_at": [
+      -106.5,
+      36.0
+     ]
+    },
+    {
+     "points": [
+      [
+       -104.5,
+       37.0
+      ],
+      [
+       -93.5,
+       37.0
+      ]
+     ],
+     "color": "blue",
+     "label": "37° N",
+     "label_at": [
+      -103.6,
+      37.3
+     ],
+     "delay": 1.6
+    }
+   ],
+   "stamp": {
+    "text": "1854",
+    "delay": 0.3
+   },
+   "word": {
+    "text": "½ DEGREE",
+    "sub": "THE GAP",
+    "delay": 3.6,
+    "size": 150
+   }
+  },
+  {
+   "vo": "New Mexico stopped at the 103rd meridian. Left in the middle: a strip 34 miles wide and 167 miles long, in no state or territory.",
+   "camera": {
+    "center": [
+     -101.3,
+     36.4
+    ],
+    "zoom": 95
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "admin1": [
+      "US-TX"
+     ],
+     "color": "orange",
+     "fill": 0.4
+    },
+    {
+     "admin1": [
+      "US-KS"
+     ],
+     "color": "blue",
+     "fill": 0.4
+    },
+    {
+     "admin1": [
+      "US-NM"
+     ],
+     "color": "purple",
+     "fill": 0.55,
+     "label": "NEW MEXICO",
+     "label_at": [
+      -104.6,
+      35.6
+     ],
+     "delay": 0.2
+    },
+    {
+     "shape": [
+      [
+       -103.0,
+       36.5
+      ],
+      [
+       -100.0,
+       36.5
+      ],
+      [
+       -100.0,
+       37.0
+      ],
+      [
+       -103.0,
+       37.0
+      ]
+     ],
+     "color": "green",
+     "pulse": true,
+     "fill": 0.9,
+     "delay": 2.8
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -103.0,
+       34.5
+      ],
+      [
+       -103.0,
+       38.5
+      ]
+     ],
+     "color": "purple",
+     "label": "103° W",
+     "label_at": [
+      -103.5,
+      38.2
+     ],
+     "delay": 0.8
+    }
+   ],
+   "word": {
+    "text": "34 × 167 MI",
+    "sub": "IN NO STATE OR TERRITORY",
+    "delay": 4.0,
+    "size": 140
+   }
+  },
+  {
+   "vo": "Maps called it the Public Land Strip. Settlers called it No Man's Land. Towns made their own claim boards, and vigilantes kept order.",
+   "camera": {
+    "center": [
+     -101.5,
+     36.75
+    ],
+    "zoom": 230
+   },
+   "camera_move": 1.1,
+   "highlight": [
+    {
+     "shape": [
+      [
+       -103.0,
+       36.5
+      ],
+      [
+       -100.0,
+       36.5
+      ],
+      [
+       -100.0,
+       37.0
+      ],
+      [
+       -103.0,
+       37.0
+      ]
+     ],
+     "color": "green",
+     "fill": 0.75
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -101.5,
+      37.25
+     ],
+     "text": "PUBLIC LAND STRIP",
+     "size": 44,
+     "delay": 0.3
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -100.519,
+      36.816
+     ],
+     "label": "BEAVER CITY",
+     "side": "above",
+     "color": "accent",
+     "delay": 4.0
+    }
+   ],
+   "word": {
+    "text": "NO MAN'S LAND",
+    "sub": "WHAT SETTLERS CALLED IT",
+    "delay": 1.8,
+    "size": 130
+   }
+  },
+  {
+   "vo": "In 1890, Congress finally attached it to Oklahoma Territory.",
+   "camera": {
+    "center": [
+     -100.2,
+     36.3
+    ],
+    "zoom": 115
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "shape": [
+      [
+       -103.0,
+       36.5
+      ],
+      [
+       -100.0,
+       36.5
+      ],
+      [
+       -100.0,
+       37.0
+      ],
+      [
+       -103.0,
+       37.0
+      ]
+     ],
+     "color": "green",
+     "fill": 0.9,
+     "pulse": true
+    }
+   ],
+   "stamp": {
+    "text": "1890",
+    "delay": 0.3
+   },
+   "word": {
+    "text": "ATTACHED",
+    "sub": "TO OKLAHOMA TERRITORY",
+    "delay": 1.5,
+    "size": 150
+   }
+  },
+  {
+   "vo": "In 1907, Oklahoma became a state, panhandle and all.",
+   "camera": {
+    "center": [
+     -98.0,
+     35.4
+    ],
+    "zoom": 72
+   },
+   "camera_move": 1.0,
+   "highlight": [
+    {
+     "admin1": [
+      "US-OK"
+     ],
+     "color": "green",
+     "fill": 0.75,
+     "pulse": true,
+     "label": "OKLAHOMA",
+     "label_at": [
+      -97.2,
+      35.4
+     ],
+     "delay": 0.2
+    }
+   ],
+   "stamp": {
+    "text": "1907",
+    "delay": 0.3
+   },
+   "word": {
+    "text": "STATEHOOD",
+    "sub": "PANHANDLE AND ALL",
+    "delay": 1.4,
+    "size": 150
+   }
+  },
+  {
+   "vo": "Follow for more places where the map got weird.",
+   "camera": {
+    "center": [
+     -97.0,
+     37.5
+    ],
+    "zoom": 24
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "admin1": [
+      "US-TX"
+     ],
+     "color": "orange",
+     "fill": 0.4
+    },
+    {
+     "admin1": [
+      "US-KS"
+     ],
+     "color": "blue",
+     "fill": 0.4
+    },
+    {
+     "admin1": [
+      "US-NM"
+     ],
+     "color": "purple",
+     "fill": 0.4
+    },
+    {
+     "admin1": [
+      "US-OK"
+     ],
+     "color": "green",
+     "fill": 0.8,
+     "pulse": true,
+     "label": "OKLAHOMA",
+     "label_at": [
+      -97.2,
+      35.4
+     ]
+    }
+   ]
+  }
+ ]
+}
