@@ -283,6 +283,12 @@ class Renderer:
             for h in s.get("highlight", []) or []:
                 need.update(h.get("admin1", []))
         border_of = set(sb.get("admin1_borders", []))
+        # Optional: "lakes": ["Lake Erie", ...] draws those lakes (Natural Earth names) as water on top
+        # of the land and highlights, e.g. so the Great Lakes cut Michigan into its real shape.
+        self.lakes = []
+        if sb.get("lakes"):
+            for rings in load_layer("ne_10m_lakes.geojson", "name", tol=0.003, only=set(sb["lakes"])).values():
+                self.lakes.extend(rings)
         self.adm = {}
         self.adm_lines = []
         if need or border_of:
@@ -353,6 +359,7 @@ class Renderer:
         cam = self.tl.camera(t)
         self.draw_base(ctx, cam)
         self.draw_highlights(ctx, cam, t)
+        self.draw_lakes(ctx, cam)
         self.draw_routes(ctx, cam, t)
         self.draw_pins(ctx, cam, t)
         self.draw_labels(ctx, cam, t)
@@ -396,6 +403,17 @@ class Renderer:
             for r in self.adm_lines:
                 self.ring_path(ctx, cam, r)
             ctx.set_source_rgba(*PALETTE["admin"], 0.7); ctx.set_line_width(1.0); ctx.set_dash([4, 4]); ctx.stroke(); ctx.set_dash([])
+
+    def draw_lakes(self, ctx, cam):
+        if not self.lakes:
+            return
+        ctx.new_path()
+        for r in self.lakes:
+            self.ring_path(ctx, cam, r)
+        g = cairo.LinearGradient(0, 0, 0, H)
+        g.add_color_stop_rgb(0, *PALETTE["ocean_top"]); g.add_color_stop_rgb(1, *PALETTE["ocean_bot"])
+        ctx.set_source(g); ctx.fill_preserve()
+        ctx.set_source_rgb(*PALETTE["border"]); ctx.set_line_width(1.4); ctx.set_line_join(cairo.LINE_JOIN_ROUND); ctx.stroke()
 
     def draw_highlights(self, ctx, cam, t):
         for h in self.tl.highlights:

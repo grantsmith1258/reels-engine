@@ -9,7 +9,7 @@ NE=https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson
 python3 -m pip install --break-system-packages -q pycairo soundfile numpy pillow 2>&1 | grep -v -i warning || true
 
 mkdir -p data fonts ~/.fonts
-for f in ne_50m_admin_0_countries ne_10m_admin_0_countries ne_10m_admin_1_states_provinces; do
+for f in ne_50m_admin_0_countries ne_10m_admin_0_countries ne_10m_admin_1_states_provinces ne_10m_lakes; do
   [ -s data/$f.geojson ] || curl -sSfL -o data/$f.geojson $NE/$f.geojson
 done
 [ -s fonts/Anton-Regular.ttf ] || curl -sSfL -o fonts/Anton-Regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf
