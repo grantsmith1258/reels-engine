@@ -1,0 +1,724 @@
+{
+ "title": "Two islands 2.4 miles apart, but a day apart (the Diomedes)",
+ "outro_hold": 1.0,
+ "scenes": [
+  {
+   "vo": "These two islands are 2.4 miles apart, but they're on different days.",
+   "camera": {
+    "center": [
+     -168.995,
+     65.783
+    ],
+    "zoom": 2000
+   },
+   "highlight": [
+    {
+     "iso": [
+      "RUS"
+     ],
+     "color": "orange",
+     "label": "RUSSIA",
+     "label_at": [
+      -169.05,
+      65.8
+     ],
+     "fill": 0.8
+    },
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "green",
+     "label": "USA",
+     "label_at": [
+      -168.926,
+      65.754
+     ],
+     "pulse": true,
+     "delay": 0.3
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -168.977,
+       65.55
+      ],
+      [
+       -168.977,
+       66.02
+      ]
+     ],
+     "color": "accent",
+     "delay": 0.2,
+     "draw": 0.8
+    }
+   ],
+   "word": {
+    "text": "2.4 MILES",
+    "sub": "BUT A DAY APART",
+    "delay": 0.6,
+    "size": 150
+   }
+  },
+  {
+   "vo": "Stand on the American one, and you're looking across the water at tomorrow.",
+   "camera": {
+    "center": [
+     -168.985,
+     65.772
+    ],
+    "zoom": 2700
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "iso": [
+      "RUS"
+     ],
+     "color": "orange",
+     "fill": 0.8
+    },
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "green",
+     "fill": 0.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -168.953,
+      65.758
+     ],
+     "label": "DIOMEDE, ALASKA",
+     "side": "right",
+     "color": "green",
+     "delay": 0.4
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -168.953,
+       65.758
+      ],
+      [
+       -168.99,
+       65.774
+      ],
+      [
+       -169.03,
+       65.786
+      ]
+     ],
+     "color": "accent",
+     "delay": 1.6,
+     "draw": 1.5,
+     "scene_only": true
+    }
+   ],
+   "word": {
+    "text": "TOMORROW",
+    "sub": "ACROSS THE WATER",
+    "delay": 2.6,
+    "size": 150
+   }
+  },
+  {
+   "vo": "This is the Bering Strait. Big Diomede is Russian. Little Diomede is American.",
+   "camera": {
+    "center": [
+     -169.5,
+     65.6
+    ],
+    "zoom": 70
+   },
+   "camera_move": 1.6,
+   "highlight": [
+    {
+     "iso": [
+      "RUS"
+     ],
+     "color": "orange",
+     "fill": 0.55,
+     "label": "RUSSIA",
+     "label_at": [
+      -173.5,
+      66.6
+     ]
+    },
+    {
+     "admin1": [
+      "US-AK"
+     ],
+     "color": "green",
+     "fill": 0.55,
+     "label": "ALASKA",
+     "label_at": [
+      -164.5,
+      65.3
+     ],
+     "delay": 0.3
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -169.6,
+      64.9
+     ],
+     "text": "BERING STRAIT",
+     "size": 34,
+     "color": "white",
+     "delay": 0.6
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -169.05,
+      65.79
+     ],
+     "label": "BIG DIOMEDE",
+     "side": "left",
+     "color": "orange",
+     "delay": 2.0
+    },
+    {
+     "at": [
+      -168.925,
+      65.754
+     ],
+     "label": "LITTLE DIOMEDE",
+     "side": "right",
+     "color": "green",
+     "delay": 3.3
+    }
+   ]
+  },
+  {
+   "vo": "Between them run two lines: the US-Russia border, and the International Date Line.",
+   "camera": {
+    "center": [
+     -168.995,
+     65.783
+    ],
+    "zoom": 1700
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "RUS"
+     ],
+     "color": "orange",
+     "fill": 0.8,
+     "label": "BIG DIOMEDE",
+     "label_at": [
+      -169.05,
+      65.8
+     ]
+    },
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "green",
+     "fill": 0.8,
+     "label": "LITTLE DIOMEDE",
+     "label_at": [
+      -168.926,
+      65.754
+     ]
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -168.977,
+       65.55
+      ],
+      [
+       -168.977,
+       66.02
+      ]
+     ],
+     "color": "red",
+     "label": "US–RUSSIA BORDER",
+     "label_at": [
+      -168.977,
+      65.86
+     ],
+     "delay": 0.5,
+     "draw": 1.2
+    }
+   ],
+   "word": {
+    "text": "DATE LINE",
+    "sub": "SAME GAP",
+    "delay": 3.0,
+    "size": 150
+   }
+  },
+  {
+   "vo": "So Big Diomede is 21 hours ahead. They're nicknamed Tomorrow Island and Yesterday Island.",
+   "camera": {
+    "center": [
+     -168.995,
+     65.783
+    ],
+    "zoom": 1700
+   },
+   "camera_move": 0.6,
+   "highlight": [
+    {
+     "iso": [
+      "RUS"
+     ],
+     "color": "orange",
+     "fill": 0.8,
+     "pulse": true
+    },
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "green",
+     "fill": 0.8
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -168.977,
+       65.55
+      ],
+      [
+       -168.977,
+       66.02
+      ]
+     ],
+     "color": "red"
+    }
+   ],
+   "word": {
+    "text": "21 HOURS",
+    "sub": "BIG DIOMEDE IS AHEAD",
+    "delay": 0.4,
+    "size": 150
+   },
+   "labels": [
+    {
+     "at": [
+      -169.05,
+      65.8
+     ],
+     "text": "TOMORROW ISLAND",
+     "size": 34,
+     "color": "white",
+     "delay": 2.6
+    },
+    {
+     "at": [
+      -168.926,
+      65.745
+     ],
+     "text": "YESTERDAY ISLAND",
+     "size": 34,
+     "color": "white",
+     "delay": 3.8
+    }
+   ]
+  },
+  {
+   "vo": "The border landed here in 1867, when Russia sold Alaska to the United States. The treaty split the islands down the middle.",
+   "camera": {
+    "center": [
+     -160,
+     63
+    ],
+    "zoom": 28
+   },
+   "camera_move": 1.6,
+   "highlight": [
+    {
+     "iso": [
+      "RUS"
+     ],
+     "color": "orange",
+     "fill": 0.5,
+     "label": "RUSSIA",
+     "label_at": [
+      -172,
+      67.5
+     ]
+    },
+    {
+     "admin1": [
+      "US-AK"
+     ],
+     "color": "green",
+     "fill": 0.75,
+     "label": "ALASKA",
+     "label_at": [
+      -152,
+      64
+     ],
+     "delay": 1.0,
+     "pulse": true
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -168.977,
+       65.4
+      ],
+      [
+       -168.977,
+       71.5
+      ]
+     ],
+     "color": "red",
+     "label": "1867 TREATY LINE",
+     "label_at": [
+      -168.977,
+      69.5
+     ],
+     "delay": 3.5,
+     "draw": 1.5
+    }
+   ],
+   "stamp": {
+    "text": "1867",
+    "delay": 0.4
+   }
+  },
+  {
+   "vo": "For generations, Inupiat families lived on both islands and visited freely.",
+   "camera": {
+    "center": [
+     -168.995,
+     65.783
+    ],
+    "zoom": 2000
+   },
+   "camera_move": 1.5,
+   "highlight": [
+    {
+     "iso": [
+      "RUS"
+     ],
+     "color": "orange",
+     "fill": 0.8
+    },
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "green",
+     "fill": 0.8
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -169.02,
+       65.79
+      ],
+      [
+       -168.98,
+       65.778
+      ],
+      [
+       -168.94,
+       65.762
+      ]
+     ],
+     "color": "teal",
+     "delay": 0.8,
+     "draw": 1.4,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -168.94,
+       65.752
+      ],
+      [
+       -168.98,
+       65.765
+      ],
+      [
+       -169.02,
+       65.776
+      ]
+     ],
+     "color": "teal",
+     "delay": 2.0,
+     "draw": 1.4,
+     "scene_only": true
+    }
+   ],
+   "word": {
+    "text": "INUPIAT",
+    "sub": "ONE PEOPLE · TWO ISLANDS",
+    "delay": 0.4,
+    "size": 150
+   }
+  },
+  {
+   "vo": "Then came the Cold War. In 1948 the border closed, and the Soviets moved Big Diomede's people to the mainland. It became the Ice Curtain.",
+   "camera": {
+    "center": [
+     -169.4,
+     65.9
+    ],
+    "zoom": 260
+   },
+   "camera_move": 1.5,
+   "highlight": [
+    {
+     "iso": [
+      "RUS"
+     ],
+     "color": "orange",
+     "fill": 0.6
+    },
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "green",
+     "fill": 0.6
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -168.977,
+       65.55
+      ],
+      [
+       -168.977,
+       66.25
+      ]
+     ],
+     "color": "red",
+     "delay": 1.0,
+     "draw": 1.0
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -169.05,
+       65.79
+      ],
+      [
+       -169.4,
+       65.92
+      ],
+      [
+       -169.68,
+       66.0
+      ]
+     ],
+     "color": "orange",
+     "delay": 3.0,
+     "draw": 1.6,
+     "scene_only": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -169.68,
+      66.0
+     ],
+     "label": "MAINLAND",
+     "side": "left",
+     "color": "orange",
+     "delay": 4.4
+    }
+   ],
+   "stamp": {
+    "text": "1948",
+    "delay": 0.8
+   },
+   "word": {
+    "text": "ICE CURTAIN",
+    "sub": "THE COLD WAR BORDER",
+    "delay": 5.0,
+    "size": 140
+   }
+  },
+  {
+   "vo": "In 1987, American swimmer Lynne Cox swam across in water of about 6 degrees Celsius. Gorbachev later toasted her swim with Reagan.",
+   "camera": {
+    "center": [
+     -168.995,
+     65.783
+    ],
+    "zoom": 2000
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "RUS"
+     ],
+     "color": "orange",
+     "fill": 0.8
+    },
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "green",
+     "fill": 0.8
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -168.945,
+       65.762
+      ],
+      [
+       -168.98,
+       65.772
+      ],
+      [
+       -169.01,
+       65.778
+      ]
+     ],
+     "color": "accent",
+     "delay": 0.8,
+     "draw": 2.6,
+     "scene_only": true
+    }
+   ],
+   "stamp": {
+    "text": "1987",
+    "delay": 0.3
+   },
+   "word": {
+    "text": "6°C",
+    "sub": "THE WATER SHE SWAM",
+    "delay": 3.0,
+    "size": 160
+   }
+  },
+  {
+   "vo": "Today 83 people live on Little Diomede, a short swim from tomorrow.",
+   "camera": {
+    "center": [
+     -168.96,
+     65.765
+    ],
+    "zoom": 2700
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "iso": [
+      "RUS"
+     ],
+     "color": "orange",
+     "fill": 0.8
+    },
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "green",
+     "fill": 0.8,
+     "pulse": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -168.953,
+      65.758
+     ],
+     "label": "DIOMEDE",
+     "side": "right",
+     "color": "green",
+     "delay": 0.3
+    }
+   ],
+   "word": {
+    "text": "83 PEOPLE",
+    "sub": "LIVE HERE TODAY",
+    "delay": 0.8,
+    "size": 150
+   }
+  },
+  {
+   "vo": "Follow for more places where the map got weird.",
+   "camera": {
+    "center": [
+     -167,
+     64.5
+    ],
+    "zoom": 40
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "RUS"
+     ],
+     "color": "orange",
+     "fill": 0.5
+    },
+    {
+     "admin1": [
+      "US-AK"
+     ],
+     "color": "green",
+     "fill": 0.6,
+     "pulse": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -168.925,
+      65.754
+     ],
+     "label": "LITTLE DIOMEDE",
+     "side": "right",
+     "color": "green",
+     "delay": 0.2
+    },
+    {
+     "at": [
+      -169.05,
+      65.79
+     ],
+     "label": "BIG DIOMEDE",
+     "side": "left",
+     "color": "orange",
+     "delay": 0.2
+    }
+   ]
+  }
+ ]
+}
