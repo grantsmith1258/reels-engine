@@ -1,0 +1,514 @@
+{
+ "title": "The year Sweden had a February 30th (1712)",
+ "scenes": [
+  {
+   "vo": "In 1712, Sweden had a February 30th. Not a typo. A real day people lived through.",
+   "camera": {
+    "center": [
+     16,
+     62
+    ],
+    "zoom": 38
+   },
+   "highlight": [
+    {
+     "iso": [
+      "SWE"
+     ],
+     "color": "green",
+     "pulse": true,
+     "label": "SWEDEN",
+     "label_at": [
+      15.5,
+      62.8
+     ],
+     "delay": 0.1
+    }
+   ],
+   "stamp": {
+    "text": "1712",
+    "delay": 0.3
+   },
+   "word": {
+    "text": "FEB 30",
+    "sub": "A REAL DAY",
+    "delay": 1.3,
+    "size": 170
+   }
+  },
+  {
+   "vo": "And for 12 years before that, Swedish dates matched no other country's calendar.",
+   "camera": {
+    "center": [
+     10,
+     53
+    ],
+    "zoom": 13
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "SWE"
+     ],
+     "color": "green",
+     "pulse": true,
+     "label": "SWEDEN",
+     "label_at": [
+      15.5,
+      62.8
+     ]
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      18.07,
+      59.33
+     ],
+     "label": "STOCKHOLM",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.6
+    }
+   ],
+   "word": {
+    "text": "MATCHED NOBODY",
+    "sub": "12 YEARS",
+    "delay": 2.0,
+    "size": 130
+   }
+  },
+  {
+   "vo": "In 1699, Catholic Europe used the new Gregorian calendar. Sweden still used the old Julian one, 10 days behind.",
+   "camera": {
+    "center": [
+     8,
+     48
+    ],
+    "zoom": 14
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "iso": [
+      "FRA"
+     ],
+     "color": "blue",
+     "delay": 0.8,
+     "residual": 0.25
+    },
+    {
+     "iso": [
+      "ESP"
+     ],
+     "color": "blue",
+     "delay": 1.1,
+     "residual": 0.25
+    },
+    {
+     "iso": [
+      "PRT"
+     ],
+     "color": "blue",
+     "delay": 1.4,
+     "residual": 0.25
+    },
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "blue",
+     "delay": 1.7,
+     "residual": 0.25
+    },
+    {
+     "iso": [
+      "AUT"
+     ],
+     "color": "blue",
+     "delay": 1.4,
+     "residual": 0.25
+    },
+    {
+     "iso": [
+      "POL"
+     ],
+     "color": "blue",
+     "delay": 2.3,
+     "residual": 0.25
+    },
+    {
+     "iso": [
+      "BEL"
+     ],
+     "color": "blue",
+     "delay": 2.0,
+     "residual": 0.25
+    },
+    {
+     "iso": [
+      "SWE"
+     ],
+     "color": "green",
+     "label": "JULIAN",
+     "label_at": [
+      15.5,
+      62.8
+     ],
+     "delay": 3.6
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      4,
+      38.6
+     ],
+     "text": "GREGORIAN",
+     "delay": 1.6,
+     "color": "white",
+     "size": 48
+    }
+   ],
+   "stamp": {
+    "text": "1699",
+    "delay": 0.3
+   },
+   "word": {
+    "text": "-10 DAYS",
+    "sub": "SWEDEN BEHIND",
+    "delay": 5.0,
+    "size": 150
+   }
+  },
+  {
+   "vo": "Sweden's plan: skip every leap day for 40 years and slowly catch up. In 1700, it skipped the first one.",
+   "camera": {
+    "center": [
+     17,
+     61
+    ],
+    "zoom": 32
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "SWE"
+     ],
+     "color": "green",
+     "pulse": true,
+     "label": "SWEDEN",
+     "label_at": [
+      15.5,
+      62.8
+     ]
+    }
+   ],
+   "word": {
+    "text": "NO LEAP DAYS",
+    "sub": "THE 40-YEAR PLAN",
+    "delay": 0.9,
+    "size": 140
+   },
+   "stamp": {
+    "text": "1700",
+    "delay": 4.4
+   }
+  },
+  {
+   "vo": "Then war got in the way. Sweden was fighting Russia in the Great Northern War, and in 1704 and 1708 the leap days happened anyway.",
+   "camera": {
+    "center": [
+     30,
+     59
+    ],
+    "zoom": 17
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "SWE"
+     ],
+     "color": "green",
+     "label": "SWEDEN",
+     "label_at": [
+      15.5,
+      62.8
+     ]
+    },
+    {
+     "iso": [
+      "RUS"
+     ],
+     "color": "red",
+     "fill": 0.55,
+     "label": "RUSSIA",
+     "label_at": [
+      40,
+      58
+     ],
+     "delay": 1.2
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      26,
+      54
+     ],
+     "text": "GREAT NORTHERN WAR",
+     "delay": 2.0,
+     "color": "white",
+     "size": 40
+    }
+   ],
+   "word": {
+    "text": "1704 + 1708",
+    "sub": "LEAP DAYS KEPT",
+    "delay": 5.0,
+    "size": 140
+   }
+  },
+  {
+   "vo": "Now Sweden was one day ahead of the old calendar and ten days behind the new one. A letter from Stockholm to London carried a date neither side used.",
+   "camera": {
+    "center": [
+     6,
+     56
+    ],
+    "zoom": 21
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "SWE"
+     ],
+     "color": "green",
+     "pulse": true,
+     "label": "SWEDEN",
+     "label_at": [
+      15.5,
+      62.8
+     ]
+    },
+    {
+     "iso": [
+      "GBR"
+     ],
+     "color": "orange",
+     "label": "BRITAIN",
+     "label_at": [
+      -2.5,
+      54.5
+     ],
+     "delay": 4.6
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      18.07,
+      59.33
+     ],
+     "label": "STOCKHOLM",
+     "side": "right",
+     "color": "accent",
+     "delay": 4.4
+    },
+    {
+     "at": [
+      -0.13,
+      51.5
+     ],
+     "label": "LONDON",
+     "side": "left",
+     "color": "accent",
+     "delay": 5.6
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       18.07,
+       59.33
+      ],
+      [
+       9,
+       57.5
+      ],
+      [
+       -0.13,
+       51.5
+      ]
+     ],
+     "color": "accent",
+     "delay": 5.0,
+     "draw": 1.6,
+     "scene_only": true
+    }
+   ],
+   "word": {
+    "text": "+1 / -10 DAYS",
+    "sub": "OLD / NEW CALENDAR",
+    "delay": 1.0,
+    "size": 130
+   }
+  },
+  {
+   "vo": "So King Charles the Twelfth gave up and went back to the old calendar. That took one extra day.",
+   "camera": {
+    "center": [
+     17,
+     61
+    ],
+    "zoom": 34
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "SWE"
+     ],
+     "color": "green",
+     "pulse": true,
+     "label": "SWEDEN",
+     "label_at": [
+      15.5,
+      62.8
+     ]
+    }
+   ],
+   "word": {
+    "text": "BACK TO JULIAN",
+    "sub": "KING CHARLES XII",
+    "delay": 0.8,
+    "size": 130
+   },
+   "stamp": {
+    "text": "+1 DAY",
+    "delay": 4.0
+   }
+  },
+  {
+   "vo": "So 1712 got two leap days: February 29th, and then February 30th.",
+   "camera": {
+    "center": [
+     17,
+     61.8
+    ],
+    "zoom": 44
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "iso": [
+      "SWE"
+     ],
+     "color": "green",
+     "pulse": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      18.07,
+      59.33
+     ],
+     "label": "STOCKHOLM",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.2
+    }
+   ],
+   "stamp": {
+    "text": "FEB 29",
+    "delay": 1.1
+   },
+   "word": {
+    "text": "FEB 30",
+    "sub": "1712 · THE ONLY ONE",
+    "delay": 1.9,
+    "size": 170
+   }
+  },
+  {
+   "vo": "Sweden finally switched for real in 1753. February 17th was followed by March 1st.",
+   "camera": {
+    "center": [
+     10,
+     52
+    ],
+    "zoom": 12
+   },
+   "camera_move": 1.5,
+   "highlight": [
+    {
+     "iso": [
+      "FRA",
+      "ESP",
+      "PRT",
+      "ITA",
+      "AUT",
+      "POL",
+      "BEL"
+     ],
+     "color": "blue",
+     "fill": 0.45
+    },
+    {
+     "iso": [
+      "SWE"
+     ],
+     "color": "green",
+     "pulse": true,
+     "label": "SWEDEN",
+     "label_at": [
+      15.5,
+      62.8
+     ],
+     "delay": 0.3
+    }
+   ],
+   "stamp": {
+    "text": "1753",
+    "delay": 0.3
+   },
+   "word": {
+    "text": "FEB 17 → MAR 1",
+    "sub": "GREGORIAN AT LAST",
+    "delay": 2.6,
+    "size": 120
+   }
+  },
+  {
+   "vo": "Follow for more places where the map got weird.",
+   "camera": {
+    "center": [
+     15,
+     58
+    ],
+    "zoom": 20
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "SWE"
+     ],
+     "color": "green",
+     "pulse": true,
+     "label": "SWEDEN",
+     "label_at": [
+      15.5,
+      62.8
+     ]
+    }
+   ]
+  }
+ ]
+}
