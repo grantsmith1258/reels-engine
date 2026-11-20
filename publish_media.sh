@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Put a finished video on the repo's "media" branch so vidIQ can import it from a public link.
 # The branch keeps only the last 7 days of videos (one commit, force-pushed) so the repo stays small.
-# Usage: bash publish_media.sh path/to/video.mp4 YYYY-MM-DD-slug.mp4
+# Usage: bash publish_media.sh path/to/video.mp4 YYYY-MM-DD-slug.mp4   (also works for a cover .png)
 # Prints the public raw URL on the last line.
 set -euo pipefail
 SRC=$(realpath "$1"); NAME="$2"
@@ -17,7 +17,7 @@ fi
 cd "$TMP/m"
 mkdir -p videos
 CUT=$(date -u -d '7 days ago' +%F)
-for f in videos/*.mp4; do   # names start with YYYY-MM-DD
+for f in videos/*; do   # names start with YYYY-MM-DD (videos and cover images)
   [ -e "$f" ] || continue
   d=$(basename "$f" | cut -c1-10)
   [[ "$d" < "$CUT" ]] && rm -f "$f"

@@ -468,5 +468,33 @@
     }
    ]
   }
- ]
+ ],
+ "cover": {
+  "lines": [
+   {
+    "text": "IT'S ONLY",
+    "size": 150
+   },
+   {
+    "text": "2019",
+    "size": 380,
+    "color": "accent"
+   },
+   {
+    "text": "IN ETHIOPIA",
+    "size": 150
+   }
+  ],
+  "badge": "AND THE YEAR HAS 13 MONTHS",
+  "scene": 0,
+  "at": 2.5,
+  "y": 640,
+  "camera": {
+   "center": [
+    39.5,
+    15.5
+   ],
+   "zoom": 52
+  }
+ }
 }

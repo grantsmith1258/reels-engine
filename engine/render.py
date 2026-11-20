@@ -371,6 +371,54 @@ class Renderer:
         ctx.save(); ctx.scale(2, 2); ctx.set_source_surface(self.grain[int(t * FPS) % 4][0], 0, 0); ctx.paint(); ctx.restore()
         return surf
 
+    def cover(self):
+        """Profile-grid cover: the hook map with the video's crazy fact in big lettering.
+        Storyboard "cover": {"lines": [{"text", "size", "color"}...], "badge", "badge_color",
+        "scene" (map to use, default 0), "at" (seconds into that scene), "camera", "y" (block centre)}"""
+        cv = self.tl.sb["cover"]
+        i = cv.get("scene", 0)
+        s0, s1 = self.tl.starts[i], self.tl.ends[i]
+        t = s0 + min(cv.get("at", 2.5), max(0.1, s1 - s0 - 0.3))
+        surf = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H)
+        ctx = cairo.Context(surf)
+        cam = self.tl.camera(t)
+        if cv.get("camera"):
+            c = cv["camera"]; X, Y = merc(*c["center"]); cam = (X, Y, c["zoom"])
+        self.draw_base(ctx, cam)
+        self.draw_highlights(ctx, cam, t)
+        self.draw_lakes(ctx, cam)
+        if cv.get("map_extras", False):
+            self.draw_routes(ctx, cam, t); self.draw_pins(ctx, cam, t); self.draw_labels(ctx, cam, t)
+        self.draw_vignette(ctx)
+        # soft dark band behind the lettering so it reads at thumbnail size
+        lines = cv["lines"]
+        gaps = [ln.get("size", 150) * 1.04 for ln in lines]
+        block = sum(gaps)
+        yc = cv.get("y", 900)
+        y = yc - block / 2
+        g = cairo.LinearGradient(0, y - 220, 0, y + block + 220)
+        for k, a in ((0, 0), (0.3, 0.45), (0.7, 0.45), (1, 0)):
+            g.add_color_stop_rgba(k, 0.01, 0.02, 0.04, a)
+        ctx.rectangle(0, y - 220, W, block + 440); ctx.set_source(g); ctx.fill()
+        for ln, gap in zip(lines, gaps):
+            size = ln.get("size", 150)
+            yy = y + gap / 2
+            col = hexc(ln.get("color", "white"))
+            self.text(ctx, ln["text"], W / 2, yy, size, "Anton", col, 1.0, spacing=4,
+                      outline=(0, 0, 0, 1.0), maxw=1000, stroke_k=0.14)
+            y += gap
+        if cv.get("badge"):
+            col = hexc(cv.get("badge_color", "#e8483b"))
+            ctx.save(); ctx.translate(W / 2, y + 120); ctx.rotate(math.radians(-4))
+            ctx.select_font_face("Anton"); ctx.set_font_size(78)
+            tw = ctx.text_extents(cv["badge"]).x_advance
+            bw, bh = min(1040, tw + 80), 128
+            ctx.rectangle(-bw / 2, -bh / 2, bw, bh); ctx.set_source_rgba(*col, 0.95); ctx.fill()
+            ctx.move_to(-tw / 2, 29); ctx.text_path(cv["badge"]); ctx.set_source_rgb(1, 1, 1); ctx.fill()
+            ctx.restore()
+        ctx.save(); ctx.scale(2, 2); ctx.set_source_surface(self.grain[0][0], 0, 0); ctx.paint(); ctx.restore()
+        return surf
+
     def draw_base(self, ctx, cam):
         g = cairo.LinearGradient(0, 0, 0, H)
         g.add_color_stop_rgb(0, *PALETTE["ocean_top"]); g.add_color_stop_rgb(1, *PALETTE["ocean_bot"])
@@ -717,6 +765,7 @@ def main():
     if "--preview" in args:
         v = args[args.index("--preview") + 1]
         preview = [] if v in ("", "auto") else [float(x) for x in v.split(",")]
+    cover_only = args[args.index("--cover") + 1] if "--cover" in args else None
     sbp, outp = args[0], args[1]
     sb, tl, voice = build(sbp, audio)
     work = os.path.join(ROOT, "build", os.path.splitext(os.path.basename(sbp))[0])
@@ -725,6 +774,12 @@ def main():
     print(f"duration {tl.total:.1f}s, {len(sb['scenes'])} scenes", flush=True)
     for i, (s, e) in enumerate(zip(tl.starts, tl.ends)):
         print(f"  scene {i + 1}: {s:5.1f}-{e:5.1f}s  {sb['scenes'][i]['vo'][:60]}")
+    if cover_only:
+        if not sb.get("cover"):
+            sys.exit("storyboard has no \"cover\" block")
+        R.cover().write_to_png(cover_only)
+        print("cover:", cover_only)
+        return
     if preview is not None:
         if not preview:
             preview = [min(e - 0.3, s + max(1.4, (e - s) * 0.6)) for s, e in zip(tl.starts, tl.ends)]
@@ -752,6 +807,14 @@ def main():
             done += k
             if done % 300 < 30:
                 print(f"  {done}/{nf} frames", flush=True)
+    if sb.get("cover"):
+        # The first frames become the cover, so TikTok and Instagram show it on the profile grid by default.
+        cpath = os.path.splitext(outp)[0] + "_cover.png"
+        R.cover().write_to_png(cpath)
+        import shutil
+        for f in range(min(nf, sb["cover"].get("frames", 2))):
+            shutil.copy(cpath, os.path.join(fdir, f"f{f:05d}.png"))
+        print("cover:", cpath, flush=True)
     wav = os.path.join(work, "mix.wav")
     mix_audio(tl, voice, wav)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", os.path.join(fdir, "f%05d.png"),

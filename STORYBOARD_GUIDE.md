@@ -42,3 +42,20 @@ Colors: names `red, green, orange, blue, purple, teal, accent (yellow), white` o
 
 ## 5. Example
 `storyboards/examples/` has full examples (Lesotho with a vidIQ voiceover, Point Roberts, coffee).
+
+## 6. Cover image (required on every video)
+Top-level `cover` makes the profile-grid thumbnail: the hook map with the video's single craziest fact in huge lettering. The full render writes it to `build/<slug>_cover.png` and also uses it as the video's first 2 frames, so TikTok and Instagram show it on the profile grid by default (neither app's posting API takes a separate cover).
+```json
+"cover": {
+  "lines": [{"text": "IT'S ONLY", "size": 150}, {"text": "2019", "size": 380, "color": "accent"}, {"text": "IN ETHIOPIA", "size": 150}],
+  "badge": "AND THE YEAR HAS 13 MONTHS",
+  "camera": {"center": [39.5, 15.5], "zoom": 52},
+  "y": 640
+}
+```
+- `lines`: 2-4 short lines, ALL CAPS, the fact that sounds impossible (the Hook, squeezed). Make the one shocking word or number the giant yellow line (size 300-380); the others ~130-160. Each line ≤ ~12 characters at 150.
+- `badge`: optional red strip under the text, the second jaw-drop in ≤ 28 characters.
+- `camera`: frame the subject so it sits in the lower half (y ≈ 1150-1650) and the text block (centred on `y`, default 900) sits above it. Without it, the camera of `scene` (default 0) is used.
+- Keep everything between y 260 and 1680: the profile grid crops the 9:16 frame to 3:4 around the centre.
+- Check it alone first: `python3 engine/render.py storyboards/<file>.json /tmp/x.mp4 --audio build/vo.mp3 --cover build/cover.png`, then Read the PNG. Never put a claim on the cover that the script doesn't make.
+- Host it with `bash publish_media.sh build/<slug>_cover.png <YYYY-MM-DD>-<slug>-cover.png` and save the link to the row's "Cover image" field.
