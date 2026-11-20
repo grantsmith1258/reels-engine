@@ -1,0 +1,472 @@
+{
+ "title": "Why it's only 2019 in Ethiopia (and the year has 13 months)",
+ "min_pause": 0.75,
+ "scenes": [
+  {
+   "vo": "In Ethiopia, it's 2019 right now. And their year has 13 months.",
+   "camera": {
+    "center": [
+     39.5,
+     8.6
+    ],
+    "zoom": 48
+   },
+   "highlight": [
+    {
+     "iso": [
+      "ETH"
+     ],
+     "color": "green",
+     "pulse": true,
+     "label": "ETHIOPIA",
+     "label_at": [
+      39.5,
+      8.3
+     ],
+     "delay": 0.1
+    }
+   ],
+   "word": {
+    "text": "2019",
+    "sub": "THE YEAR RIGHT NOW",
+    "delay": 0.4,
+    "size": 170
+   },
+   "stamp": {
+    "text": "13 MONTHS",
+    "delay": 2.9
+   }
+  },
+  {
+   "vo": "Ethiopia threw its millennium party in September 2007, seven years after the rest of the world.",
+   "camera": {
+    "center": [
+     22,
+     22
+    ],
+    "zoom": 10
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "ETH"
+     ],
+     "color": "green",
+     "pulse": true,
+     "fill": 0.9
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      10,
+      50
+     ],
+     "text": "REST OF THE WORLD: 2000",
+     "delay": 0.8,
+     "size": 40
+    }
+   ],
+   "stamp": {
+    "text": "2007",
+    "delay": 0.5
+   },
+   "word": {
+    "text": "YEAR 2000",
+    "sub": "ETHIOPIA'S PARTY: SEPT 2007",
+    "delay": 2.8,
+    "size": 140
+   }
+  },
+  {
+   "vo": "Twelve months have exactly 30 days each. Then comes a tiny 13th month, Pagume: five days long, six in a leap year.",
+   "camera": {
+    "center": [
+     39.5,
+     8.6
+    ],
+    "zoom": 60
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "ETH"
+     ],
+     "color": "green",
+     "fill": 0.6
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      39.5,
+      11.5
+     ],
+     "text": "12 MONTHS × 30 DAYS",
+     "delay": 0.5,
+     "size": 46
+    }
+   ],
+   "word": {
+    "text": "13th MONTH",
+    "sub": "PAGUME · 5 OR 6 DAYS",
+    "delay": 3.6,
+    "size": 140
+   }
+  },
+  {
+   "vo": "New Year falls on September 11th. That's the day Ethiopia entered 2019, just this September.",
+   "camera": {
+    "center": [
+     39.2,
+     9.0
+    ],
+    "zoom": 75
+   },
+   "camera_move": 1.1,
+   "highlight": [
+    {
+     "iso": [
+      "ETH"
+     ],
+     "color": "green",
+     "fill": 0.5
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      38.75,
+      9.03
+     ],
+     "label": "ADDIS ABABA",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.6
+    }
+   ],
+   "stamp": {
+    "text": "SEPT 11",
+    "delay": 0.3
+   },
+   "word": {
+    "text": "2019",
+    "sub": "BEGAN SEPT 11, 2026",
+    "delay": 2.7,
+    "size": 170
+   }
+  },
+  {
+   "vo": "The calendar came from Alexandria, in Egypt, where the Coptic Church uses the same months.",
+   "camera": {
+    "center": [
+     34,
+     15
+    ],
+    "zoom": 28
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "EGY"
+     ],
+     "color": "orange",
+     "fill": 0.6,
+     "label": "EGYPT",
+     "label_at": [
+      28.5,
+      26.5
+     ],
+     "delay": 0.3
+    },
+    {
+     "iso": [
+      "ETH"
+     ],
+     "color": "green",
+     "fill": 0.6,
+     "label": "ETHIOPIA",
+     "label_at": [
+      39.5,
+      8.3
+     ]
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      29.92,
+      31.2
+     ],
+     "label": "ALEXANDRIA",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.6
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       29.92,
+       31.2
+      ],
+      [
+       33.5,
+       22
+      ],
+      [
+       38.75,
+       9.03
+      ]
+     ],
+     "color": "accent",
+     "delay": 1.6,
+     "draw": 1.8,
+     "scene_only": true
+    }
+   ],
+   "word": {
+    "text": "SAME MONTHS",
+    "sub": "COPTIC CHURCH",
+    "delay": 3.4,
+    "size": 130
+   }
+  },
+  {
+   "vo": "The gap in years comes from one date. An Alexandrian monk placed the start of Jesus's life about seven years later than Europe's count did.",
+   "camera": {
+    "center": [
+     27,
+     21
+    ],
+    "zoom": 16
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "EGY"
+     ],
+     "color": "orange",
+     "fill": 0.45
+    },
+    {
+     "iso": [
+      "ETH"
+     ],
+     "color": "green",
+     "fill": 0.6
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      29.92,
+      31.2
+     ],
+     "label": "ALEXANDRIAN MONK",
+     "side": "right",
+     "color": "accent",
+     "delay": 2.4
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      14,
+      47
+     ],
+     "text": "EUROPE'S COUNT",
+     "delay": 4.0,
+     "size": 44
+    }
+   ],
+   "word": {
+    "text": "~7 YEARS",
+    "sub": "A LATER START DATE",
+    "delay": 5.6,
+    "size": 150
+   }
+  },
+  {
+   "vo": "From January to early September, the gap even grows to eight years.",
+   "camera": {
+    "center": [
+     39.5,
+     8.6
+    ],
+    "zoom": 55
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "ETH"
+     ],
+     "color": "green",
+     "pulse": true,
+     "fill": 0.7
+    }
+   ],
+   "stamp": {
+    "text": "JAN–SEPT",
+    "delay": 0.4
+   },
+   "word": {
+    "text": "8 YEARS",
+    "sub": "BEHIND, UNTIL SEPT 11",
+    "delay": 1.6,
+    "size": 160
+   }
+  },
+  {
+   "vo": "So why didn't Ethiopia switch? In 1896 it beat Italy at the Battle of Adwa, and kept its independence, its church and its calendar.",
+   "camera": {
+    "center": [
+     27,
+     21
+    ],
+    "zoom": 17
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "red",
+     "fill": 0.7,
+     "label": "ITALY",
+     "label_at": [
+      13,
+      44.5
+     ],
+     "delay": 1.6
+    },
+    {
+     "iso": [
+      "ETH"
+     ],
+     "color": "green",
+     "fill": 0.6,
+     "label": "ETHIOPIA",
+     "label_at": [
+      39.5,
+      8.3
+     ]
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      38.9,
+      14.16
+     ],
+     "label": "ADWA",
+     "side": "right",
+     "color": "accent",
+     "delay": 2.8
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       12.5,
+       41.9
+      ],
+      [
+       25,
+       30
+      ],
+      [
+       38.9,
+       14.16
+      ]
+     ],
+     "color": "red",
+     "delay": 2.0,
+     "draw": 1.6,
+     "scene_only": true
+    }
+   ],
+   "stamp": {
+    "text": "1896",
+    "delay": 2.4
+   },
+   "word": {
+    "text": "ADWA",
+    "sub": "ETHIOPIA DEFEATS ITALY",
+    "delay": 4.6,
+    "size": 160
+   }
+  },
+  {
+   "vo": "Even the clock is different. The day starts at dawn, so 7 a.m. is called one o'clock.",
+   "camera": {
+    "center": [
+     39.2,
+     9.0
+    ],
+    "zoom": 65
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "ETH"
+     ],
+     "color": "green",
+     "fill": 0.55
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      38.75,
+      9.03
+     ],
+     "label": "ADDIS ABABA",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.3
+    }
+   ],
+   "word": {
+    "text": "7 AM = 1:00",
+    "sub": "THE DAY STARTS AT DAWN",
+    "delay": 2.4,
+    "size": 140
+   }
+  },
+  {
+   "vo": "Follow for more places where the map got weird.",
+   "camera": {
+    "center": [
+     24,
+     6
+    ],
+    "zoom": 17
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "ETH"
+     ],
+     "color": "green",
+     "pulse": true,
+     "label": "ETHIOPIA",
+     "label_at": [
+      39.5,
+      8.3
+     ]
+    }
+   ]
+  }
+ ]
+}

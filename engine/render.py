@@ -156,10 +156,10 @@ def load_audio(p):
     return np.frombuffer(raw, np.float32).copy()
 
 
-def scene_bounds_from_audio(mp3, texts, tail=0.6):
+def scene_bounds_from_audio(mp3, texts, tail=0.6, min_pause=0.25):
     """Split one voiceover into scenes at the pauses nearest each paragraph boundary."""
     D = ffprobe_dur(mp3)
-    log = subprocess.run(["ffmpeg", "-i", mp3, "-af", "silencedetect=noise=-35dB:d=0.25", "-f", "null", "-"],
+    log = subprocess.run(["ffmpeg", "-i", mp3, "-af", f"silencedetect=noise=-35dB:d={min_pause}", "-f", "null", "-"],
                          capture_output=True, text=True).stderr
     starts = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", log)]
     ends = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", log)]
@@ -690,7 +690,7 @@ def build(sbp, audio=None):
     sb = json.load(open(sbp))
     texts = [s["vo"] for s in sb["scenes"]]
     if audio:
-        starts, ends, D = scene_bounds_from_audio(audio, texts, min(0.6, max(0.1, sb.get("max_seconds", 75) - 0.05 - ffprobe_dur(audio))))
+        starts, ends, D = scene_bounds_from_audio(audio, texts, min(0.6, max(0.1, sb.get("max_seconds", 75) - 0.05 - ffprobe_dur(audio))), sb.get("min_pause", 0.25))
         voice = load_audio(audio)
         speech = [(s + (0.15 if i else 0.05), e - 0.25) for i, (s, e) in enumerate(zip(starts, ends))]
         speech[-1] = (speech[-1][0], D)
