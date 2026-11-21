@@ -36,14 +36,107 @@
  },
  "scenes": [
   {
-   "vo": "For more than 150 years, Maine wasn't a state. It belonged to Massachusetts.",
+   "vo": "Imagine your bedroom belonged to the house next door, and to reach it, you had to walk through a stranger's kitchen.",
    "camera": {
     "center": [
-     -70.6,
-     42.9
+     -70.9,
+     43.3
     ],
-    "zoom": 95
+    "zoom": 115
    },
+   "highlight": [
+    {
+     "admin1": [
+      "US-MA"
+     ],
+     "color": "orange",
+     "fill": 0.45
+    },
+    {
+     "admin1": [
+      "US-NH"
+     ],
+     "color": "purple",
+     "fill": 0.45
+    },
+    {
+     "admin1": [
+      "US-ME"
+     ],
+     "color": "green",
+     "fill": 0.6,
+     "pulse": true
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "\ud83d\udecf\ufe0f",
+     "at": [
+      -69.0,
+      46.6
+     ],
+     "size": 170,
+     "motion": "bob",
+     "delay": 0.8
+    },
+    {
+     "emoji": "\ud83c\udfe0",
+     "at": [
+      -72.85,
+      42.75
+     ],
+     "size": 115,
+     "motion": "bob",
+     "delay": 1.8
+    },
+    {
+     "emoji": "\ud83c\udf73",
+     "at": [
+      -71.45,
+      44.75
+     ],
+     "size": 105,
+     "motion": "shake",
+     "delay": 4.6
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -72.3,
+       42.4
+      ],
+      [
+       -71.5,
+       43.6
+      ],
+      [
+       -70.3,
+       44.6
+      ],
+      [
+       -69.3,
+       46.0
+      ]
+     ],
+     "color": "accent",
+     "delay": 5.0,
+     "draw": 2.0,
+     "scene_only": true
+    }
+   ]
+  },
+  {
+   "vo": "For more than 150 years, that was Maine. The house was Massachusetts. The kitchen was New Hampshire.",
+   "camera": {
+    "center": [
+     -70.9,
+     43.3
+    ],
+    "zoom": 115
+   },
+   "camera_move": 0.8,
    "highlight": [
     {
      "admin1": [
@@ -53,9 +146,23 @@
      "fill": 0.85,
      "label": "MASSACHUSETTS",
      "label_at": [
-      -71.9,
-      42.0
-     ]
+      -71.4,
+      41.9
+     ],
+     "delay": 1.4
+    },
+    {
+     "admin1": [
+      "US-NH"
+     ],
+     "color": "purple",
+     "fill": 0.85,
+     "label": "NEW HAMPSHIRE",
+     "label_at": [
+      -72.45,
+      43.55
+     ],
+     "delay": 2.6
     },
     {
      "admin1": [
@@ -67,95 +174,50 @@
      "label": "MAINE",
      "label_at": [
       -69.2,
-      45.4
+      45.2
      ],
-     "delay": 0.3
+     "delay": 0.6
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "\ud83d\udecf\ufe0f",
+     "at": [
+      -69.0,
+      46.6
+     ],
+     "size": 170,
+     "motion": "bob",
+     "delay": 0.8
+    },
+    {
+     "emoji": "\ud83c\udfe0",
+     "at": [
+      -72.85,
+      42.75
+     ],
+     "size": 115,
+     "motion": "bob",
+     "delay": 1.8
+    },
+    {
+     "emoji": "\ud83c\udf73",
+     "at": [
+      -71.45,
+      44.75
+     ],
+     "size": 105,
+     "motion": "shake",
+     "delay": 4.6
     }
    ],
    "word": {
     "text": "150+ YEARS",
-    "sub": "NOT A STATE",
-    "delay": 1.6,
-    "size": 150
+    "sub": "THAT WAS MAINE",
+    "delay": 0.3,
+    "size": 150,
+    "y": 1580
    }
-  },
-  {
-   "vo": "And to reach their own capital, Boston, by land, people in Maine had to cross another state: New Hampshire.",
-   "camera": {
-    "center": [
-     -70.9,
-     43.2
-    ],
-    "zoom": 190
-   },
-   "highlight": [
-    {
-     "admin1": [
-      "US-MA"
-     ],
-     "color": "orange",
-     "fill": 0.7
-    },
-    {
-     "admin1": [
-      "US-ME"
-     ],
-     "color": "green",
-     "fill": 0.6
-    },
-    {
-     "admin1": [
-      "US-NH"
-     ],
-     "color": "purple",
-     "fill": 0.8,
-     "pulse": true,
-     "label": "NEW HAMPSHIRE",
-     "label_at": [
-      -71.6,
-      43.75
-     ],
-     "delay": 2.5
-    }
-   ],
-   "pins": [
-    {
-     "at": [
-      -71.06,
-      42.36
-     ],
-     "label": "BOSTON",
-     "side": "left",
-     "color": "accent",
-     "delay": 0.8
-    }
-   ],
-   "routes": [
-    {
-     "points": [
-      [
-       -70.26,
-       43.66
-      ],
-      [
-       -70.75,
-       43.05
-      ],
-      [
-       -70.85,
-       42.8
-      ],
-      [
-       -71.06,
-       42.36
-      ]
-     ],
-     "color": "accent",
-     "delay": 3.0,
-     "draw": 2.0,
-     "scene_only": true
-    }
-   ]
   },
   {
    "vo": "In 1652, Massachusetts read its charter as reaching far north, and began taking over Maine's towns, starting with Kittery.",
@@ -533,7 +595,7 @@
    }
   },
   {
-   "vo": "But Massachusetts kept half of Maine's public land. Maine didn't buy the last of it back until 1853.",
+   "vo": "The bedroom finally got its own front door. But Massachusetts kept half of Maine's public land until 1853.",
    "camera": {
     "center": [
      -69.3,
@@ -549,6 +611,7 @@
      ],
      "color": "green",
      "fill": 0.85,
+     "pulse": true,
      "label": "MAINE",
      "label_at": [
       -69.2,
@@ -556,15 +619,28 @@
      ]
     }
    ],
+   "pictures": [
+    {
+     "emoji": "\ud83d\udeaa",
+     "at": [
+      -68.3,
+      44.9
+     ],
+     "size": 200,
+     "motion": "pulse",
+     "delay": 0.3,
+     "label": "ITS OWN FRONT DOOR"
+    }
+   ],
    "word": {
     "text": "HALF",
     "sub": "OF MAINE'S PUBLIC LAND",
-    "delay": 1.0,
+    "delay": 3.4,
     "size": 170
    },
    "stamp": {
     "text": "1853",
-    "delay": 4.2,
+    "delay": 5.4,
     "x": 830,
     "y": 600
    }
