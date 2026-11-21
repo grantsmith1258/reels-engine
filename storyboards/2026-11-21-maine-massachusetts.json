@@ -1,0 +1,618 @@
+{
+ "title": "Maine used to be part of Massachusetts (until 1820)",
+ "admin1_borders": [
+  "USA",
+  "CAN"
+ ],
+ "min_pause": 0.65,
+ "outro_hold": 1.0,
+ "cover": {
+  "lines": [
+   {
+    "text": "MAINE",
+    "size": 160
+   },
+   {
+    "text": "USED TO BE",
+    "size": 130
+   },
+   {
+    "text": "MASSACHUSETTS",
+    "size": 230,
+    "color": "accent"
+   }
+  ],
+  "badge": "FOR MORE THAN 150 YEARS",
+  "scene": 0,
+  "at": 2.5,
+  "y": 700,
+  "camera": {
+   "center": [
+    -70.6,
+    47.6
+   ],
+   "zoom": 95
+  }
+ },
+ "scenes": [
+  {
+   "vo": "For more than 150 years, Maine wasn't a state. It belonged to Massachusetts.",
+   "camera": {
+    "center": [
+     -70.6,
+     42.9
+    ],
+    "zoom": 95
+   },
+   "highlight": [
+    {
+     "admin1": [
+      "US-MA"
+     ],
+     "color": "orange",
+     "fill": 0.85,
+     "label": "MASSACHUSETTS",
+     "label_at": [
+      -71.9,
+      42.0
+     ]
+    },
+    {
+     "admin1": [
+      "US-ME"
+     ],
+     "color": "green",
+     "fill": 0.85,
+     "pulse": true,
+     "label": "MAINE",
+     "label_at": [
+      -69.2,
+      45.4
+     ],
+     "delay": 0.3
+    }
+   ],
+   "word": {
+    "text": "150+ YEARS",
+    "sub": "NOT A STATE",
+    "delay": 1.6,
+    "size": 150
+   }
+  },
+  {
+   "vo": "And to reach their own capital, Boston, by land, people in Maine had to cross another state: New Hampshire.",
+   "camera": {
+    "center": [
+     -70.9,
+     43.2
+    ],
+    "zoom": 190
+   },
+   "highlight": [
+    {
+     "admin1": [
+      "US-MA"
+     ],
+     "color": "orange",
+     "fill": 0.7
+    },
+    {
+     "admin1": [
+      "US-ME"
+     ],
+     "color": "green",
+     "fill": 0.6
+    },
+    {
+     "admin1": [
+      "US-NH"
+     ],
+     "color": "purple",
+     "fill": 0.8,
+     "pulse": true,
+     "label": "NEW HAMPSHIRE",
+     "label_at": [
+      -71.6,
+      43.75
+     ],
+     "delay": 2.5
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -71.06,
+      42.36
+     ],
+     "label": "BOSTON",
+     "side": "left",
+     "color": "accent",
+     "delay": 0.8
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -70.26,
+       43.66
+      ],
+      [
+       -70.75,
+       43.05
+      ],
+      [
+       -70.85,
+       42.8
+      ],
+      [
+       -71.06,
+       42.36
+      ]
+     ],
+     "color": "accent",
+     "delay": 3.0,
+     "draw": 2.0,
+     "scene_only": true
+    }
+   ]
+  },
+  {
+   "vo": "In 1652, Massachusetts read its charter as reaching far north, and began taking over Maine's towns, starting with Kittery.",
+   "camera": {
+    "center": [
+     -70.75,
+     43.05
+    ],
+    "zoom": 520
+   },
+   "highlight": [
+    {
+     "admin1": [
+      "US-MA"
+     ],
+     "color": "orange",
+     "fill": 0.6
+    },
+    {
+     "admin1": [
+      "US-ME"
+     ],
+     "color": "green",
+     "fill": 0.45
+    },
+    {
+     "admin1": [
+      "US-NH"
+     ],
+     "color": "purple",
+     "fill": 0.45
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -70.74,
+      43.09
+     ],
+     "label": "KITTERY",
+     "side": "right",
+     "color": "accent",
+     "delay": 4.5
+    }
+   ],
+   "stamp": {
+    "text": "1652",
+    "delay": 0.3,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "CHARTER",
+    "sub": "READ AS REACHING FAR NORTH",
+    "delay": 1.8,
+    "size": 150
+   }
+  },
+  {
+   "vo": "In 1677, it bought out the Gorges family's claim to Maine for 1,250 pounds.",
+   "camera": {
+    "center": [
+     -69.3,
+     44.2
+    ],
+    "zoom": 150
+   },
+   "highlight": [
+    {
+     "admin1": [
+      "US-ME"
+     ],
+     "color": "green",
+     "fill": 0.9,
+     "pulse": true,
+     "label": "MAINE",
+     "label_at": [
+      -69.2,
+      45.4
+     ]
+    }
+   ],
+   "stamp": {
+    "text": "1677",
+    "delay": 0.3,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "\u00a31,250",
+    "sub": "THE GORGES FAMILY'S CLAIM",
+    "delay": 2.2,
+    "size": 170
+   }
+  },
+  {
+   "vo": "For over 140 years, Maine was just a district of Massachusetts, run from Boston.",
+   "camera": {
+    "center": [
+     -70.6,
+     42.9
+    ],
+    "zoom": 95
+   },
+   "highlight": [
+    {
+     "admin1": [
+      "US-MA"
+     ],
+     "color": "orange",
+     "fill": 0.85,
+     "label_at": [
+      -71.9,
+      42.0
+     ]
+    },
+    {
+     "admin1": [
+      "US-ME"
+     ],
+     "color": "orange",
+     "fill": 0.7,
+     "label": "DISTRICT OF MAINE",
+     "label_at": [
+      -69.2,
+      45.4
+     ],
+     "delay": 0.4
+    },
+    {
+     "admin1": [
+      "US-NH"
+     ],
+     "color": "purple",
+     "fill": 0.4
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -71.06,
+      42.36
+     ],
+     "label": "BOSTON",
+     "side": "left",
+     "color": "accent",
+     "delay": 2.5
+    }
+   ],
+   "word": {
+    "text": "140+ YEARS",
+    "sub": "RUN FROM BOSTON",
+    "delay": 1.2,
+    "size": 150
+   }
+  },
+  {
+   "vo": "Then came the War of 1812. In 1814, British troops took Castine and held eastern Maine.",
+   "camera": {
+    "center": [
+     -68.85,
+     44.6
+    ],
+    "zoom": 260
+   },
+   "highlight": [
+    {
+     "admin1": [
+      "US-ME"
+     ],
+     "color": "green",
+     "fill": 0.5
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -68.8,
+      44.39
+     ],
+     "label": "CASTINE",
+     "side": "right",
+     "color": "red",
+     "delay": 2.8
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -68.0,
+      45.2
+     ],
+     "text": "BRITISH-HELD",
+     "size": 44,
+     "color": "red",
+     "delay": 4.0
+    }
+   ],
+   "stamp": {
+    "text": "1814",
+    "delay": 2.2,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "WAR OF 1812",
+    "sub": "BRITISH TROOPS ARRIVE",
+    "delay": 0.3,
+    "size": 140
+   }
+  },
+  {
+   "vo": "The governor of Massachusetts refused to send his militia. Mainers never forgot it.",
+   "camera": {
+    "center": [
+     -70.0,
+     42.7
+    ],
+    "zoom": 130
+   },
+   "highlight": [
+    {
+     "admin1": [
+      "US-MA"
+     ],
+     "color": "orange",
+     "fill": 0.8
+    },
+    {
+     "admin1": [
+      "US-ME"
+     ],
+     "color": "green",
+     "fill": 0.5
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -71.06,
+      42.36
+     ],
+     "label": "BOSTON",
+     "side": "left",
+     "color": "accent",
+     "delay": 0.3
+    },
+    {
+     "at": [
+      -68.8,
+      44.39
+     ],
+     "label": "CASTINE",
+     "side": "right",
+     "color": "red",
+     "delay": 0.3
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -71.06,
+       42.36
+      ],
+      [
+       -69.7,
+       43.4
+      ],
+      [
+       -68.8,
+       44.39
+      ]
+     ],
+     "color": "red",
+     "delay": 0.8,
+     "draw": 1.6,
+     "scene_only": true
+    }
+   ],
+   "word": {
+    "text": "NO MILITIA",
+    "sub": "MASSACHUSETTS REFUSED",
+    "delay": 1.8,
+    "size": 150
+   }
+  },
+  {
+   "vo": "In July 1819, Maine voted to leave, about 17,000 to 7,000.",
+   "camera": {
+    "center": [
+     -69.3,
+     44.2
+    ],
+    "zoom": 150
+   },
+   "highlight": [
+    {
+     "admin1": [
+      "US-ME"
+     ],
+     "color": "green",
+     "fill": 0.9,
+     "pulse": true,
+     "label": "MAINE",
+     "label_at": [
+      -69.2,
+      45.4
+     ]
+    }
+   ],
+   "stamp": {
+    "text": "JULY 1819",
+    "delay": 0.3,
+    "x": 800,
+    "y": 600
+   },
+   "word": {
+    "text": "17,000 V 7,000",
+    "sub": "VOTED TO LEAVE",
+    "delay": 1.6,
+    "size": 130
+   }
+  },
+  {
+   "vo": "On March 15, 1820, Maine became the 23rd state, a free state to balance slave-state Missouri.",
+   "camera": {
+    "center": [
+     -82.0,
+     40.0
+    ],
+    "zoom": 30
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "admin1": [
+      "US-ME"
+     ],
+     "color": "green",
+     "fill": 0.95,
+     "pulse": true,
+     "label": "FREE",
+     "label_at": [
+      -69.2,
+      45.4
+     ],
+     "delay": 0.2
+    },
+    {
+     "admin1": [
+      "US-MO"
+     ],
+     "color": "red",
+     "fill": 0.85,
+     "label": "SLAVE",
+     "label_at": [
+      -92.5,
+      38.4
+     ],
+     "delay": 3.8
+    }
+   ],
+   "stamp": {
+    "text": "1820",
+    "delay": 0.4,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "23RD STATE",
+    "sub": "MARCH 15, 1820",
+    "delay": 1.6,
+    "size": 150
+   }
+  },
+  {
+   "vo": "But Massachusetts kept half of Maine's public land. Maine didn't buy the last of it back until 1853.",
+   "camera": {
+    "center": [
+     -69.3,
+     44.2
+    ],
+    "zoom": 150
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "admin1": [
+      "US-ME"
+     ],
+     "color": "green",
+     "fill": 0.85,
+     "label": "MAINE",
+     "label_at": [
+      -69.2,
+      45.4
+     ]
+    }
+   ],
+   "word": {
+    "text": "HALF",
+    "sub": "OF MAINE'S PUBLIC LAND",
+    "delay": 1.0,
+    "size": 170
+   },
+   "stamp": {
+    "text": "1853",
+    "delay": 4.2,
+    "x": 830,
+    "y": 600
+   }
+  },
+  {
+   "vo": "Follow for more places where the map got weird.",
+   "camera": {
+    "center": [
+     -70.6,
+     42.9
+    ],
+    "zoom": 95
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "admin1": [
+      "US-MA"
+     ],
+     "color": "orange",
+     "fill": 0.7,
+     "label": "MASSACHUSETTS",
+     "label_at": [
+      -71.9,
+      42.0
+     ]
+    },
+    {
+     "admin1": [
+      "US-NH"
+     ],
+     "color": "purple",
+     "fill": 0.45
+    },
+    {
+     "admin1": [
+      "US-ME"
+     ],
+     "color": "green",
+     "fill": 0.9,
+     "pulse": true,
+     "label": "MAINE",
+     "label_at": [
+      -69.2,
+      45.4
+     ]
+    }
+   ]
+  }
+ ]
+}
