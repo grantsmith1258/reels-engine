@@ -8,11 +8,14 @@ NE=https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson
 
 python3 -m pip install --break-system-packages -q pycairo soundfile numpy pillow 2>&1 | grep -v -i warning || true
 
+python3 -c "from PIL import Image" 2>/dev/null || python3 -m pip install --break-system-packages --ignore-installed -q pillow 2>&1 | grep -v -i warning || true
+
 mkdir -p data fonts ~/.fonts
 for f in ne_50m_admin_0_countries ne_10m_admin_0_countries ne_10m_admin_1_states_provinces ne_10m_lakes; do
   [ -s data/$f.geojson ] || curl -sSfL -o data/$f.geojson $NE/$f.geojson
 done
 [ -s fonts/Anton-Regular.ttf ] || curl -sSfL -o fonts/Anton-Regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf
+fc-list | grep -qi "Noto Color Emoji" || [ -s fonts/NotoColorEmoji.ttf ] || curl -sSfL -o fonts/NotoColorEmoji.ttf https://raw.githubusercontent.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf
 cp fonts/Anton-Regular.ttf ~/.fonts/ && fc-cache -f >/dev/null
 fc-list : family | grep -i "inter" >/dev/null || echo "WARNING: Inter font missing; captions will fall back to a default sans font"
 

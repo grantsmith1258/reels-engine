@@ -59,3 +59,18 @@ Top-level `cover` makes the profile-grid thumbnail: the hook map with the video'
 - Keep everything between y 260 and 1680: the profile grid crops the 9:16 frame to 3:4 around the centre.
 - Check it alone first: `python3 engine/render.py storyboards/<file>.json /tmp/x.mp4 --audio build/vo.mp3 --cover build/cover.png`, then Read the PNG. Never put a claim on the cover that the script doesn't make.
 - Host it with `bash publish_media.sh build/<slug>_cover.png <YYYY-MM-DD>-<slug>-cover.png` and save the link to the row's "Cover image" field.
+
+## 7. Everyday-comparison pictures (required in the hook)
+Every video hooks with a semi-ridiculous comparison people know from real life, shown as a picture on the map (owner, 2026-11-21; modeled on an El Niño reel that opens "Just imagine if a giant natural fan that helps cool the eastern Pacific suddenly stopped working", with a desk fan sitting on South America that spins, then stops). Scene field:
+```json
+"pictures": [{"emoji": "🪭", "at": [-80.0, -2.0], "size": 240, "motion": "spin", "stop_after": 2.5, "label": "A GIANT FAN", "delay": 0.3}]
+```
+| field | what it does |
+|---|---|
+| `emoji` | one emoji, drawn in full colour (Noto Color Emoji). Pick an everyday object: 🍕 🚪 🛋️ 🏠 🪑 🧀 ⏰ 🎂 🧱 🚗 🔑 🧾 🪭 🌀 📦 🛏️ ... |
+| `at` `[lon,lat]` or `x`,`y` | on the map (moves with the camera) or fixed on screen (default 540, 900) |
+| `size` | height in px (default 260). Keep it big: 200-320 in the hook. |
+| `motion` | `bob` (default), `spin` (+ `speed` turns/s, `stop_after` s to slow to a halt: the "it stopped working" beat), `shake` (alarm, conflict), `pulse`, `move` (+ `to` [lon,lat] or [x,y], `move_time`) |
+| `label` | optional short caption under it |
+| `delay` | as elsewhere |
+Rules: the picture appears with the comparison's words (scene 1, by second 2) and comes back once later when the script returns to the comparison. Keep it out of the caption zone (y < 450) and the bottom 250 px, and off the word card (y ≈ 1300-1500). Identical items in consecutive scenes stay on screen.

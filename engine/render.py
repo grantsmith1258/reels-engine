@@ -222,6 +222,7 @@ class Timeline:
         self.headlines = spans("headline")
         self.stamps = spans("stamp")
         self.words = spans("word")
+        self.pictures = spans("pictures")
 
     def scene_at(self, t):
         for i in range(len(self.scenes) - 1, -1, -1):
@@ -366,6 +367,7 @@ class Renderer:
         self.draw_vignette(ctx)
         self.draw_headlines(ctx, t)
         self.draw_stamps(ctx, t)
+        self.draw_pictures(ctx, cam, t)
         self.draw_words(ctx, t)
         self.draw_captions(ctx, t)
         ctx.save(); ctx.scale(2, 2); ctx.set_source_surface(self.grain[int(t * FPS) % 4][0], 0, 0); ctx.paint(); ctx.restore()
@@ -617,6 +619,77 @@ class Renderer:
             ctx.rectangle(-bw / 2 + 10, -bh / 2 + 10, bw - 20, bh - 20); ctx.set_source_rgba(*col, 0.18 * a); ctx.fill()
             ctx.move_to(-tw / 2, 24); ctx.text_path(it["text"]); ctx.set_source_rgba(*col, a); ctx.fill()
             ctx.restore()
+
+    # ------------------------------------------------ pictures (everyday-object comparisons)
+    _emoji_cache = {}
+
+    @classmethod
+    def emoji_surface(cls, ch):
+        """Render one emoji (Noto Color Emoji) to a cairo surface, 136 px tall."""
+        if ch in cls._emoji_cache:
+            return cls._emoji_cache[ch]
+        from PIL import Image, ImageDraw, ImageFont
+        font = None
+        for fp in (os.path.join(os.path.dirname(__file__), "..", "fonts", "NotoColorEmoji.ttf"),
+                   "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"):
+            if os.path.exists(fp):
+                font = ImageFont.truetype(fp, 109); break
+        if font is None:
+            raise SystemExit("pictures need fonts/NotoColorEmoji.ttf (run bash setup.sh)")
+        im = Image.new("RGBA", (160, 160), (0, 0, 0, 0))
+        ImageDraw.Draw(im).text((80, 80), ch, font=font, embedded_color=True, anchor="mm")
+        im = im.crop(im.getbbox() or (0, 0, 160, 160))
+        a = np.asarray(im).astype(np.float32)
+        al = a[..., 3:4] / 255.0
+        bgra = np.concatenate([a[..., 2:3] * al, a[..., 1:2] * al, a[..., 0:1] * al, a[..., 3:4]], axis=2).astype(np.uint8)
+        h, w = bgra.shape[:2]
+        stride = cairo.ImageSurface.format_stride_for_width(cairo.FORMAT_ARGB32, w)
+        buf = np.zeros((h, stride // 4, 4), np.uint8); buf[:, :w] = bgra
+        surf = cairo.ImageSurface.create_for_data(bytearray(buf.tobytes()), cairo.FORMAT_ARGB32, w, h, stride)
+        cls._emoji_cache[ch] = surf
+        return surf
+
+    def draw_pictures(self, ctx, cam, t):
+        for h in self.tl.pictures:
+            it = h["item"]
+            a = window(t, h["t_in"], h["t_out"], 0.2, 0.3)
+            if a <= 0:
+                continue
+            if it.get("at"):
+                X, Y = self.to_screen(cam, *merc(*it["at"]))
+            else:
+                X, Y = it.get("x", 540), it.get("y", 900)
+            size = it.get("size", 260)
+            dt = t - h["t_in"]
+            motion = it.get("motion", "bob")
+            rot, dx, dy, k = 0.0, 0.0, 0.0, 1.0
+            if motion == "spin":
+                sp = 2 * math.pi * it.get("speed", 1.2)
+                st = it.get("stop_after")          # seconds after appearing; then it slows to a halt over 1 s
+                if st is None or dt < st:
+                    rot = dt * sp
+                else:
+                    u = min(dt - st, 1.0)
+                    rot = st * sp + sp * (u - u * u / 2)
+            elif motion == "bob":
+                dy = 12 * math.sin(dt * 3.2)
+            elif motion == "shake":
+                rot = math.radians(7) * math.sin(dt * 22)
+            elif motion == "pulse":
+                k = 1 + 0.08 * math.sin(dt * 6)
+            elif motion == "move" and it.get("to"):
+                tx, ty = (self.to_screen(cam, *merc(*it["to"])) if it.get("to_map", bool(it.get("at"))) else it["to"])
+                f = ease_io(clamp(dt / it.get("move_time", 2.0)))
+                dx, dy = (tx - X) * f, (ty - Y) * f
+            pop = 0.55 + 0.45 * ease_back(dt / 0.4)
+            src = self.emoji_surface(it["emoji"])
+            sc = size / src.get_height() * pop * k
+            ctx.save(); ctx.translate(X + dx, Y + dy); ctx.rotate(rot); ctx.scale(sc, sc)
+            ctx.set_source_surface(src, -src.get_width() / 2, -src.get_height() / 2)
+            ctx.paint_with_alpha(a); ctx.restore()
+            if it.get("label"):
+                self.text(ctx, it["label"], X + dx, Y + dy + size * 0.5 + 44, it.get("label_size", 52), "Anton",
+                          hexc(it.get("label_color", "white")), a, spacing=3, outline=(0, 0, 0, 0.6), maxw=1000)
 
     def draw_words(self, ctx, t):
         for h in self.tl.words:
