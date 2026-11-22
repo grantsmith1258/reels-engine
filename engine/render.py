@@ -812,6 +812,9 @@ def build(sbp, audio=None):
     texts = [s["vo"] for s in sb["scenes"]]
     if audio:
         starts, ends, D = scene_bounds_from_audio(audio, texts, min(0.6, max(0.1, sb.get("max_seconds", 75) - 0.05 - ffprobe_dur(audio))), sb.get("min_pause", 0.25))
+        if sb.get("cuts"):  # optional manual scene boundaries (seconds), one per paragraph break
+            assert len(sb["cuts"]) == len(texts) - 1, "cuts needs one time per paragraph break"
+            starts, ends = [0.0] + list(sb["cuts"]), list(sb["cuts"]) + [ends[-1]]
         voice = load_audio(audio)
         speech = [(s + (0.15 if i else 0.05), e - 0.25) for i, (s, e) in enumerate(zip(starts, ends))]
         speech[-1] = (speech[-1][0], D)

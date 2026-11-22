@@ -1,0 +1,1001 @@
+{
+ "title": "Four states claim the first Thanksgiving (and it wasn't Plymouth)",
+ "admin1_borders": [
+  "USA"
+ ],
+ "outro_hold": 1.0,
+ "cover": {
+  "lines": [
+   {
+    "text": "4 STATES",
+    "size": 300,
+    "color": "accent"
+   },
+   {
+    "text": "CLAIM THE FIRST",
+    "size": 120
+   },
+   {
+    "text": "THANKSGIVING",
+    "size": 150
+   }
+  ],
+  "badge": "PLYMOUTH CAME LAST",
+  "camera": {
+   "center": [
+    -88.0,
+    50.5
+   ],
+   "zoom": 22
+  },
+  "y": 610
+ },
+ "scenes": [
+  {
+   "vo": "Imagine four diners on one street, each with a sign: home of the original Thanksgiving.",
+   "camera": {
+    "center": [
+     -88.0,
+     33.0
+    ],
+    "zoom": 26
+   },
+   "highlight": [
+    {
+     "admin1": [
+      "US-FL"
+     ],
+     "color": "green",
+     "fill": 0.6
+    },
+    {
+     "admin1": [
+      "US-TX"
+     ],
+     "color": "orange",
+     "fill": 0.6
+    },
+    {
+     "admin1": [
+      "US-VA"
+     ],
+     "color": "blue",
+     "fill": 0.6
+    },
+    {
+     "admin1": [
+      "US-MA"
+     ],
+     "color": "purple",
+     "fill": 0.6
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "🪧",
+     "at": [
+      -81.8,
+      31.6
+     ],
+     "size": 150,
+     "motion": "bob",
+     "delay": 0.2
+    },
+    {
+     "emoji": "🪧",
+     "at": [
+      -100.0,
+      34.8
+     ],
+     "size": 150,
+     "motion": "bob",
+     "delay": 0.7
+    },
+    {
+     "emoji": "🪧",
+     "at": [
+      -78.6,
+      39.6
+     ],
+     "size": 150,
+     "motion": "bob",
+     "delay": 1.2
+    },
+    {
+     "emoji": "🪧",
+     "at": [
+      -71.6,
+      44.8
+     ],
+     "size": 150,
+     "motion": "bob",
+     "delay": 1.7
+    }
+   ],
+   "word": {
+    "text": "THE ORIGINAL",
+    "sub": "HOME OF",
+    "delay": 2.6,
+    "size": 140,
+    "y": 1500
+   }
+  },
+  {
+   "vo": "That's America. Florida says 1565. Texas says 1598. Virginia says 1619. Massachusetts says 1621.",
+   "camera": {
+    "center": [
+     -88.0,
+     33.0
+    ],
+    "zoom": 26
+   },
+   "camera_move": 0.6,
+   "highlight": [
+    {
+     "admin1": [
+      "US-FL"
+     ],
+     "color": "green",
+     "fill": 0.6
+    },
+    {
+     "admin1": [
+      "US-TX"
+     ],
+     "color": "orange",
+     "fill": 0.6
+    },
+    {
+     "admin1": [
+      "US-VA"
+     ],
+     "color": "blue",
+     "fill": 0.6
+    },
+    {
+     "admin1": [
+      "US-MA"
+     ],
+     "color": "purple",
+     "fill": 0.6
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -81.31,
+      29.89
+     ],
+     "label": "1565",
+     "side": "right",
+     "color": "green",
+     "delay": 2.2
+    },
+    {
+     "at": [
+      -106.27,
+      31.585
+     ],
+     "label": "1598",
+     "side": "above",
+     "color": "orange",
+     "delay": 4.5
+    },
+    {
+     "at": [
+      -77.18,
+      37.32
+     ],
+     "label": "1619",
+     "side": "right",
+     "color": "blue",
+     "delay": 6.7
+    },
+    {
+     "at": [
+      -70.667,
+      41.958
+     ],
+     "label": "1621",
+     "side": "left",
+     "color": "purple",
+     "delay": 9.3
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -83.5,
+      27.0
+     ],
+     "text": "FLORIDA",
+     "size": 34,
+     "delay": 1.8
+    },
+    {
+     "at": [
+      -99.0,
+      30.0
+     ],
+     "text": "TEXAS",
+     "size": 34,
+     "delay": 4.1
+    },
+    {
+     "at": [
+      -80.5,
+      36.0
+     ],
+     "text": "VIRGINIA",
+     "size": 34,
+     "delay": 6.3
+    },
+    {
+     "at": [
+      -69.0,
+      40.0
+     ],
+     "text": "MASSACHUSETTS",
+     "size": 34,
+     "delay": 8.8
+    }
+   ]
+  },
+  {
+   "vo": "Florida first. In 1565, Spanish settlers founded St. Augustine, held a Mass of thanks, and shared a meal with the Timucua.",
+   "camera": {
+    "center": [
+     -82.3,
+     29.6
+    ],
+    "zoom": 80
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "admin1": [
+      "US-FL"
+     ],
+     "color": "green",
+     "fill": 0.6,
+     "pulse": true,
+     "label": "FLORIDA",
+     "label_at": [
+      -81.7,
+      27.6
+     ]
+    },
+    {
+     "admin1": [
+      "US-GA"
+     ],
+     "color": "blue",
+     "fill": 0.4,
+     "label": "GEORGIA",
+     "label_at": [
+      -83.6,
+      32.0
+     ]
+    },
+    {
+     "admin1": [
+      "US-AL"
+     ],
+     "color": "purple",
+     "fill": 0.4,
+     "label": "ALABAMA",
+     "label_at": [
+      -86.7,
+      31.8
+     ]
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -75.5,
+       27.0
+      ],
+      [
+       -78.5,
+       28.8
+      ],
+      [
+       -81.31,
+       29.89
+      ]
+     ],
+     "color": "accent",
+     "delay": 1.4,
+     "draw": 1.8,
+     "scene_only": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -81.31,
+      29.89
+     ],
+     "label": "ST. AUGUSTINE",
+     "side": "right",
+     "color": "accent",
+     "delay": 2.6
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -77.5,
+      30.6
+     ],
+     "text": "ATLANTIC",
+     "size": 34,
+     "delay": 0.4
+    }
+   ],
+   "stamp": {
+    "text": "1565",
+    "delay": 1.6
+   },
+   "word": {
+    "text": "MASS + MEAL",
+    "sub": "WITH THE TIMUCUA",
+    "delay": 5.0,
+    "size": 140
+   }
+  },
+  {
+   "vo": "In 1598, Juan de Oñate's expedition crawled out of the desert, four days without water, and feasted on the Rio Grande.",
+   "camera": {
+    "center": [
+     -103.0,
+     29.8
+    ],
+    "zoom": 40
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "admin1": [
+      "US-TX"
+     ],
+     "color": "orange",
+     "fill": 0.6,
+     "pulse": true,
+     "label": "TEXAS",
+     "label_at": [
+      -99.5,
+      31.3
+     ]
+    },
+    {
+     "admin1": [
+      "US-NM"
+     ],
+     "color": "teal",
+     "fill": 0.42,
+     "label": "NEW MEXICO",
+     "label_at": [
+      -106.0,
+      34.0
+     ]
+    },
+    {
+     "iso": [
+      "MEX"
+     ],
+     "color": "red",
+     "fill": 0.35,
+     "label": "MEXICO",
+     "label_at": [
+      -103.5,
+      26.5
+     ]
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -105.8,
+       27.0
+      ],
+      [
+       -106.1,
+       28.8
+      ],
+      [
+       -106.27,
+       31.585
+      ]
+     ],
+     "color": "accent",
+     "delay": 0.9,
+     "draw": 2.6,
+     "scene_only": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -106.27,
+      31.585
+     ],
+     "label": "RIO GRANDE",
+     "side": "right",
+     "color": "accent",
+     "delay": 5.6
+    }
+   ],
+   "stamp": {
+    "text": "1598",
+    "delay": 0.4
+   },
+   "word": {
+    "text": "4 DAYS",
+    "sub": "WITHOUT WATER",
+    "delay": 3.0,
+    "size": 160
+   }
+  },
+  {
+   "vo": "Then Virginia. On December 4th, 1619, 38 English settlers landed at Berkeley Hundred, ordered to give thanks on that day every year.",
+   "camera": {
+    "center": [
+     -77.4,
+     37.4
+    ],
+    "zoom": 115
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "admin1": [
+      "US-VA"
+     ],
+     "color": "blue",
+     "fill": 0.6,
+     "pulse": true,
+     "label": "VIRGINIA",
+     "label_at": [
+      -80.0,
+      37.45
+     ]
+    },
+    {
+     "admin1": [
+      "US-NC"
+     ],
+     "color": "teal",
+     "fill": 0.42,
+     "label": "N. CAROLINA",
+     "label_at": [
+      -79.3,
+      35.7
+     ]
+    },
+    {
+     "admin1": [
+      "US-MD"
+     ],
+     "color": "red",
+     "fill": 0.42,
+     "label": "MARYLAND",
+     "label_at": [
+      -76.9,
+      39.3
+     ]
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -74.6,
+       36.6
+      ],
+      [
+       -76.0,
+       37.0
+      ],
+      [
+       -76.6,
+       37.15
+      ],
+      [
+       -77.18,
+       37.32
+      ]
+     ],
+     "color": "accent",
+     "delay": 1.8,
+     "draw": 1.8,
+     "scene_only": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -77.18,
+      37.32
+     ],
+     "label": "BERKELEY HUNDRED",
+     "side": "below",
+     "color": "accent",
+     "delay": 3.4
+    }
+   ],
+   "stamp": {
+    "text": "DEC 4, 1619",
+    "delay": 1.0,
+    "x": 800,
+    "y": 600
+   },
+   "word": {
+    "text": "EVERY YEAR",
+    "sub": "38 SETTLERS' ORDERS",
+    "delay": 6.0,
+    "size": 150
+   }
+  },
+  {
+   "vo": "No feast. No turkey. Just a prayer. But the first one meant to repeat.",
+   "camera": {
+    "center": [
+     -78.5,
+     37.0
+    ],
+    "zoom": 70
+   },
+   "camera_move": 1.0,
+   "highlight": [
+    {
+     "admin1": [
+      "US-VA"
+     ],
+     "color": "blue",
+     "fill": 0.75,
+     "pulse": true,
+     "label": "VIRGINIA",
+     "label_at": [
+      -80.0,
+      37.45
+     ]
+    },
+    {
+     "admin1": [
+      "US-NC"
+     ],
+     "color": "teal",
+     "fill": 0.42
+    },
+    {
+     "admin1": [
+      "US-MD"
+     ],
+     "color": "red",
+     "fill": 0.42
+    },
+    {
+     "admin1": [
+      "US-WV"
+     ],
+     "color": "orange",
+     "fill": 0.4,
+     "label": "W. VIRGINIA",
+     "label_at": [
+      -80.6,
+      38.7
+     ]
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -77.18,
+      37.32
+     ],
+     "label": "BERKELEY",
+     "side": "below",
+     "color": "accent"
+    }
+   ],
+   "stamp": {
+    "text": "YEARLY",
+    "delay": 2.6,
+    "color": "accent"
+   },
+   "word": {
+    "text": "JUST A PRAYER",
+    "sub": "NO FEAST · NO TURKEY",
+    "delay": 0.6,
+    "size": 130
+   }
+  },
+  {
+   "vo": "Two years later at Plymouth, the Pilgrims and about ninety Wampanoag men feasted for three days.",
+   "camera": {
+    "center": [
+     -71.2,
+     42.4
+    ],
+    "zoom": 125
+   },
+   "camera_move": 1.5,
+   "highlight": [
+    {
+     "admin1": [
+      "US-MA"
+     ],
+     "color": "purple",
+     "fill": 0.6,
+     "pulse": true,
+     "label": "MASSACHUSETTS",
+     "label_at": [
+      -72.3,
+      42.45
+     ]
+    },
+    {
+     "admin1": [
+      "US-CT"
+     ],
+     "color": "teal",
+     "fill": 0.42,
+     "label": "CONN.",
+     "label_at": [
+      -72.7,
+      41.6
+     ]
+    },
+    {
+     "admin1": [
+      "US-RI"
+     ],
+     "color": "red",
+     "fill": 0.5
+    },
+    {
+     "admin1": [
+      "US-NH"
+     ],
+     "color": "orange",
+     "fill": 0.42,
+     "label": "N.H.",
+     "label_at": [
+      -71.6,
+      43.6
+     ]
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -70.667,
+      41.958
+     ],
+     "label": "PLYMOUTH",
+     "side": "right",
+     "color": "accent",
+     "delay": 1.6
+    }
+   ],
+   "stamp": {
+    "text": "1621",
+    "delay": 0.5
+   },
+   "word": {
+    "text": "3 DAYS",
+    "sub": "PILGRIMS + ~90 WAMPANOAG",
+    "delay": 4.2,
+    "size": 160
+   }
+  },
+  {
+   "vo": "So why does Plymouth get the school plays? In 1841, a Boston writer printed a Pilgrim's letter and called it \"the first Thanksgiving.\" It stuck.",
+   "camera": {
+    "center": [
+     -70.95,
+     42.15
+    ],
+    "zoom": 200
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "admin1": [
+      "US-MA"
+     ],
+     "color": "purple",
+     "fill": 0.6
+    },
+    {
+     "admin1": [
+      "US-RI"
+     ],
+     "color": "red",
+     "fill": 0.5
+    },
+    {
+     "admin1": [
+      "US-NH"
+     ],
+     "color": "orange",
+     "fill": 0.42
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -70.667,
+      41.958
+     ],
+     "label": "PLYMOUTH",
+     "side": "right",
+     "color": "accent"
+    },
+    {
+     "at": [
+      -71.06,
+      42.36
+     ],
+     "label": "BOSTON",
+     "side": "right",
+     "color": "white",
+     "delay": 3.6
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -71.06,
+       42.36
+      ],
+      [
+       -70.667,
+       41.958
+      ]
+     ],
+     "color": "accent",
+     "delay": 5.0,
+     "draw": 1.0
+    }
+   ],
+   "stamp": {
+    "text": "1841",
+    "delay": 3.2
+   },
+   "word": {
+    "text": "\"THE FIRST\"",
+    "sub": "A BOSTON WRITER'S LABEL",
+    "delay": 6.2,
+    "size": 150
+   }
+  },
+  {
+   "vo": "So which diner is right? All four, depending on what you count.",
+   "camera": {
+    "center": [
+     -88.0,
+     33.0
+    ],
+    "zoom": 26
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "admin1": [
+      "US-FL"
+     ],
+     "color": "green",
+     "fill": 0.6
+    },
+    {
+     "admin1": [
+      "US-TX"
+     ],
+     "color": "orange",
+     "fill": 0.6
+    },
+    {
+     "admin1": [
+      "US-VA"
+     ],
+     "color": "blue",
+     "fill": 0.6
+    },
+    {
+     "admin1": [
+      "US-MA"
+     ],
+     "color": "purple",
+     "fill": 0.6
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -81.31,
+      29.89
+     ],
+     "label": "1565",
+     "side": "right",
+     "color": "green"
+    },
+    {
+     "at": [
+      -106.27,
+      31.585
+     ],
+     "label": "1598",
+     "side": "above",
+     "color": "orange"
+    },
+    {
+     "at": [
+      -77.18,
+      37.32
+     ],
+     "label": "1619",
+     "side": "right",
+     "color": "blue"
+    },
+    {
+     "at": [
+      -70.667,
+      41.958
+     ],
+     "label": "1621",
+     "side": "left",
+     "color": "purple"
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "🪧",
+     "at": [
+      -81.8,
+      31.6
+     ],
+     "size": 150,
+     "motion": "bob",
+     "delay": 0.6
+    },
+    {
+     "emoji": "🪧",
+     "at": [
+      -100.0,
+      34.8
+     ],
+     "size": 150,
+     "motion": "bob",
+     "delay": 0.8
+    },
+    {
+     "emoji": "🪧",
+     "at": [
+      -78.6,
+      39.6
+     ],
+     "size": 150,
+     "motion": "bob",
+     "delay": 1.1
+    },
+    {
+     "emoji": "🪧",
+     "at": [
+      -71.6,
+      44.8
+     ],
+     "size": 150,
+     "motion": "bob",
+     "delay": 1.4
+    }
+   ],
+   "word": {
+    "text": "ALL FOUR",
+    "sub": "DEPENDS WHAT YOU COUNT",
+    "delay": 1.8,
+    "size": 160,
+    "y": 1500
+   }
+  },
+  {
+   "vo": "Follow for more places where the map got weird.",
+   "camera": {
+    "center": [
+     -88.0,
+     34.0
+    ],
+    "zoom": 22
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "admin1": [
+      "US-FL"
+     ],
+     "color": "green",
+     "fill": 0.6,
+     "pulse": true
+    },
+    {
+     "admin1": [
+      "US-TX"
+     ],
+     "color": "orange",
+     "fill": 0.6,
+     "pulse": true
+    },
+    {
+     "admin1": [
+      "US-VA"
+     ],
+     "color": "blue",
+     "fill": 0.6,
+     "pulse": true
+    },
+    {
+     "admin1": [
+      "US-MA"
+     ],
+     "color": "purple",
+     "fill": 0.6,
+     "pulse": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -81.31,
+      29.89
+     ],
+     "label": "1565",
+     "side": "right",
+     "color": "green"
+    },
+    {
+     "at": [
+      -106.27,
+      31.585
+     ],
+     "label": "1598",
+     "side": "above",
+     "color": "orange"
+    },
+    {
+     "at": [
+      -77.18,
+      37.32
+     ],
+     "label": "1619",
+     "side": "right",
+     "color": "blue"
+    },
+    {
+     "at": [
+      -70.667,
+      41.958
+     ],
+     "label": "1621",
+     "side": "left",
+     "color": "purple"
+    }
+   ]
+  }
+ ],
+ "cuts": [
+  5.74,
+  16.68,
+  24.99,
+  32.95,
+  42.18,
+  47.11,
+  52.83,
+  62.08,
+  66.34
+ ]
+}

@@ -21,6 +21,7 @@ Style: animated dark map explainer. Every scene is the map; the story is told by
 | `delay` (any item) | seconds after the scene starts before the item appears. Time items to the moment the voiceover says them (scene length ≈ chars/15 s). |
 
 Top level: `title`, `admin1_borders: ["USA"]` (faint dashed state lines for those countries; use when states matter), `outro_hold` (seconds).
+`cuts` (optional): scene start times in seconds, one per paragraph break, when the preview shows scenes split at the wrong pause (scripts with many short sentences). Read the pauses with `ffmpeg -i build/vo.mp3 -af silencedetect=noise=-35dB:d=0.25 -f null -` and put each cut in the middle of the pause that ends a paragraph.
 
 Identical items in consecutive scenes (same JSON) stay on screen instead of re-popping, so copy a highlight exactly to keep it.
 
