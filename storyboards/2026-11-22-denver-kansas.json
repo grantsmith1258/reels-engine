@@ -1,0 +1,1076 @@
+{
+ "title": "Denver used to be in Kansas",
+ "admin1_borders": [
+  "USA"
+ ],
+ "min_pause": 0.65,
+ "outro_hold": 2.0,
+ "cover": {
+  "lines": [
+   {
+    "text": "DENVER",
+    "size": 160
+   },
+   {
+    "text": "WAS FOUNDED IN",
+    "size": 120
+   },
+   {
+    "text": "KANSAS",
+    "size": 340,
+    "color": "accent"
+   }
+  ],
+  "badge": "168 YEARS AGO TODAY",
+  "scene": 0,
+  "at": 2.5,
+  "y": 680,
+  "camera": {
+   "center": [
+    -100.7,
+    41.8
+   ],
+   "zoom": 66
+  }
+ },
+ "scenes": [
+  {
+   "vo": "Imagine naming your baby after your boss to win him over, then finding out he'd already quit.",
+   "camera": {
+    "center": [
+     -100.7,
+     38.6
+    ],
+    "zoom": 72
+   },
+   "highlight": [
+    {
+     "admin1": [
+      "US-KS"
+     ],
+     "color": "green",
+     "fill": 0.75
+    },
+    {
+     "shape": [
+      [
+       -102.05,
+       37.0
+      ],
+      [
+       -102.05,
+       40.0
+      ],
+      [
+       -105.68,
+       40.0
+      ],
+      [
+       -105.88,
+       39.66
+      ],
+      [
+       -106.06,
+       39.36
+      ],
+      [
+       -106.31,
+       39.36
+      ],
+      [
+       -106.32,
+       38.5
+      ],
+      [
+       -106.25,
+       38.39
+      ],
+      [
+       -106.6,
+       38.16
+      ],
+      [
+       -106.8,
+       37.48
+      ],
+      [
+       -106.5,
+       37.0
+      ]
+     ],
+     "color": "green",
+     "fill": 0.75,
+     "pulse": true
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -100.3,
+      38.3
+     ],
+     "text": "KANSAS",
+     "size": 50,
+     "delay": 0.2
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -104.99,
+      39.74
+     ],
+     "label": "DENVER",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.4
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "👶",
+     "at": [
+      -104.4,
+      41.6
+     ],
+     "size": 210,
+     "motion": "bob",
+     "delay": 0.3
+    }
+   ]
+  },
+  {
+   "vo": "That's Denver. It was founded in Kansas, 168 years ago today.",
+   "camera": {
+    "center": [
+     -103.0,
+     38.8
+    ],
+    "zoom": 80
+   },
+   "camera_move": 1.0,
+   "highlight": [
+    {
+     "admin1": [
+      "US-KS"
+     ],
+     "color": "green",
+     "fill": 0.75
+    },
+    {
+     "shape": [
+      [
+       -102.05,
+       37.0
+      ],
+      [
+       -102.05,
+       40.0
+      ],
+      [
+       -105.68,
+       40.0
+      ],
+      [
+       -105.88,
+       39.66
+      ],
+      [
+       -106.06,
+       39.36
+      ],
+      [
+       -106.31,
+       39.36
+      ],
+      [
+       -106.32,
+       38.5
+      ],
+      [
+       -106.25,
+       38.39
+      ],
+      [
+       -106.6,
+       38.16
+      ],
+      [
+       -106.8,
+       37.48
+      ],
+      [
+       -106.5,
+       37.0
+      ]
+     ],
+     "color": "green",
+     "fill": 0.75,
+     "pulse": true
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -103.9,
+      37.6
+     ],
+     "text": "KANSAS",
+     "size": 44,
+     "delay": 0.4
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -104.99,
+      39.74
+     ],
+     "label": "DENVER",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.2
+    }
+   ],
+   "word": {
+    "text": "168 YEARS",
+    "sub": "AGO TODAY",
+    "delay": 2.0,
+    "size": 150
+   }
+  },
+  {
+   "vo": "Back then, Kansas Territory ran west all the way to the top of the Rocky Mountains.",
+   "camera": {
+    "center": [
+     -101.2,
+     38.9
+    ],
+    "zoom": 68
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "admin1": [
+      "US-KS"
+     ],
+     "color": "green",
+     "fill": 0.7
+    },
+    {
+     "shape": [
+      [
+       -102.05,
+       37.0
+      ],
+      [
+       -102.05,
+       40.0
+      ],
+      [
+       -105.68,
+       40.0
+      ],
+      [
+       -105.88,
+       39.66
+      ],
+      [
+       -106.06,
+       39.36
+      ],
+      [
+       -106.31,
+       39.36
+      ],
+      [
+       -106.32,
+       38.5
+      ],
+      [
+       -106.25,
+       38.39
+      ],
+      [
+       -106.6,
+       38.16
+      ],
+      [
+       -106.8,
+       37.48
+      ],
+      [
+       -106.5,
+       37.0
+      ]
+     ],
+     "color": "green",
+     "fill": 0.7,
+     "delay": 0.8,
+     "pulse": true
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -99.5,
+      39.6
+     ],
+     "text": "KANSAS TERRITORY",
+     "size": 46,
+     "delay": 0.6
+    },
+    {
+     "at": [
+      -105.4,
+      40.6
+     ],
+     "text": "ROCKY MOUNTAINS",
+     "size": 36,
+     "delay": 2.6
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -105.68,
+       40.0
+      ],
+      [
+       -105.88,
+       39.66
+      ],
+      [
+       -106.06,
+       39.36
+      ],
+      [
+       -106.31,
+       39.36
+      ],
+      [
+       -106.32,
+       38.5
+      ],
+      [
+       -106.25,
+       38.39
+      ],
+      [
+       -106.6,
+       38.16
+      ],
+      [
+       -106.8,
+       37.48
+      ],
+      [
+       -106.5,
+       37.0
+      ]
+     ],
+     "color": "white",
+     "delay": 2.8,
+     "draw": 1.4
+    }
+   ],
+   "word": {
+    "text": "TO THE ROCKIES",
+    "sub": "KANSAS TERRITORY RAN WEST",
+    "delay": 3.4,
+    "size": 130
+   }
+  },
+  {
+   "vo": "In 1858, prospectors found gold where Cherry Creek meets the South Platte River, and a gold rush began.",
+   "camera": {
+    "center": [
+     -103.0,
+     39.5
+    ],
+    "zoom": 120
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "shape": [
+      [
+       -102.05,
+       37.0
+      ],
+      [
+       -102.05,
+       40.0
+      ],
+      [
+       -105.68,
+       40.0
+      ],
+      [
+       -105.88,
+       39.66
+      ],
+      [
+       -106.06,
+       39.36
+      ],
+      [
+       -106.31,
+       39.36
+      ],
+      [
+       -106.32,
+       38.5
+      ],
+      [
+       -106.25,
+       38.39
+      ],
+      [
+       -106.6,
+       38.16
+      ],
+      [
+       -106.8,
+       37.48
+      ],
+      [
+       -106.5,
+       37.0
+      ]
+     ],
+     "color": "green",
+     "fill": 0.45
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -98.6,
+       39.2
+      ],
+      [
+       -101.5,
+       39.5
+      ],
+      [
+       -104.99,
+       39.74
+      ]
+     ],
+     "color": "accent",
+     "delay": 3.0,
+     "draw": 2.2,
+     "scene_only": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -105.0075,
+      39.7555
+     ],
+     "label": "CHERRY CREEK + SOUTH PLATTE",
+     "side": "above",
+     "color": "accent",
+     "delay": 0.9
+    }
+   ],
+   "stamp": {
+    "text": "1858",
+    "delay": 0.3,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "GOLD RUSH",
+    "sub": "PROSPECTORS FIND GOLD",
+    "delay": 2.4,
+    "size": 150
+   }
+  },
+  {
+   "vo": "On November 22nd, William Larimer's party staked a town there and named it Denver City, after the governor of Kansas Territory.",
+   "camera": {
+    "center": [
+     -104.99,
+     39.74
+    ],
+    "zoom": 800
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "shape": [
+      [
+       -102.05,
+       37.0
+      ],
+      [
+       -102.05,
+       40.0
+      ],
+      [
+       -105.68,
+       40.0
+      ],
+      [
+       -105.88,
+       39.66
+      ],
+      [
+       -106.06,
+       39.36
+      ],
+      [
+       -106.31,
+       39.36
+      ],
+      [
+       -106.32,
+       38.5
+      ],
+      [
+       -106.25,
+       38.39
+      ],
+      [
+       -106.6,
+       38.16
+      ],
+      [
+       -106.8,
+       37.48
+      ],
+      [
+       -106.5,
+       37.0
+      ]
+     ],
+     "color": "green",
+     "fill": 0.2
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -104.9995,
+      39.7477
+     ],
+     "label": "DENVER CITY",
+     "side": "right",
+     "color": "accent",
+     "delay": 1.6
+    }
+   ],
+   "stamp": {
+    "text": "NOV 22, 1858",
+    "delay": 0.3,
+    "x": 760,
+    "y": 600
+   },
+   "word": {
+    "text": "DENVER CITY",
+    "sub": "NAMED FOR THE KANSAS GOVERNOR",
+    "delay": 4.2,
+    "size": 140
+   }
+  },
+  {
+   "vo": "They hoped he'd make it the county seat. But Governor Denver had already resigned, weeks earlier.",
+   "camera": {
+    "center": [
+     -100.7,
+     38.6
+    ],
+    "zoom": 72
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "admin1": [
+      "US-KS"
+     ],
+     "color": "green",
+     "fill": 0.6
+    },
+    {
+     "shape": [
+      [
+       -102.05,
+       37.0
+      ],
+      [
+       -102.05,
+       40.0
+      ],
+      [
+       -105.68,
+       40.0
+      ],
+      [
+       -105.88,
+       39.66
+      ],
+      [
+       -106.06,
+       39.36
+      ],
+      [
+       -106.31,
+       39.36
+      ],
+      [
+       -106.32,
+       38.5
+      ],
+      [
+       -106.25,
+       38.39
+      ],
+      [
+       -106.6,
+       38.16
+      ],
+      [
+       -106.8,
+       37.48
+      ],
+      [
+       -106.5,
+       37.0
+      ]
+     ],
+     "color": "green",
+     "fill": 0.6
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -104.99,
+      39.74
+     ],
+     "label": "DENVER CITY",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.2
+    },
+    {
+     "at": [
+      -95.39,
+      39.04
+     ],
+     "label": "GOV. DENVER",
+     "side": "below",
+     "color": "white",
+     "delay": 0.8
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -104.99,
+       39.74
+      ],
+      [
+       -100.0,
+       40.3
+      ],
+      [
+       -95.39,
+       39.04
+      ]
+     ],
+     "color": "accent",
+     "delay": 0.6,
+     "draw": 1.6,
+     "scene_only": true
+    }
+   ],
+   "word": {
+    "text": "RESIGNED",
+    "sub": "WEEKS EARLIER",
+    "delay": 3.3,
+    "size": 150,
+    "color": "red"
+   }
+  },
+  {
+   "vo": "Across the creek sat a rival town, Auraria. In 1860, the two merged into one Denver.",
+   "camera": {
+    "center": [
+     -105.0,
+     39.75
+    ],
+    "zoom": 900
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "shape": [
+      [
+       -102.05,
+       37.0
+      ],
+      [
+       -102.05,
+       40.0
+      ],
+      [
+       -105.68,
+       40.0
+      ],
+      [
+       -105.88,
+       39.66
+      ],
+      [
+       -106.06,
+       39.36
+      ],
+      [
+       -106.31,
+       39.36
+      ],
+      [
+       -106.32,
+       38.5
+      ],
+      [
+       -106.25,
+       38.39
+      ],
+      [
+       -106.6,
+       38.16
+      ],
+      [
+       -106.8,
+       37.48
+      ],
+      [
+       -106.5,
+       37.0
+      ]
+     ],
+     "color": "green",
+     "fill": 0.2
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -105.006,
+      39.744
+     ],
+     "label": "AURARIA",
+     "side": "left",
+     "color": "orange",
+     "delay": 0.8
+    },
+    {
+     "at": [
+      -104.9995,
+      39.7477
+     ],
+     "label": "DENVER CITY",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.3
+    }
+   ],
+   "stamp": {
+    "text": "1860",
+    "delay": 2.2,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "ONE DENVER",
+    "sub": "THE RIVALS MERGE",
+    "delay": 3.4,
+    "size": 150
+   }
+  },
+  {
+   "vo": "In January 1861, Kansas became a state, but Congress cut it off far east of the mountains.",
+   "camera": {
+    "center": [
+     -100.7,
+     38.6
+    ],
+    "zoom": 72
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "admin1": [
+      "US-KS"
+     ],
+     "color": "green",
+     "fill": 0.85,
+     "pulse": true,
+     "label": "STATE OF KANSAS",
+     "label_at": [
+      -98.3,
+      38.5
+     ],
+     "delay": 0.6
+    },
+    {
+     "shape": [
+      [
+       -102.05,
+       37.0
+      ],
+      [
+       -102.05,
+       40.0
+      ],
+      [
+       -105.68,
+       40.0
+      ],
+      [
+       -105.88,
+       39.66
+      ],
+      [
+       -106.06,
+       39.36
+      ],
+      [
+       -106.31,
+       39.36
+      ],
+      [
+       -106.32,
+       38.5
+      ],
+      [
+       -106.25,
+       38.39
+      ],
+      [
+       -106.6,
+       38.16
+      ],
+      [
+       -106.8,
+       37.48
+      ],
+      [
+       -106.5,
+       37.0
+      ]
+     ],
+     "color": "red",
+     "fill": 0.3,
+     "delay": 2.4
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -104.99,
+      39.74
+     ],
+     "label": "DENVER",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.2
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -102.05,
+       36.6
+      ],
+      [
+       -102.05,
+       40.4
+      ]
+     ],
+     "color": "accent",
+     "label": "CUT HERE",
+     "label_at": [
+      -102.05,
+      40.9
+     ],
+     "delay": 2.2,
+     "draw": 1.0
+    }
+   ],
+   "stamp": {
+    "text": "JAN 1861",
+    "delay": 0.3,
+    "x": 830,
+    "y": 600
+   }
+  },
+  {
+   "vo": "Thirty days later, the leftover land became Colorado Territory. Denver left Kansas without moving an inch.",
+   "camera": {
+    "center": [
+     -103.5,
+     39.0
+    ],
+    "zoom": 75
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "admin1": [
+      "US-KS"
+     ],
+     "color": "green",
+     "fill": 0.55
+    },
+    {
+     "admin1": [
+      "US-CO"
+     ],
+     "color": "orange",
+     "fill": 0.75,
+     "pulse": true,
+     "label": "COLORADO TERRITORY",
+     "label_at": [
+      -105.6,
+      38.0
+     ],
+     "delay": 0.5
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -104.99,
+      39.74
+     ],
+     "label": "DENVER",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.2
+    }
+   ],
+   "stamp": {
+    "text": "FEB 1861",
+    "delay": 0.3,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "0 INCHES",
+    "sub": "DENVER NEVER MOVED",
+    "delay": 3.8,
+    "size": 150
+   }
+  },
+  {
+   "vo": "The boss it was named for? Already gone. Denver got the name, never the favor.",
+   "camera": {
+    "center": [
+     -104.0,
+     39.4
+    ],
+    "zoom": 95
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "admin1": [
+      "US-CO"
+     ],
+     "color": "orange",
+     "fill": 0.7
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -104.99,
+      39.74
+     ],
+     "label": "DENVER",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.2
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "👶",
+     "at": [
+      -104.6,
+      41.4
+     ],
+     "size": 200,
+     "motion": "bob",
+     "delay": 0.2
+    }
+   ],
+   "word": {
+    "text": "NAME ONLY",
+    "sub": "NEVER THE FAVOR",
+    "delay": 2.8,
+    "size": 150
+   }
+  },
+  {
+   "vo": "Follow for more places where the map got weird.",
+   "camera": {
+    "center": [
+     -100.7,
+     38.6
+    ],
+    "zoom": 66
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "admin1": [
+      "US-KS"
+     ],
+     "color": "green",
+     "fill": 0.6,
+     "label": "KANSAS",
+     "label_at": [
+      -98.4,
+      38.5
+     ]
+    },
+    {
+     "admin1": [
+      "US-CO"
+     ],
+     "color": "orange",
+     "fill": 0.75,
+     "pulse": true,
+     "label": "COLORADO",
+     "label_at": [
+      -105.5,
+      38.0
+     ]
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -104.99,
+      39.74
+     ],
+     "label": "DENVER",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.3
+    }
+   ]
+  }
+ ]
+}
