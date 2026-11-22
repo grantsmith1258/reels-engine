@@ -33,6 +33,7 @@ Colors: names `red, green, orange, blue, purple, teal, accent (yellow), white` o
 - Use `stamp` for dates the script says aloud.
 - Go wide for context, then close for the detail, alternate; don't stay at one zoom for 3 scenes.
 - Last scene (the follow line): pull out to the wide context with the main place pulsing.
+- **Color and variety (owner, 2026-11-22, after the Denver v1 was called "terrible"):** never one flat color. Most scenes show 3-4 colored places: the subject plus its neighbors, each in its own color (e.g. subject green, neighbors blue / purple / red / teal at fill ~0.4), kept identical across scenes so they stay on screen; put neighbor names in each scene's `labels` so they fit that camera. Never zoom so close that the frame becomes one flat fill or an empty dark map (Natural Earth has no streets or small rivers): for towns, stay at zoom ≤ ~170 and use pins. Every zoom-in must reveal something new, and something must move or appear every 2-3 seconds.
 - Never show something false: no invented borders, no guessed coordinates, no labels the script doesn't support. If the map can't show a claim accurately, show a pin, label or word card instead.
 
 ## 4. Check before rendering (required)
