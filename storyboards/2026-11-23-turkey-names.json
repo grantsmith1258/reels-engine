@@ -1,0 +1,889 @@
+{
+ "title": "Why the turkey is named after Turkey (and every country blames someone else)",
+ "style": "satellite",
+ "pitch": 28,
+ "min_pause": 0.6,
+ "outro_hold": 2.0,
+ "cover": {
+  "lines": [
+   {
+    "text": "IN TURKEY,",
+    "size": 140
+   },
+   {
+    "text": "TURKEYS",
+    "size": 300,
+    "color": "accent"
+   },
+   {
+    "text": "ARE \"INDIAN\"",
+    "size": 150
+   }
+  ],
+  "badge": "THE BIRD IS FROM MEXICO",
+  "camera": {
+   "center": [
+    50,
+    20
+   ],
+   "zoom": 13,
+   "pitch": 30
+  },
+  "y": 640
+ },
+ "scenes": [
+  {
+   "vo": "In Turkey, the turkey is called hindi. The bird from India.",
+   "camera": {
+    "center": [
+     56,
+     29
+    ],
+    "zoom": 15,
+    "pitch": 32,
+    "bearing": -4
+   },
+   "highlight": [
+    {
+     "iso": [
+      "TUR"
+     ],
+     "color": "red",
+     "fill": 0.38,
+     "pulse": true,
+     "label": "TURKEY",
+     "label_at": [
+      35,
+      39.3
+     ],
+     "delay": 0.0,
+     "draw": 0.7
+    },
+    {
+     "iso": [
+      "IND"
+     ],
+     "color": "orange",
+     "fill": 0.35,
+     "label": "INDIA",
+     "label_at": [
+      79,
+      17
+     ],
+     "delay": 1.6,
+     "draw": 0.8
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       35,
+       39
+      ],
+      [
+       58,
+       36
+      ],
+      [
+       78,
+       23
+      ]
+     ],
+     "color": "accent",
+     "delay": 1.3,
+     "draw": 1.4,
+     "scene_only": true
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "🦃",
+     "at": [
+      35,
+      41.5
+     ],
+     "size": 170,
+     "motion": "move",
+     "to": [
+      79,
+      24.5
+     ],
+     "move_time": 1.6,
+     "delay": 0.2
+    }
+   ],
+   "word": {
+    "text": "HİNDİ",
+    "sub": "TURKISH FOR TURKEY",
+    "delay": 0.6,
+    "size": 170
+   }
+  },
+  {
+   "vo": "And not one of the places it's named after is where it actually comes from. Not one.",
+   "camera": {
+    "center": [
+     10,
+     31
+    ],
+    "zoom": 3.3,
+    "pitch": 24,
+    "bearing": 0
+   },
+   "camera_move": 1.6,
+   "highlight": [
+    {
+     "iso": [
+      "TUR"
+     ],
+     "color": "red",
+     "fill": 0.7,
+     "delay": 0.2,
+     "draw": 0.6,
+     "width": 5
+    },
+    {
+     "iso": [
+      "IND"
+     ],
+     "color": "orange",
+     "fill": 0.7,
+     "delay": 0.6,
+     "draw": 0.6,
+     "width": 5
+    },
+    {
+     "iso": [
+      "PER"
+     ],
+     "color": "purple",
+     "fill": 0.7,
+     "delay": 1.0,
+     "draw": 0.6,
+     "width": 5
+    },
+    {
+     "iso": [
+      "NLD"
+     ],
+     "color": "blue",
+     "fill": 0.7,
+     "delay": 1.4,
+     "draw": 0.6,
+     "width": 5
+    },
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "teal",
+     "fill": 0.7,
+     "delay": 1.8,
+     "draw": 0.6,
+     "width": 5
+    },
+    {
+     "iso": [
+      "ETH"
+     ],
+     "color": "accent",
+     "fill": 0.7,
+     "delay": 2.2,
+     "draw": 0.6,
+     "width": 5
+    }
+   ],
+   "word": {
+    "text": "NOT ONE",
+    "sub": "IS WHERE IT COMES FROM",
+    "delay": 3.0,
+    "size": 160
+   }
+  },
+  {
+   "vo": "The turkey is from North America, first tamed in Mexico. In the 1500s, Spanish ships carried it to Europe.",
+   "camera": {
+    "center": [
+     -98,
+     26
+    ],
+    "zoom": 13,
+    "pitch": 34,
+    "bearing": 3
+   },
+   "camera_move": 1.7,
+   "highlight": [
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "green",
+     "fill": 0.22,
+     "delay": 0.2,
+     "draw": 1.2,
+     "label": "NORTH AMERICA",
+     "label_at": [
+      -100,
+      41
+     ]
+    },
+    {
+     "iso": [
+      "MEX"
+     ],
+     "color": "green",
+     "fill": 0.5,
+     "pulse": true,
+     "delay": 1.4,
+     "draw": 0.8,
+     "label": "MEXICO",
+     "label_at": [
+      -102.5,
+      23.5
+     ]
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -96,
+       20
+      ],
+      [
+       -75,
+       28
+      ],
+      [
+       -40,
+       36
+      ],
+      [
+       -6.2,
+       36.9
+      ]
+     ],
+     "color": "accent",
+     "delay": 4.0,
+     "draw": 2.4,
+     "scene_only": true
+    }
+   ],
+   "stamp": {
+    "text": "1500s",
+    "delay": 3.6,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "MEXICO",
+    "sub": "FIRST TAMED IN",
+    "delay": 1.8,
+    "size": 150
+   }
+  },
+  {
+   "vo": "The English already knew a similar bird: the guinea fowl, an African bird brought in through Turkey. So the new bird became a turkey too.",
+   "camera": {
+    "center": [
+     14,
+     33
+    ],
+    "zoom": 10,
+    "pitch": 30,
+    "bearing": -3
+   },
+   "camera_move": 1.7,
+   "highlight": [
+    {
+     "iso": [
+      "TUR"
+     ],
+     "color": "red",
+     "fill": 0.4,
+     "pulse": true,
+     "label": "TURKEY",
+     "label_at": [
+      35,
+      39.3
+     ],
+     "delay": 1.0
+    },
+    {
+     "iso": [
+      "GBR"
+     ],
+     "color": "#8ecae6",
+     "fill": 0.4,
+     "label": "ENGLAND",
+     "label_at": [
+      -2,
+      53
+     ],
+     "delay": 3.4
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      22,
+      16
+     ],
+     "text": "AFRICA",
+     "size": 46,
+     "delay": 0.3
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       18,
+       9
+      ],
+      [
+       30,
+       25
+      ],
+      [
+       29,
+       41
+      ]
+     ],
+     "color": "orange",
+     "delay": 0.6,
+     "draw": 1.4,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       29,
+       41
+      ],
+      [
+       12,
+       47
+      ],
+      [
+       -0.1,
+       51.5
+      ]
+     ],
+     "color": "orange",
+     "delay": 2.4,
+     "draw": 1.4,
+     "scene_only": true
+    }
+   ],
+   "word": {
+    "text": "GUINEA FOWL",
+    "sub": "AN AFRICAN BIRD",
+    "delay": 0.5,
+    "size": 140
+   }
+  },
+  {
+   "vo": "France called it dinde. From d'Inde: of India. Columbus thought he had reached the Indies.",
+   "camera": {
+    "center": [
+     -22,
+     37
+    ],
+    "zoom": 9,
+    "pitch": 28,
+    "bearing": 4
+   },
+   "camera_move": 1.5,
+   "highlight": [
+    {
+     "iso": [
+      "FRA"
+     ],
+     "color": "#ff7eb6",
+     "fill": 0.45,
+     "pulse": true,
+     "label": "FRANCE",
+     "label_at": [
+      2.4,
+      46.6
+     ],
+     "delay": 0.2
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -6.3,
+       37
+      ],
+      [
+       -40,
+       30
+      ],
+      [
+       -74,
+       22
+      ]
+     ],
+     "color": "accent",
+     "delay": 3.2,
+     "draw": 1.8,
+     "label": "THE \"INDIES\"",
+     "label_at": [
+      -60,
+      31
+     ],
+     "scene_only": true
+    }
+   ],
+   "word": {
+    "text": "DINDE",
+    "sub": "D'INDE = OF INDIA",
+    "delay": 0.9,
+    "size": 170
+   }
+  },
+  {
+   "vo": "The Dutch went further: kalkoen, after Calicut, a spice port on India's southwest coast.",
+   "camera": {
+    "center": [
+     40,
+     33
+    ],
+    "zoom": 11,
+    "pitch": 30,
+    "bearing": -3
+   },
+   "camera_move": 1.7,
+   "highlight": [
+    {
+     "iso": [
+      "NLD"
+     ],
+     "color": "blue",
+     "fill": 0.5,
+     "pulse": true,
+     "label": "NETHERLANDS",
+     "label_at": [
+      10,
+      56
+     ],
+     "delay": 0.2
+    },
+    {
+     "iso": [
+      "IND"
+     ],
+     "color": "orange",
+     "fill": 0.3,
+     "delay": 2.0
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       5.3,
+       52.2
+      ],
+      [
+       40,
+       38
+      ],
+      [
+       75.78,
+       11.25
+      ]
+     ],
+     "color": "blue",
+     "delay": 1.6,
+     "draw": 1.8,
+     "scene_only": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      75.78,
+      11.25
+     ],
+     "label": "CALICUT",
+     "side": "left",
+     "color": "orange",
+     "delay": 3.2
+    }
+   ],
+   "word": {
+    "text": "KALKOEN",
+    "sub": "AFTER CALICUT, INDIA",
+    "delay": 1.0,
+    "size": 160
+   }
+  },
+  {
+   "vo": "Portugal named it peru. After Peru, in South America. Closer. But still the wrong continent.",
+   "camera": {
+    "center": [
+     -48,
+     12
+    ],
+    "zoom": 7,
+    "pitch": 28,
+    "bearing": 3
+   },
+   "camera_move": 1.7,
+   "highlight": [
+    {
+     "iso": [
+      "PRT"
+     ],
+     "color": "#f4a261",
+     "fill": 0.55,
+     "pulse": true,
+     "label": "PORTUGAL",
+     "label_at": [
+      -8,
+      41.6
+     ],
+     "delay": 0.2
+    },
+    {
+     "iso": [
+      "PER"
+     ],
+     "color": "purple",
+     "fill": 0.45,
+     "label": "PERU",
+     "label_at": [
+      -75,
+      -9.5
+     ],
+     "delay": 1.6
+    },
+    {
+     "iso": [
+      "MEX",
+      "USA"
+     ],
+     "color": "green",
+     "fill": 0.3,
+     "label": "REAL HOME",
+     "label_at": [
+      -100,
+      33
+     ],
+     "delay": 4.6
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -8.5,
+       39.5
+      ],
+      [
+       -40,
+       10
+      ],
+      [
+       -75,
+       -9.5
+      ]
+     ],
+     "color": "purple",
+     "delay": 1.2,
+     "draw": 1.8,
+     "scene_only": true
+    }
+   ],
+   "word": {
+    "text": "PERU",
+    "sub": "WRONG CONTINENT",
+    "delay": 4.0,
+    "size": 170
+   }
+  },
+  {
+   "vo": "In Malaysia, it's ayam belanda. The Dutch chicken.",
+   "camera": {
+    "center": [
+     104,
+     4
+    ],
+    "zoom": 40,
+    "pitch": 34,
+    "bearing": -4
+   },
+   "camera_move": 1.7,
+   "highlight": [
+    {
+     "iso": [
+      "MYS"
+     ],
+     "color": "#c77dff",
+     "fill": 0.45,
+     "pulse": true,
+     "label": "MALAYSIA",
+     "label_at": [
+      101.9,
+      5.2
+     ],
+     "delay": 0.2
+    }
+   ],
+   "word": {
+    "text": "AYAM BELANDA",
+    "sub": "= DUTCH CHICKEN",
+    "delay": 1.2,
+    "size": 140
+   }
+  },
+  {
+   "vo": "And in Arabic, it's often dik rumi. The Roman rooster. In parts of the Levant, it's the Ethiopian bird.",
+   "camera": {
+    "center": [
+     28,
+     28
+    ],
+    "zoom": 13,
+    "pitch": 30,
+    "bearing": 3
+   },
+   "camera_move": 1.7,
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "teal",
+     "fill": 0.45,
+     "delay": 0.6
+    },
+    {
+     "iso": [
+      "SYR",
+      "LBN",
+      "JOR"
+     ],
+     "color": "#e9c46a",
+     "fill": 0.4,
+     "label": "LEVANT",
+     "label_at": [
+      37.5,
+      34.5
+     ],
+     "delay": 3.2
+    },
+    {
+     "iso": [
+      "ETH"
+     ],
+     "color": "accent",
+     "fill": 0.4,
+     "pulse": true,
+     "label": "ETHIOPIA",
+     "label_at": [
+      39.5,
+      9
+     ],
+     "delay": 4.6
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      12.5,
+      41.9
+     ],
+     "label": "ROME",
+     "side": "left",
+     "color": "teal",
+     "delay": 1.6
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       36.5,
+       33.5
+      ],
+      [
+       38,
+       20
+      ],
+      [
+       39.5,
+       10
+      ]
+     ],
+     "color": "accent",
+     "delay": 4.4,
+     "draw": 1.2,
+     "scene_only": true
+    }
+   ],
+   "word": {
+    "text": "DIK RUMI",
+    "sub": "= ROMAN ROOSTER",
+    "delay": 1.2,
+    "size": 160
+   }
+  },
+  {
+   "vo": "Turkey. India. Peru. The Netherlands. Rome. Even Ethiopia. The bird got named after everywhere except its real home.",
+   "camera": {
+    "center": [
+     -5,
+     30
+    ],
+    "zoom": 3.4,
+    "pitch": 22,
+    "bearing": 0
+   },
+   "camera_move": 1.7,
+   "highlight": [
+    {
+     "iso": [
+      "TUR"
+     ],
+     "color": "red",
+     "fill": 0.7,
+     "delay": 0.1,
+     "draw": 0.5,
+     "width": 5
+    },
+    {
+     "iso": [
+      "IND"
+     ],
+     "color": "orange",
+     "fill": 0.7,
+     "delay": 0.8,
+     "draw": 0.5,
+     "width": 5
+    },
+    {
+     "iso": [
+      "PER"
+     ],
+     "color": "purple",
+     "fill": 0.7,
+     "delay": 1.5,
+     "draw": 0.5,
+     "width": 5
+    },
+    {
+     "iso": [
+      "NLD"
+     ],
+     "color": "blue",
+     "fill": 0.7,
+     "delay": 2.2,
+     "draw": 0.5,
+     "width": 5
+    },
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "teal",
+     "fill": 0.7,
+     "delay": 2.9,
+     "draw": 0.5,
+     "width": 5
+    },
+    {
+     "iso": [
+      "ETH"
+     ],
+     "color": "accent",
+     "fill": 0.7,
+     "delay": 3.6,
+     "draw": 0.5,
+     "width": 5
+    },
+    {
+     "iso": [
+      "MEX",
+      "USA"
+     ],
+     "color": "green",
+     "fill": 0.7,
+     "pulse": true,
+     "delay": 5.0,
+     "draw": 0.9,
+     "label": "HOME",
+     "label_at": [
+      -100,
+      36
+     ],
+     "width": 5
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "🦃",
+     "at": [
+      -100,
+      24
+     ],
+     "size": 150,
+     "motion": "bob",
+     "delay": 5.2
+    }
+   ],
+   "word": {
+    "text": "EVERYWHERE",
+    "sub": "BUT ITS REAL HOME",
+    "delay": 4.6,
+    "size": 150
+   }
+  },
+  {
+   "vo": "Follow for more places where the map got weird.",
+   "camera": {
+    "center": [
+     -98,
+     30
+    ],
+    "zoom": 9,
+    "pitch": 36,
+    "bearing": -3
+   },
+   "camera_move": 1.6,
+   "highlight": [
+    {
+     "iso": [
+      "MEX",
+      "USA"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "pulse": true,
+     "label": "HOME",
+     "label_at": [
+      -100,
+      36
+     ]
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "🦃",
+     "at": [
+      -100,
+      24
+     ],
+     "size": 150,
+     "motion": "bob",
+     "delay": 0.0
+    }
+   ]
+  }
+ ]
+}

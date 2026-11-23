@@ -231,15 +231,46 @@ class Timeline:
         return 0
 
     def camera(self, t):
+        """(x, y, zoom, pitch_deg, bearing_deg). Satellite style adds a 3D tilt, fly-over arcs between
+        far-apart scenes (zoom out, travel, zoom in) and a slow drift so the camera never stands still."""
         i = self.scene_at(t)
         cur = self.scenes[i]["camera"]
         prev = self.scenes[i - 1]["camera"] if i > 0 else cur
-        move = self.scenes[i].get("camera_move", 1.1)
-        k = ease_io((t - self.starts[i]) / move)
+        sat = self.sb.get("style") == "satellite"
+        move = self.scenes[i].get("camera_move", 1.5 if sat else 1.1)
+        u = clamp((t - self.starts[i]) / move)
+        k = ease_io(u)
         (x0, y0), (x1, y1) = merc(*prev["center"]), merc(*cur["center"])
-        z = math.exp(math.log(prev["zoom"]) * (1 - k) + math.log(cur["zoom"]) * k)
-        z *= 1 + 0.035 * clamp((t - self.starts[i]) / max(0.1, self.ends[i] - self.starts[i]))
-        return x0 + (x1 - x0) * k, y0 + (y1 - y0) * k, z
+        lz0, lz1 = math.log(prev["zoom"]), math.log(cur["zoom"])
+        if not sat:
+            z = math.exp(lz0 * (1 - k) + lz1 * k)
+            z *= 1 + 0.035 * clamp((t - self.starts[i]) / max(0.1, self.ends[i] - self.starts[i]))
+            return x0 + (x1 - x0) * k, y0 + (y1 - y0) * k, z, 0.0, 0.0
+        P0 = self.sb.get("pitch", 28)
+        p0, p1 = prev.get("pitch", P0), cur.get("pitch", P0)
+        b0, b1 = prev.get("bearing", 0.0), cur.get("bearing", 0.0)
+        # fly-over: when the move is long compared with the frame, pull out mid-flight
+        dist = math.hypot(x1 - x0, y1 - y0) * min(prev["zoom"], cur["zoom"])
+        bump = clamp(math.log(max(dist, 1) / (W * 0.7)) * 0.9, 0, 2.4) if i > 0 else 0.0
+        kp = k
+        if lz1 > lz0 + 0.3:      # zooming in: travel early
+            kp = ease_io(clamp(u * 1.35))
+        elif lz0 > lz1 + 0.3:    # zooming out: travel late
+            kp = ease_io(clamp(u * 1.35 - 0.35))
+        arc = math.sin(math.pi * k)
+        z = math.exp(lz0 * (1 - k) + lz1 * k - bump * arc)
+        pitch = p0 + (p1 - p0) * k + (8 + 4 * bump) * arc * (1 if bump > 0.05 else 0.4)
+        bearing = b0 + (b1 - b0) * k
+        # drift inside the scene
+        frac = clamp((t - self.starts[i]) / max(0.1, self.ends[i] - self.starts[i]))
+        z *= 1 + self.scenes[i].get("drift_zoom", 0.07) * ease_io(frac)
+        bearing += self.scenes[i].get("drift_rotate", 2.5 if i % 2 else -2.5) * (frac - 0.5)
+        return x0 + (x1 - x0) * kp, y0 + (y1 - y0) * kp, z, pitch, bearing
+
+    def speed(self, t):
+        """Rough screen speed of the camera (px per frame), to add motion blur on fast moves."""
+        a, b = self.camera(t), self.camera(t + 1 / FPS)
+        return math.hypot(a[0] - b[0], a[1] - b[1]) * (a[2] + b[2]) / 2 + abs(math.log(b[2] / a[2])) * W
 
 
 def make_captions(tl):
@@ -723,6 +754,488 @@ class Renderer:
                     y += 78
 
 
+# ---------------------------------------------------------------- satellite style
+D_PERSP = 3000.0     # perspective distance (px): smaller = stronger 3D
+
+
+def smooth(x, a, b):
+    x = clamp((x - a) / (b - a))
+    return x * x * (3 - 2 * x)
+
+
+def arr_surface(arr):
+    h, w = arr.shape[:2]
+    return cairo.ImageSurface.create_for_data(memoryview(arr), cairo.FORMAT_ARGB32, w, h, w * 4)
+
+
+class SatRenderer(Renderer):
+    """Real satellite imagery + terrain, a tilted 3D camera, glowing drawn-on borders and card labels.
+    Storyboard: "style": "satellite", optional "pitch" (default 28 deg) and per-scene camera
+    "pitch"/"bearing", "drift_zoom", "drift_rotate"."""
+
+    def __init__(self, tl, work):
+        super().__init__(tl)
+        import basemap as bm
+        import cv2
+        self.cv2 = cv2
+        self.levels = []
+        img, box = bm.world_level()
+        # world: wrap 180 degrees on each side (pacific crossings) and pad the poles with deep ocean
+        x0, x1, y0, y1, res = box
+        q = int(180 * res)
+        img = np.concatenate([img[:, -q:], img, img[:, :q]], axis=1)
+        pad = int(40 * res)
+        deep = np.array([6, 18, 36], np.float32)
+        img = img.astype(np.float32)
+        fr = 60
+        ramp = (np.arange(fr, dtype=np.float32) / fr)[:, None, None]
+        img[:fr] = img[:fr] * ramp + deep * (1 - ramp)
+        img[-fr:] = img[-fr:] * ramp[::-1] + deep * (1 - ramp[::-1])
+        img = img.astype(np.uint8)
+        sea = np.zeros((pad, img.shape[1], 3), np.uint8); sea[:] = deep; top = sea
+        img = np.concatenate([sea, img, top], axis=0)
+        self.levels.append(self._prep(img, (x0 - 180, x1 + 180, y0 - 40, y1 + 40, res), feather=False))
+        views = []
+        T = np.arange(0, tl.total, 0.2)
+        for t in T:
+            cx, cy, z, p, b = tl.camera(t)
+            _, (gx0, gx1, gy0, gy1) = self._ground_box(p)
+            r = max(abs(gx0), abs(gx1), abs(gy0), abs(gy1)) / z
+            views.append((cx, cy, r, r, z))
+        for res, b in bm.plan_levels(views, margin=1.1):
+            key = hashlib.md5(json.dumps([res] + [round(v, 3) for v in b]).encode()).hexdigest()[:12]
+            path = os.path.join(work, "levels", f"L{res}_{key}.npz")
+            print(f"  satellite level {res} px/deg: lon {b[0]:.2f}..{b[1]:.2f}", flush=True)
+            img, box = bm.build_level(b[0], b[1], b[2], b[3], res, path)
+            self.levels.append(self._prep(img, box))
+
+    def _prep(self, img, box, feather=True):
+        cv2 = self.cv2
+        h, w = img.shape[:2]
+        a = np.full((h, w), 255, np.uint8)
+        if feather:
+            f = max(4, min(h, w) // 12)
+            ramp = np.minimum(np.arange(w)[None, :], np.arange(w)[::-1][None, :])
+            ramp = np.minimum(ramp, np.minimum(np.arange(h)[:, None], np.arange(h)[::-1][:, None]))
+            a = (np.clip(ramp / f, 0, 1) * 255).astype(np.uint8)
+        bgra = np.dstack([img[..., 2], img[..., 1], img[..., 0], a])
+        mips = [bgra]
+        while min(mips[-1].shape[:2]) > 64:
+            mips.append(cv2.pyrDown(mips[-1]))
+        return dict(box=box, mips=mips)
+
+    # -------------------------------------------- projection
+    def _ground_box(self, pitch):
+        sp, cp = math.sin(math.radians(pitch)), math.cos(math.radians(pitch))
+        gys, gxs = [], []
+        for sx, sy in ((0, 0), (W, 0), (0, H), (W, H)):
+            X, Y = sx - W / 2, MAP_CY - sy
+            den = cp * D_PERSP - Y * sp
+            gy = Y * D_PERSP / den if den > 50 else 3 * H
+            gy = min(gy, 3 * H)
+            gx = X * (D_PERSP + gy * sp) / D_PERSP
+            gys.append(gy); gxs.append(gx)
+        return (sp, cp), (min(gxs) - 8, max(gxs) + 8, min(gys) - 8, max(gys) + 8)
+
+    def set_view(self, cam):
+        cx, cy, z, pitch, bearing = cam
+        (sp, cp), (gx0, gx1, gy0, gy1) = self._ground_box(pitch)
+        br = math.radians(bearing)
+        self.v = dict(cx=cx, cy=cy, z=z, sp=sp, cp=cp, cb=math.cos(br), sb=math.sin(br),
+                      gx0=gx0, gy1=gy1, CW=int(math.ceil(gx1 - gx0)), CH=int(math.ceil(gy1 - gy0)))
+        D = D_PERSP
+        self.v["H"] = np.array([[D, -(W / 2) * sp, (W / 2) * (D + sp * gy1) + D * gx0],
+                                [0, cp * D - MAP_CY * sp, MAP_CY * (D + sp * gy1) - cp * D * gy1],
+                                [0, -sp, D + sp * gy1]], np.float64)
+
+    def ground(self, xs, ys):
+        v = self.v
+        dx, dy = (np.asarray(xs) - v["cx"]), (np.asarray(ys) - v["cy"])
+        gx = (dx * v["cb"] - dy * v["sb"]) * v["z"]
+        gy = (dx * v["sb"] + dy * v["cb"]) * v["z"]
+        return gx, gy
+
+    def P(self, xs, ys):
+        gx, gy = self.ground(xs, ys)
+        return gx - self.v["gx0"], self.v["gy1"] - gy
+
+    def S(self, x, y):
+        gx, gy = self.ground(x, y)
+        f = D_PERSP / max(1.0, D_PERSP + gy * self.v["sp"])
+        return W / 2 + gx * f, MAP_CY - gy * self.v["cp"] * f, f
+
+    # -------------------------------------------- base imagery
+    def base(self):
+        v, cv2 = self.v, self.cv2
+        CW, CH, z = v["CW"], v["CH"], v["z"]
+        out = None
+        for li, L in enumerate(self.levels):
+            x0, x1, y0, y1, res = L["box"]
+            ratio = res / z
+            wgt = 1.0 if li == 0 else smooth(ratio, 0.22, 0.5) * (1 - smooth(ratio, 10, 20))
+            if wgt <= 0.01:
+                continue
+            m = int(clamp(math.floor(math.log2(max(ratio, 1e-6))), 0, len(L["mips"]) - 1))
+            img = L["mips"][m]; r = res / 2 ** m
+            cb, sb = v["cb"], v["sb"]
+            a11, a12 = r * cb / z, -r * sb / z
+            a13 = r * (v["cx"] - x0 + (cb * v["gx0"] + sb * v["gy1"]) / z)
+            b11, b12 = r * sb / z, r * cb / z
+            b13 = r * (y1 - v["cy"] - (-sb * v["gx0"] + cb * v["gy1"]) / z)
+            M = np.array([[a11, a12, a13], [b11, b12, b13]], np.float64)
+            # quick reject: is any of the canvas inside this level?
+            cs = np.array([[0, 0, 1], [CW, 0, 1], [0, CH, 1], [CW, CH, 1]], float) @ M.T
+            if cs[:, 0].max() < 0 or cs[:, 0].min() > img.shape[1] or cs[:, 1].max() < 0 or cs[:, 1].min() > img.shape[0]:
+                continue
+            warped = cv2.warpAffine(img, M, (CW, CH), flags=cv2.INTER_LINEAR | cv2.WARP_INVERSE_MAP,
+                                    borderMode=cv2.BORDER_CONSTANT if li else cv2.BORDER_REPLICATE, borderValue=(0, 0, 0, 0))
+            if out is None:
+                out = warped[..., :3].astype(np.float32)
+                continue
+            al = warped[..., 3:4].astype(np.float32) / 255 * wgt
+            out = out * (1 - al) + warped[..., :3].astype(np.float32) * al
+        return out
+
+    def map_layer(self, t):
+        cam = self.tl.camera(t)
+        self.set_view(cam)
+        v, cv2 = self.v, self.cv2
+        rgb = self.base()
+        # gentle grade: a little contrast, cooler shadows
+        rgb = np.clip((rgb - 128) * 1.06 + 124, 0, 255)
+        canvas = np.empty((v["CH"], v["CW"], 4), np.uint8)
+        canvas[..., :3] = rgb.astype(np.uint8); canvas[..., 3] = 255
+        surf = arr_surface(canvas)
+        ctx = cairo.Context(surf)
+        self.draw_admin(ctx)
+        self.draw_highlights_sat(ctx, t)
+        self.draw_routes_sat(ctx, t)
+        surf.flush()
+        scr = cv2.warpPerspective(canvas, v["H"], (W, H), flags=cv2.INTER_LINEAR,
+                                  borderMode=cv2.BORDER_CONSTANT, borderValue=(40, 26, 14, 255))
+        # aerial haze toward the far edge when tilted
+        if v["sp"] > 0.05:
+            yy = np.linspace(0, 1, H, dtype=np.float32)[:, None, None]
+            hz = (1 - smooth_arr(yy, 0.0, 0.42)) * 0.55 * min(1, v["sp"] / 0.5)
+            haze = np.array([200, 170, 140], np.float32)   # BGR: pale blue-grey sky haze
+            scr[..., :3] = (scr[..., :3] * (1 - hz) + haze * hz).astype(np.uint8)
+        return scr
+
+    # -------------------------------------------- map overlays (on the ground canvas)
+    def path_rings(self, ctx, rings, closed=True):
+        n = 0
+        for a, x0, x1, y0, y1 in rings:
+            if (x1 - x0) * self.v["z"] < 1.5 and (y1 - y0) * self.v["z"] < 1.5:
+                continue
+            u, w = self.P(a[:, 0], a[:, 1])
+            ctx.move_to(u[0], w[0])
+            for X, Y in zip(u[1:].tolist(), w[1:].tolist()):
+                ctx.line_to(X, Y)
+            if closed:
+                ctx.close_path()
+            n += float(np.hypot(np.diff(u), np.diff(w)).sum())
+        return n
+
+    def draw_admin(self, ctx):
+        if self.tl.sb.get("country_borders", True):
+            L = self.hi if self.v["z"] >= 18 else self.lo
+            ctx.new_path()
+            cx, cy, z = self.v["cx"], self.v["cy"], self.v["z"]
+            R = (self.v["CW"] + self.v["CH"]) / z
+            for rings in L.values():
+                for r in rings:
+                    if r[2] < cx - R or r[1] > cx + R or r[4] < cy - R or r[3] > cy + R:
+                        continue
+                    self.path_rings(ctx, [r])
+            ctx.set_line_join(cairo.LINE_JOIN_ROUND)
+            ctx.set_source_rgba(0, 0, 0, 0.25); ctx.set_line_width(2.6); ctx.stroke_preserve()
+            ctx.set_source_rgba(1, 1, 1, 0.38); ctx.set_line_width(1.1); ctx.stroke()
+        if not self.adm_lines or self.v["z"] < 8:
+            return
+        ctx.new_path(); self.path_rings(ctx, self.adm_lines)
+        ctx.set_line_join(cairo.LINE_JOIN_ROUND)
+        ctx.set_source_rgba(0, 0, 0, 0.35); ctx.set_line_width(3.2); ctx.stroke_preserve()
+        ctx.set_source_rgba(1, 1, 1, 0.55); ctx.set_line_width(1.3); ctx.stroke()
+
+    def rings_all(self, it):
+        L = self.hi if self.v["z"] >= 18 else self.lo
+        out = []
+        for iso in it.get("iso", []):
+            out += L.get(iso, [])
+        for code in it.get("admin1", []):
+            out += self.adm.get(code, [])
+        if it.get("shape"):
+            out += self.shapes[json.dumps(it["shape"])]
+        return out
+
+    def draw_highlights_sat(self, ctx, t):
+        for h in self.tl.highlights:
+            it = h["item"]
+            a = window(t, h["t_in"], h["t_out"], 0.5, 0.5)
+            residual = it.get("residual", 0.0)
+            if t > h["t_out"] and residual:
+                a = max(a, residual * ease_out((t - h["t_out"]) / 0.5))
+            if a <= 0.001:
+                continue
+            col = hexc(it.get("color", "accent"))
+            rings = self.rings_all(it)
+            ctx.new_path(); per = self.path_rings(ctx, rings)
+            path = ctx.copy_path()
+            prog = ease_io((t - h["t_in"]) / it.get("draw", 1.0))
+            pulse = 0.8 + 0.2 * math.sin((t - h["t_in"]) * 4) if it.get("pulse") else 1.0
+            ctx.set_line_join(cairo.LINE_JOIN_ROUND); ctx.set_line_cap(cairo.LINE_CAP_ROUND)
+            # raised look: soft shadow under the shape
+            if it.get("raise", True):
+                ctx.save(); ctx.translate(0, 9)
+                ctx.new_path(); ctx.append_path(path); ctx.set_source_rgba(0, 0, 0, 0.32 * a * prog); ctx.fill(); ctx.restore()
+            ctx.new_path(); ctx.append_path(path)
+            ctx.set_source_rgba(*col, it.get("fill", 0.3) * a * (0.35 + 0.65 * prog)); ctx.fill()
+            dash = [max(0.01, per * prog), per * 2 + 10]
+            light = [min(1, c * 1.25 + 0.2) for c in col]
+            for w_, al in ((30, 0.07), (18, 0.12), (10, 0.22)):
+                ctx.new_path(); ctx.append_path(path); ctx.set_dash(dash)
+                ctx.set_source_rgba(*col, al * a * pulse); ctx.set_line_width(w_); ctx.stroke()
+            ctx.new_path(); ctx.append_path(path); ctx.set_dash(dash)
+            ctx.set_source_rgba(*light, 0.98 * a); ctx.set_line_width(it.get("width", 4.0)); ctx.stroke()
+            ctx.set_dash([])
+
+    def draw_routes_sat(self, ctx, t):
+        for r in self.tl.routes:
+            if t < r["t0"]:
+                continue
+            fade = 1.0
+            if r["t_end"] is not None:
+                fade = 1 - ease_out((t - r["t_end"]) / 0.4) if t > r["t_end"] else 1.0
+                if fade <= 0:
+                    continue
+            p = ease_io((t - r["t0"]) / r["dur"])
+            n = max(2, int(np.searchsorted(r["frac"], p)))
+            pts = r["pts"][:n]
+            u, w = self.P(pts[:, 0], pts[:, 1])
+            ctx.new_path(); ctx.move_to(u[0], w[0])
+            for X, Y in zip(u[1:].tolist(), w[1:].tolist()):
+                ctx.line_to(X, Y)
+            path = ctx.copy_path()
+            ctx.set_line_cap(cairo.LINE_CAP_ROUND); ctx.set_line_join(cairo.LINE_JOIN_ROUND)
+            ctx.new_path(); ctx.append_path(path); ctx.set_source_rgba(0, 0, 0, 0.35 * fade); ctx.set_line_width(r["width"] * 2.6); ctx.stroke()
+            for w_, al in ((r["width"] * 4.5, 0.10), (r["width"] * 2.4, 0.22)):
+                ctx.new_path(); ctx.append_path(path); ctx.set_source_rgba(*r["color"], al * fade); ctx.set_line_width(w_); ctx.stroke()
+            ctx.new_path(); ctx.append_path(path)
+            if r["head"]:
+                ctx.set_dash([18, 12], -t * 60)
+            ctx.set_line_width(r["width"] * 1.2); ctx.set_source_rgba(*[min(1, c * 1.2 + 0.15) for c in r["color"]], fade); ctx.stroke()
+            ctx.set_dash([])
+            r["_head"] = (pts[-1], p, fade)
+
+    # -------------------------------------------- billboards (screen space, after the 3D warp)
+    def tag(self, ctx, text, x, y, col, a, side="right", size=34, pop=1.0):
+        """Frosted dark card with a coloured edge, anchored at (x, y)."""
+        if a <= 0:
+            return
+        ctx.save()
+        ctx.select_font_face("Inter", cairo.FONT_SLANT_NORMAL, cairo.FONT_WEIGHT_BOLD); ctx.set_font_size(size)
+        sp = size * 0.06
+        tw = sum(ctx.text_extents(c).x_advance for c in text) + sp * (len(text) - 1)
+        bw, bh = tw + size * 1.1, size * 1.65
+        if side == "right":
+            bx, by = x + 22, y - bh / 2
+        elif side == "left":
+            bx, by = x - 22 - bw, y - bh / 2
+        elif side == "above":
+            bx, by = x - bw / 2, y - 26 - bh
+        else:
+            bx, by = x - bw / 2, y + 26
+        ctx.translate(x, y); ctx.scale(pop, pop); ctx.translate(-x, -y)
+        r = bh * 0.28
+
+        def rr(x0, y0, w0, h0):
+            ctx.new_path()
+            ctx.arc(x0 + w0 - r, y0 + r, r, -math.pi / 2, 0); ctx.arc(x0 + w0 - r, y0 + h0 - r, r, 0, math.pi / 2)
+            ctx.arc(x0 + r, y0 + h0 - r, r, math.pi / 2, math.pi); ctx.arc(x0 + r, y0 + r, r, math.pi, 3 * math.pi / 2)
+            ctx.close_path()
+        rr(bx + 3, by + 6, bw, bh); ctx.set_source_rgba(0, 0, 0, 0.35 * a); ctx.fill()
+        rr(bx, by, bw, bh); ctx.set_source_rgba(0.04, 0.06, 0.09, 0.78 * a); ctx.fill_preserve()
+        ctx.set_source_rgba(1, 1, 1, 0.16 * a); ctx.set_line_width(1.5); ctx.stroke()
+        ctx.rectangle(bx + 2, by + bh * 0.2, 6, bh * 0.6); ctx.set_source_rgba(*col, a); ctx.fill()
+        cx = bx + size * 0.62
+        for ch in text:
+            ctx.move_to(cx, by + bh / 2 + size * 0.36); ctx.text_path(ch); cx += ctx.text_extents(ch).x_advance + sp
+        ctx.set_source_rgba(1, 1, 1, a); ctx.fill()
+        ctx.restore()
+
+    def place_text(self, ctx, text, x, y, size, col, a, pop=1.0):
+        """Place-name text on the map: letter-spaced, soft shadow."""
+        if a <= 0:
+            return
+        self.text(ctx, text, x + 2, y + 4, size, "Inter", (0, 0, 0), a * 0.55, spacing=size * 0.16, pop=pop,
+                  weight=cairo.FONT_WEIGHT_BOLD)
+        self.text(ctx, text, x, y, size, "Inter", col, a, spacing=size * 0.16, outline=(0, 0, 0, 0.35), pop=pop,
+                  weight=cairo.FONT_WEIGHT_BOLD, stroke_k=0.08)
+
+    def draw_billboards(self, ctx, t):
+        # highlight labels
+        for h in self.tl.highlights:
+            it = h["item"]
+            if not it.get("label") or t > h["t_out"] + 0.5:
+                continue
+            la = window(t, h["t_in"] + 0.5, h["t_out"], 0.35, 0.35)
+            X, Y, f = self.S(*merc(*it["label_at"]))
+            self.place_text(ctx, it["label"], X, Y, 44 * it.get("label_scale", 1) * (0.75 + 0.25 * f),
+                            (1, 1, 1), la, pop=0.85 + 0.15 * ease_back((t - h["t_in"] - 0.5) / 0.4))
+        # route heads
+        for r in self.tl.routes:
+            hd = r.get("_head")
+            if not hd or not r["head"]:
+                continue
+            (x, y), p, fade = hd
+            if p >= 1 or fade <= 0:
+                continue
+            X, Y, f = self.S(x, y)
+            for rad, al in ((26, 0.16), (15, 0.35)):
+                ctx.arc(X, Y, rad, 0, 2 * math.pi); ctx.set_source_rgba(*r["color"], al * fade); ctx.fill()
+            ctx.arc(X, Y, 8, 0, 2 * math.pi); ctx.set_source_rgba(1, 1, 1, fade); ctx.fill()
+        for r in self.tl.routes:
+            if r["label"] and t >= r["t0"]:
+                p = ease_io((t - r["t0"]) / r["dur"])
+                if p > 0.6 and (r["t_end"] is None or t < r["t_end"] + 0.4):
+                    X, Y, f = self.S(*merc(*r["label_at"]))
+                    self.tag(ctx, r["label"], X, Y, r["color"], ease_out((p - 0.6) / 0.4), side="above", size=32)
+        # pins
+        for h in self.tl.pins:
+            it = h["item"]
+            a = window(t, h["t_in"], h["t_out"])
+            if a <= 0:
+                continue
+            X, Y, f = self.S(*merc(*it["at"]))
+            col = hexc(it.get("color", "accent"))
+            ph = ((t - h["t_in"]) % 1.4) / 1.4
+            ctx.new_path(); ctx.arc(X, Y, 12 + 40 * ph, 0, 2 * math.pi); ctx.set_source_rgba(*col, 0.6 * (1 - ph) * a); ctx.set_line_width(3); ctx.stroke()
+            s = ease_back((t - h["t_in"]) / 0.4)
+            ctx.arc(X, Y + 4, 13 * s, 0, 2 * math.pi); ctx.set_source_rgba(0, 0, 0, 0.4 * a); ctx.fill()
+            ctx.arc(X, Y, 13 * s, 0, 2 * math.pi); ctx.set_source_rgba(1, 1, 1, a); ctx.fill()
+            ctx.arc(X, Y, 8 * s, 0, 2 * math.pi); ctx.set_source_rgba(*col, a); ctx.fill()
+            if it.get("label"):
+                self.tag(ctx, it["label"], X, Y, col, a, side=it.get("side", "right"), size=it.get("size", 34),
+                         pop=0.8 + 0.2 * ease_back((t - h["t_in"] - 0.1) / 0.4))
+        # free labels (country / sea names)
+        for h in self.tl.labels:
+            it = h["item"]
+            a = window(t, h["t_in"], h["t_out"])
+            if a <= 0:
+                continue
+            X, Y, f = self.S(*merc(*it["at"]))
+            self.place_text(ctx, it["text"], X, Y, it.get("size", 40) * (0.8 + 0.2 * f), hexc(it.get("color", "white")),
+                            a * it.get("alpha", 1), pop=0.9 + 0.1 * ease_back((t - h["t_in"]) / 0.35))
+
+    def to_screen(self, cam, x, y):     # used by pictures
+        X, Y, f = self.S(x, y)
+        return X, Y
+
+    def draw_words(self, ctx, t):
+        for h in self.tl.words:
+            it = h["item"]
+            a = window(t, h["t_in"], h["t_out"], 0.25, 0.3)
+            if a <= 0:
+                continue
+            y = it.get("y", 1440)
+            g = cairo.RadialGradient(0, 0, 30, 0, 0, 560)
+            g.add_color_stop_rgba(0, 0, 0, 0, 0.5 * a); g.add_color_stop_rgba(1, 0, 0, 0, 0)
+            ctx.save(); ctx.translate(W / 2, y - 30); ctx.scale(1, 0.42); ctx.set_source(g); ctx.paint(); ctx.restore()
+        super().draw_words(ctx, t)
+
+    def frame(self, t):
+        sp = self.tl.speed(t)
+        nsub = 3 if sp > 26 else 1
+        if nsub == 1:
+            scr = self.map_layer(t)
+        else:
+            acc = None
+            for k in range(nsub):
+                lay = self.map_layer(t + (k - 1) / (FPS * 2.2)).astype(np.float32)
+                acc = lay if acc is None else acc + lay
+            scr = (acc / nsub).astype(np.uint8)
+        self.set_view(self.tl.camera(t))
+        scr = np.ascontiguousarray(scr)
+        surf = arr_surface(scr)
+        ctx = cairo.Context(surf)
+        cam = self.tl.camera(t)
+        self.draw_billboards(ctx, t)
+        self.draw_vignette(ctx)
+        self.draw_headlines(ctx, t)
+        self.draw_stamps(ctx, t)
+        self.draw_pictures(ctx, cam, t)
+        self.draw_words(ctx, t)
+        self.draw_captions(ctx, t)
+        ctx.save(); ctx.scale(2, 2); ctx.set_source_surface(self.grain[int(t * FPS) % 4][0], 0, 0); ctx.paint_with_alpha(0.6); ctx.restore()
+        surf.flush()
+        out = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H)
+        c2 = cairo.Context(out); c2.set_source_surface(surf, 0, 0); c2.paint()
+        return out
+
+    def draw_vignette(self, ctx):
+        g = cairo.RadialGradient(W / 2, H * 0.55, H * 0.3, W / 2, H * 0.55, H * 0.8)
+        g.add_color_stop_rgba(0, 0, 0, 0, 0); g.add_color_stop_rgba(1, 0, 0, 0, 0.55)
+        ctx.set_source(g); ctx.paint()
+        for y0, y1, flip, al in ((0, 520, False, 0.7), (1380, H, True, 0.55)):
+            g = cairo.LinearGradient(0, y0, 0, y1)
+            g.add_color_stop_rgba(1 if flip else 0, 0.01, 0.02, 0.04, al)
+            g.add_color_stop_rgba(0 if flip else 1, 0.01, 0.02, 0.04, 0)
+            ctx.rectangle(0, y0, W, y1 - y0); ctx.set_source(g); ctx.fill()
+
+    def cover(self):
+        cv = self.tl.sb["cover"]
+        i = cv.get("scene", 0)
+        s0, s1 = self.tl.starts[i], self.tl.ends[i]
+        t = s0 + min(cv.get("at", 2.5), max(0.1, s1 - s0 - 0.3))
+        cam = list(self.tl.camera(t))
+        if cv.get("camera"):
+            c = cv["camera"]; X, Y = merc(*c["center"])
+            cam = [X, Y, c["zoom"], c.get("pitch", cam[3]), c.get("bearing", 0.0)]
+        orig = self.tl.camera
+        self.tl.camera = lambda tt: tuple(cam)
+        try:
+            scr = np.ascontiguousarray(self.map_layer(t))
+        finally:
+            self.tl.camera = orig
+        surf = arr_surface(scr)
+        ctx = cairo.Context(surf)
+        if cv.get("map_extras", False):
+            self.draw_billboards(ctx, t)
+        self.draw_vignette(ctx)
+        lines = cv["lines"]
+        gaps = [ln.get("size", 150) * 1.04 for ln in lines]
+        block = sum(gaps)
+        yc = cv.get("y", 900)
+        y = yc - block / 2
+        g = cairo.LinearGradient(0, y - 220, 0, y + block + 220)
+        for k, a in ((0, 0), (0.3, 0.5), (0.7, 0.5), (1, 0)):
+            g.add_color_stop_rgba(k, 0.01, 0.02, 0.04, a)
+        ctx.rectangle(0, y - 220, W, block + 440); ctx.set_source(g); ctx.fill()
+        for ln, gap in zip(lines, gaps):
+            size = ln.get("size", 150)
+            self.text(ctx, ln["text"], W / 2, y + gap / 2, size, "Anton", hexc(ln.get("color", "white")), 1.0, spacing=4,
+                      outline=(0, 0, 0, 1.0), maxw=1000, stroke_k=0.14)
+            y += gap
+        if cv.get("badge"):
+            col = hexc(cv.get("badge_color", "#e8483b"))
+            ctx.save(); ctx.translate(W / 2, y + 120); ctx.rotate(math.radians(-4))
+            ctx.select_font_face("Anton"); ctx.set_font_size(78)
+            tw = ctx.text_extents(cv["badge"]).x_advance
+            bw, bh = min(1040, tw + 80), 128
+            ctx.rectangle(-bw / 2, -bh / 2, bw, bh); ctx.set_source_rgba(*col, 0.95); ctx.fill()
+            ctx.move_to(-tw / 2, 29); ctx.text_path(cv["badge"]); ctx.set_source_rgb(1, 1, 1); ctx.fill()
+            ctx.restore()
+        surf.flush()
+        out = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H)
+        c2 = cairo.Context(out); c2.set_source_surface(surf, 0, 0); c2.paint()
+        return out
+
+
+def smooth_arr(x, a, b):
+    x = np.clip((x - a) / (b - a), 0, 1)
+    return x * x * (3 - 2 * x)
+
+
 # ---------------------------------------------------------------- audio
 def kokoro_voice(sb, cache_dir):
     from kokoro_onnx import Kokoro
@@ -788,6 +1301,12 @@ def mix_audio(tl, voice, path):
     for h in tl.words:
         tt = np.arange(int(0.12 * SR)) / SR
         add(np.sin(2 * np.pi * np.cumsum(500 + 700 * tt / 0.12) / SR) * np.exp(-tt / 0.04) * 0.2, h["t_in"])
+    for h in tl.pins + tl.labels:
+        tt = np.arange(int(0.09 * SR)) / SR
+        add(np.sin(2 * np.pi * (900 + 600 * tt / 0.09) * tt) * np.exp(-tt / 0.025) * 0.08, h["t_in"])
+    for h in tl.highlights:
+        tt = np.arange(int(0.6 * SR)) / SR
+        add(bandnoise(len(tt), 3000, 9000, rng) * np.sin(np.pi * tt / 0.6) * 0.02, h["t_in"])
     for r in tl.routes:
         tt = np.arange(int(r["dur"] * SR)) / SR
         add(bandnoise(len(tt), 2000, 7000, rng) * np.sin(np.pi * tt / r["dur"]) * 0.025, r["t0"])
@@ -846,7 +1365,7 @@ def main():
     sb, tl, voice = build(sbp, audio)
     work = os.path.join(ROOT, "build", os.path.splitext(os.path.basename(sbp))[0])
     os.makedirs(work, exist_ok=True)
-    R = Renderer(tl)
+    R = SatRenderer(tl, work) if sb.get("style") == "satellite" else Renderer(tl)
     print(f"duration {tl.total:.1f}s, {len(sb['scenes'])} scenes", flush=True)
     for i, (s, e) in enumerate(zip(tl.starts, tl.ends)):
         print(f"  scene {i + 1}: {s:5.1f}-{e:5.1f}s  {sb['scenes'][i]['vo'][:60]}")

@@ -3,6 +3,16 @@
 You turn a finished, fact-checked script into `storyboards/<slug>.json`, render previews, check them, then render the video.
 Style: animated dark map explainer. Every scene is the map; the story is told by camera moves, highlighted places, routes, pins, date stamps and big key-word cards. Captions of the full script appear automatically at the top middle.
 
+## 0. Satellite style (default since 2026-11-23)
+Owner asked for more realistic, less "blank map" visuals. New storyboards set top-level `"style": "satellite"`:
+- **Real imagery**: cloud-free Sentinel-2 satellite mosaics (wide and regional views) and ESA WorldCover 10 m composites (towns, rivers), with terrain relief and depth-tinted oceans. Built automatically from the scene cameras on the first preview (a few minutes; cached in `data/sat_cache` and `build/<storyboard>/levels`). Credit line for Sources: "Imagery: contains modified Copernicus Sentinel data (2020-2021), Sentinel Hub / ESA WorldCover (CC BY 4.0). Terrain: AWS Terrain Tiles. Borders: Natural Earth."
+- **3D camera**: the map is tilted (`"pitch"`, default 28 degrees; per scene `camera.pitch`, `camera.bearing`). Far-apart scenes fly over (zoom out, travel, zoom in) with motion blur; inside a scene the camera keeps drifting (`drift_zoom`, default 0.07; `drift_rotate`, default 2.5 degrees). Never static.
+- **Highlights** draw their glowing border on over `draw` seconds (default 1.0), sit slightly raised with a shadow, and are translucent (`fill` default 0.3 so the imagery shows through; use 0.4-0.5 for the subject, 0.6-0.7 for small countries on world views).
+- **Pins and route labels** are frosted dark cards with a coloured edge; `labels` and highlight labels are letter-spaced place names. All stay upright on the tilted map.
+- Faint country borders everywhere (`"country_borders": false` to hide); `admin1_borders` adds state lines.
+- Pitch 22-26 for world views, 28-36 for regions; world views: keep Antarctica out of frame (centre latitude 25-32 at zoom ~3.3).
+- Everything in sections 1-7 still applies (one scene per paragraph, colours per side of the story, 3-4 coloured places, a change every 2-3 s, cover, captions).
+
 ## 1. One scene per script paragraph
 - `scenes[i].vo` = paragraph *i* of the script, **exactly as written in Airtable's Script field** (captions are made from it, and the voiceover pauses between paragraphs are used to time scenes). Same number of scenes as paragraphs, same order.
 - Optional `say`: only for Kokoro (free voice) pronunciation fixes. Ignored with the vidIQ voiceover.

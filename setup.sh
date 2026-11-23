@@ -6,7 +6,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 NE=https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson
 
-python3 -m pip install --break-system-packages -q pycairo soundfile numpy pillow 2>&1 | grep -v -i warning || true
+python3 -m pip install --break-system-packages -q pycairo soundfile numpy pillow rasterio opencv-python-headless 2>&1 | grep -v -i warning || true
 
 python3 -c "from PIL import Image" 2>/dev/null || python3 -m pip install --break-system-packages --ignore-installed -q pillow 2>&1 | grep -v -i warning || true
 
@@ -26,4 +26,4 @@ if [ "${1:-}" = "--kokoro" ]; then
   [ -s models/kokoro-v1.0.int8.onnx ] || curl -sSfL -o models/kokoro-v1.0.int8.onnx $R/kokoro-v1.0.int8.onnx
   [ -s models/voices-v1.0.bin ] || curl -sSfL -o models/voices-v1.0.bin $R/voices-v1.0.bin
 fi
-python3 -c "import cairo, soundfile, numpy; print('setup ok')"
+python3 -c "import cairo, soundfile, numpy, rasterio, cv2; print('setup ok')"
