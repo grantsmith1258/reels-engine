@@ -1,0 +1,1181 @@
+{
+ "title": "The year that lasted 445 days (46 BC)",
+ "style": "satellite",
+ "pitch": 28,
+ "min_pause": 0.4,
+ "outro_hold": 2.0,
+ "cuts": [
+  6.45,
+  12.16,
+  18.85,
+  24.9,
+  33.27,
+  39.8,
+  48.77,
+  54.45,
+  58.5,
+  64.85
+ ],
+ "cover": {
+  "lines": [
+   {
+    "text": "ONE YEAR",
+    "size": 150
+   },
+   {
+    "text": "445",
+    "size": 380,
+    "color": "accent"
+   },
+   {
+    "text": "DAYS LONG",
+    "size": 150
+   }
+  ],
+  "badge": "JULIUS CAESAR ORDERED IT",
+  "camera": {
+   "center": [
+    13.5,
+    44.5
+   ],
+   "zoom": 58,
+   "pitch": 30
+  },
+  "y": 640
+ },
+ "scenes": [
+  {
+   "vo": "In 46 BC, one year lasted 445 days. Julius Caesar ordered it.",
+   "camera": {
+    "center": [
+     13.5,
+     40.0
+    ],
+    "zoom": 58,
+    "pitch": 30,
+    "bearing": -4
+   },
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "red",
+     "fill": 0.45,
+     "pulse": true,
+     "label": "ITALY",
+     "label_at": [
+      15.6,
+      40.6
+     ],
+     "delay": 0.0,
+     "draw": 0.6
+    },
+    {
+     "iso": [
+      "FRA"
+     ],
+     "color": "blue",
+     "fill": 0.35,
+     "label": "FRANCE",
+     "label_at": [
+      3.5,
+      45.5
+     ],
+     "delay": 1.2,
+     "draw": 0.6
+    },
+    {
+     "iso": [
+      "TUN"
+     ],
+     "color": "teal",
+     "fill": 0.38,
+     "label": "TUNISIA",
+     "label_at": [
+      9.6,
+      36.6
+     ],
+     "delay": 1.6,
+     "draw": 0.6
+    },
+    {
+     "iso": [
+      "GRC"
+     ],
+     "color": "purple",
+     "fill": 0.38,
+     "label": "GREECE",
+     "label_at": [
+      22.2,
+      39.4
+     ],
+     "delay": 2.0,
+     "draw": 0.6
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      12.4964,
+      41.9028
+     ],
+     "label": "ROME",
+     "side": "left",
+     "color": "accent",
+     "delay": 0.3
+    }
+   ],
+   "word": {
+    "text": "445 DAYS",
+    "sub": "ONE YEAR LASTED",
+    "delay": 0.4,
+    "size": 170
+   },
+   "stamp": {
+    "text": "46 BC",
+    "delay": 1.5,
+    "x": 830,
+    "y": 600
+   }
+  },
+  {
+   "vo": "Romans lived through fifteen months in one year. They called it the year of confusion.",
+   "camera": {
+    "center": [
+     18,
+     37.5
+    ],
+    "zoom": 24,
+    "pitch": 26,
+    "bearing": 2
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "red",
+     "fill": 0.45,
+     "pulse": true,
+     "label": "ITALY",
+     "label_at": [
+      12.0,
+      43.0
+     ],
+     "draw": 0.6
+    },
+    {
+     "iso": [
+      "FRA"
+     ],
+     "color": "blue",
+     "fill": 0.35,
+     "label": "FRANCE",
+     "label_at": [
+      3.5,
+      45.5
+     ],
+     "draw": 0.6
+    },
+    {
+     "iso": [
+      "TUN"
+     ],
+     "color": "teal",
+     "fill": 0.38,
+     "draw": 0.6
+    },
+    {
+     "iso": [
+      "GRC"
+     ],
+     "color": "purple",
+     "fill": 0.38,
+     "label": "GREECE",
+     "label_at": [
+      22.2,
+      39.4
+     ],
+     "draw": 0.6
+    },
+    {
+     "iso": [
+      "EGY"
+     ],
+     "color": "orange",
+     "fill": 0.4,
+     "label": "EGYPT",
+     "label_at": [
+      29.5,
+      28.5
+     ],
+     "delay": 1.0,
+     "draw": 0.8,
+     "pulse": false
+    },
+    {
+     "iso": [
+      "ESP"
+     ],
+     "color": "green",
+     "fill": 0.3,
+     "label": "SPAIN",
+     "label_at": [
+      -3.7,
+      40.2
+     ],
+     "delay": 1.6,
+     "draw": 0.8
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      21.0,
+      34.2
+     ],
+     "text": "MEDITERRANEAN SEA",
+     "size": 34,
+     "color": "white",
+     "delay": 0.6
+    }
+   ],
+   "word": {
+    "text": "15 MONTHS",
+    "sub": "IN ONE YEAR",
+    "delay": 0.3,
+    "size": 160
+   },
+   "stamp": {
+    "text": "YEAR OF CONFUSION",
+    "delay": 3.4,
+    "x": 540,
+    "y": 620,
+    "color": "red"
+   }
+  },
+  {
+   "vo": "Rome's calendar had just 355 days, and priests were meant to add extra months to keep up with the seasons.",
+   "camera": {
+    "center": [
+     12.8,
+     41.6
+    ],
+    "zoom": 95,
+    "pitch": 34,
+    "bearing": -6
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "red",
+     "fill": 0.3,
+     "pulse": true,
+     "label": "ITALY",
+     "label_at": [
+      15.6,
+      40.6
+     ]
+    },
+    {
+     "iso": [
+      "FRA"
+     ],
+     "color": "blue",
+     "fill": 0.35,
+     "label": "FRANCE",
+     "label_at": [
+      9.1,
+      42.1
+     ]
+    },
+    {
+     "iso": [
+      "TUN"
+     ],
+     "color": "teal",
+     "fill": 0.38,
+     "label": "TUNISIA",
+     "label_at": [
+      9.6,
+      36.3
+     ]
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      11.2,
+      40.0
+     ],
+     "text": "TYRRHENIAN SEA",
+     "size": 30,
+     "color": "white",
+     "delay": 0.5
+    },
+    {
+     "at": [
+      16.0,
+      43.3
+     ],
+     "text": "ADRIATIC SEA",
+     "size": 30,
+     "color": "white",
+     "delay": 0.9
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      12.4964,
+      41.9028
+     ],
+     "label": "ROME",
+     "side": "left",
+     "color": "accent",
+     "delay": 0.0
+    }
+   ],
+   "word": {
+    "text": "355 DAYS",
+    "sub": "ROME'S CALENDAR",
+    "delay": 0.6,
+    "size": 160
+   },
+   "stamp": {
+    "text": "+ EXTRA MONTHS?",
+    "delay": 3.6,
+    "x": 540,
+    "y": 620,
+    "color": "accent"
+   }
+  },
+  {
+   "vo": "But they kept skipping them, often for politics, until the calendar ran three months ahead of the sun.",
+   "camera": {
+    "center": [
+     14.5,
+     39.5
+    ],
+    "zoom": 45,
+    "pitch": 30,
+    "bearing": 5
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "red",
+     "fill": 0.55,
+     "pulse": true,
+     "label": "ITALY",
+     "label_at": [
+      15.6,
+      40.6
+     ]
+    },
+    {
+     "iso": [
+      "FRA"
+     ],
+     "color": "blue",
+     "fill": 0.35,
+     "label": "FRANCE",
+     "label_at": [
+      3.5,
+      45.5
+     ]
+    },
+    {
+     "iso": [
+      "TUN"
+     ],
+     "color": "teal",
+     "fill": 0.38,
+     "label": "TUNISIA",
+     "label_at": [
+      9.6,
+      36.6
+     ]
+    },
+    {
+     "iso": [
+      "GRC"
+     ],
+     "color": "purple",
+     "fill": 0.38,
+     "label": "GREECE",
+     "label_at": [
+      22.2,
+      39.4
+     ]
+    },
+    {
+     "iso": [
+      "DZA"
+     ],
+     "color": "white",
+     "fill": 0.15,
+     "delay": 0.8,
+     "draw": 0.7
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      12.4964,
+      41.9028
+     ],
+     "label": "ROME",
+     "side": "left",
+     "color": "accent",
+     "delay": 0.0
+    }
+   ],
+   "stamp": {
+    "text": "SKIPPED",
+    "delay": 0.4,
+    "x": 540,
+    "y": 620,
+    "color": "red"
+   },
+   "word": {
+    "text": "3 MONTHS",
+    "sub": "AHEAD OF THE SEASONS",
+    "delay": 2.6,
+    "size": 160
+   }
+  },
+  {
+   "vo": "Caesar had just come back from Egypt, where years had 365 days. An Alexandrian astronomer, Sosigenes, helped him fix it.",
+   "camera": {
+    "center": [
+     21.5,
+     35.0
+    ],
+    "zoom": 30,
+    "pitch": 30,
+    "bearing": -3
+   },
+   "camera_move": 1.5,
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "red",
+     "fill": 0.45,
+     "pulse": false,
+     "label": "ITALY",
+     "label_at": [
+      15.6,
+      40.6
+     ]
+    },
+    {
+     "iso": [
+      "GRC"
+     ],
+     "color": "purple",
+     "fill": 0.38,
+     "label": "GREECE",
+     "label_at": [
+      22.2,
+      39.4
+     ]
+    },
+    {
+     "iso": [
+      "TUN"
+     ],
+     "color": "teal",
+     "fill": 0.38,
+     "label": "TUNISIA",
+     "label_at": [
+      9.3,
+      34.6
+     ]
+    },
+    {
+     "iso": [
+      "EGY"
+     ],
+     "color": "orange",
+     "fill": 0.5,
+     "label": "EGYPT",
+     "label_at": [
+      28.5,
+      30.0
+     ],
+     "delay": 0.3,
+     "draw": 0.8,
+     "pulse": true
+    },
+    {
+     "iso": [
+      "LBY"
+     ],
+     "color": "green",
+     "fill": 0.25,
+     "label": "LIBYA",
+     "label_at": [
+      15.0,
+      30.0
+     ],
+     "delay": 1.0,
+     "draw": 0.8
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       29.9187,
+       31.2001
+      ],
+      [
+       24,
+       34.5
+      ],
+      [
+       17.5,
+       38.2
+      ],
+      [
+       12.4964,
+       41.9028
+      ]
+     ],
+     "color": "accent",
+     "delay": 0.6,
+     "draw": 2.0,
+     "scene_only": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      12.4964,
+      41.9028
+     ],
+     "label": "ROME",
+     "side": "left",
+     "color": "accent",
+     "delay": 0.0
+    },
+    {
+     "at": [
+      29.9187,
+      31.2001
+     ],
+     "label": "ALEXANDRIA",
+     "side": "right",
+     "color": "orange",
+     "delay": 4.4
+    }
+   ],
+   "word": {
+    "text": "365 DAYS",
+    "sub": "EGYPT'S YEAR",
+    "delay": 2.4,
+    "size": 160
+   },
+   "stamp": {
+    "text": "SOSIGENES",
+    "delay": 5.6,
+    "x": 540,
+    "y": 620,
+    "color": "orange"
+   }
+  },
+  {
+   "vo": "First, drag the dates back. Caesar added a short month after February, and two more before December.",
+   "camera": {
+    "center": [
+     13.0,
+     41.3
+    ],
+    "zoom": 85,
+    "pitch": 34,
+    "bearing": 4
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "red",
+     "fill": 0.5,
+     "pulse": true,
+     "label": "ITALY",
+     "label_at": [
+      15.6,
+      40.6
+     ]
+    },
+    {
+     "iso": [
+      "FRA"
+     ],
+     "color": "blue",
+     "fill": 0.35,
+     "label": "FRANCE",
+     "label_at": [
+      9.1,
+      42.1
+     ]
+    },
+    {
+     "iso": [
+      "TUN"
+     ],
+     "color": "teal",
+     "fill": 0.38,
+     "label": "TUNISIA",
+     "label_at": [
+      9.6,
+      36.3
+     ]
+    },
+    {
+     "iso": [
+      "HRV",
+      "ALB"
+     ],
+     "color": "blue",
+     "fill": 0.25,
+     "delay": 0.5,
+     "draw": 0.6
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      16.5,
+      43.6
+     ],
+     "text": "ADRIATIC SEA",
+     "size": 30,
+     "color": "white",
+     "delay": 0.4
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      12.4964,
+      41.9028
+     ],
+     "label": "ROME",
+     "side": "left",
+     "color": "accent",
+     "delay": 0.0
+    }
+   ],
+   "stamp": {
+    "text": "46 BC",
+    "delay": 0.3,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "+3 MONTHS",
+    "sub": "ADDED BY CAESAR",
+    "delay": 2.2,
+    "size": 160
+   }
+  },
+  {
+   "vo": "Then, on January 1st, 45 BC, a new calendar began: 365 days, plus a leap day every fourth year.",
+   "camera": {
+    "center": [
+     16,
+     38
+    ],
+    "zoom": 20,
+    "pitch": 26,
+    "bearing": -2
+   },
+   "camera_move": 1.5,
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "red",
+     "fill": 0.55,
+     "pulse": true,
+     "label": "ITALY",
+     "label_at": [
+      12.0,
+      43.0
+     ]
+    },
+    {
+     "iso": [
+      "FRA"
+     ],
+     "color": "blue",
+     "fill": 0.35,
+     "label": "FRANCE",
+     "label_at": [
+      3.5,
+      45.5
+     ]
+    },
+    {
+     "iso": [
+      "TUN"
+     ],
+     "color": "teal",
+     "fill": 0.38
+    },
+    {
+     "iso": [
+      "GRC"
+     ],
+     "color": "purple",
+     "fill": 0.38,
+     "label": "GREECE",
+     "label_at": [
+      22.2,
+      39.4
+     ]
+    },
+    {
+     "iso": [
+      "EGY"
+     ],
+     "color": "orange",
+     "fill": 0.4,
+     "label": "EGYPT",
+     "label_at": [
+      29.5,
+      28.5
+     ],
+     "pulse": false
+    },
+    {
+     "iso": [
+      "ESP"
+     ],
+     "color": "green",
+     "fill": 0.3,
+     "label": "SPAIN",
+     "label_at": [
+      -3.7,
+      40.2
+     ]
+    },
+    {
+     "iso": [
+      "TUR"
+     ],
+     "color": "teal",
+     "fill": 0.3,
+     "label": "TURKEY",
+     "label_at": [
+      34,
+      39.2
+     ],
+     "delay": 2.5,
+     "draw": 0.8
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      21.0,
+      34.2
+     ],
+     "text": "MEDITERRANEAN SEA",
+     "size": 34,
+     "color": "white",
+     "delay": 0.0
+    }
+   ],
+   "stamp": {
+    "text": "1 JAN 45 BC",
+    "delay": 0.4,
+    "x": 540,
+    "y": 620,
+    "color": "accent"
+   },
+   "word": {
+    "text": "365 + 1",
+    "sub": "A LEAP DAY EVERY 4 YEARS",
+    "delay": 4.2,
+    "size": 170
+   }
+  },
+  {
+   "vo": "Rome's priests still botched it, adding leap days every three years, until Augustus stepped in.",
+   "camera": {
+    "center": [
+     12.6,
+     41.9
+    ],
+    "zoom": 130,
+    "pitch": 36,
+    "bearing": -8
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "red",
+     "fill": 0.3,
+     "pulse": true,
+     "label": "ITALY",
+     "label_at": [
+      15.6,
+      40.6
+     ]
+    },
+    {
+     "iso": [
+      "FRA"
+     ],
+     "color": "blue",
+     "fill": 0.35,
+     "label": "FRANCE",
+     "label_at": [
+      9.1,
+      42.1
+     ]
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      11.0,
+      40.6
+     ],
+     "text": "TYRRHENIAN SEA",
+     "size": 30,
+     "color": "white",
+     "delay": 0.3
+    },
+    {
+     "at": [
+      15.2,
+      43.0
+     ],
+     "text": "ADRIATIC SEA",
+     "size": 30,
+     "color": "white",
+     "delay": 0.6
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      12.4964,
+      41.9028
+     ],
+     "label": "ROME",
+     "side": "left",
+     "color": "accent",
+     "delay": 0.0
+    }
+   ],
+   "word": {
+    "text": "EVERY 3 YEARS",
+    "sub": "THE PRIESTS' MISTAKE",
+    "delay": 1.6,
+    "size": 140
+   },
+   "stamp": {
+    "text": "AUGUSTUS FIXES IT",
+    "delay": 4.0,
+    "x": 540,
+    "y": 620,
+    "color": "green"
+   }
+  },
+  {
+   "vo": "And the month Quintilis was renamed after Caesar. We call it July.",
+   "camera": {
+    "center": [
+     14.0,
+     40.5
+    ],
+    "zoom": 60,
+    "pitch": 30,
+    "bearing": 6
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "red",
+     "fill": 0.5,
+     "pulse": true,
+     "label": "ITALY",
+     "label_at": [
+      15.6,
+      40.6
+     ]
+    },
+    {
+     "iso": [
+      "FRA"
+     ],
+     "color": "blue",
+     "fill": 0.35,
+     "label": "FRANCE",
+     "label_at": [
+      3.5,
+      45.5
+     ]
+    },
+    {
+     "iso": [
+      "TUN"
+     ],
+     "color": "teal",
+     "fill": 0.38,
+     "label": "TUNISIA",
+     "label_at": [
+      9.3,
+      34.6
+     ]
+    },
+    {
+     "iso": [
+      "GRC"
+     ],
+     "color": "purple",
+     "fill": 0.38,
+     "label": "GREECE",
+     "label_at": [
+      22.2,
+      39.4
+     ]
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      12.4964,
+      41.9028
+     ],
+     "label": "ROME",
+     "side": "left",
+     "color": "accent",
+     "delay": 0.0
+    }
+   ],
+   "stamp": {
+    "text": "QUINTILIS",
+    "delay": 0.3,
+    "x": 540,
+    "y": 620,
+    "color": "white"
+   },
+   "word": {
+    "text": "JULY",
+    "sub": "NAMED AFTER CAESAR",
+    "delay": 2.6,
+    "size": 200
+   }
+  },
+  {
+   "vo": "In 1582, a pope trimmed it slightly, but the calendar on your phone is still basically Caesar's.",
+   "camera": {
+    "center": [
+     20,
+     30
+    ],
+    "zoom": 5.2,
+    "pitch": 24,
+    "bearing": 0
+   },
+   "camera_move": 1.7,
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "red",
+     "fill": 0.7,
+     "pulse": true
+    },
+    {
+     "iso": [
+      "USA",
+      "CAN",
+      "MEX"
+     ],
+     "color": "blue",
+     "fill": 0.45,
+     "delay": 2.4,
+     "draw": 0.8
+    },
+    {
+     "iso": [
+      "BRA",
+      "ARG"
+     ],
+     "color": "green",
+     "fill": 0.45,
+     "delay": 2.8,
+     "draw": 0.8
+    },
+    {
+     "iso": [
+      "IND",
+      "CHN"
+     ],
+     "color": "purple",
+     "fill": 0.45,
+     "delay": 3.2,
+     "draw": 0.8
+    },
+    {
+     "iso": [
+      "ZAF",
+      "NGA",
+      "AUS"
+     ],
+     "color": "teal",
+     "fill": 0.45,
+     "delay": 3.6,
+     "draw": 0.8
+    }
+   ],
+   "stamp": {
+    "text": "1582",
+    "delay": 0.3,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "STILL CAESAR'S",
+    "sub": "THE CALENDAR ON YOUR PHONE",
+    "delay": 4.2,
+    "size": 140
+   }
+  },
+  {
+   "vo": "Follow for more places where the map got weird.",
+   "camera": {
+    "center": [
+     16,
+     38
+    ],
+    "zoom": 20,
+    "pitch": 26,
+    "bearing": 3
+   },
+   "camera_move": 1.6,
+   "highlight": [
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "red",
+     "fill": 0.55,
+     "pulse": true,
+     "label": "ITALY",
+     "label_at": [
+      12.0,
+      43.0
+     ]
+    },
+    {
+     "iso": [
+      "FRA"
+     ],
+     "color": "blue",
+     "fill": 0.35,
+     "label": "FRANCE",
+     "label_at": [
+      3.5,
+      45.5
+     ]
+    },
+    {
+     "iso": [
+      "TUN"
+     ],
+     "color": "teal",
+     "fill": 0.38
+    },
+    {
+     "iso": [
+      "GRC"
+     ],
+     "color": "purple",
+     "fill": 0.38,
+     "label": "GREECE",
+     "label_at": [
+      22.2,
+      39.4
+     ]
+    },
+    {
+     "iso": [
+      "EGY"
+     ],
+     "color": "orange",
+     "fill": 0.4,
+     "label": "EGYPT",
+     "label_at": [
+      29.5,
+      28.5
+     ],
+     "pulse": false
+    },
+    {
+     "iso": [
+      "ESP"
+     ],
+     "color": "green",
+     "fill": 0.3,
+     "label": "SPAIN",
+     "label_at": [
+      -3.7,
+      40.2
+     ]
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      12.4964,
+      41.9028
+     ],
+     "label": "ROME",
+     "side": "left",
+     "color": "accent",
+     "delay": 0.0
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      21.0,
+      34.2
+     ],
+     "text": "MEDITERRANEAN SEA",
+     "size": 34,
+     "color": "white",
+     "delay": 0.0
+    }
+   ]
+  }
+ ]
+}
