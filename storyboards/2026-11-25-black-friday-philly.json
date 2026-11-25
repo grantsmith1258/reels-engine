@@ -1,0 +1,1507 @@
+{
+ "title": "Philadelphia's traffic cops named Black Friday",
+ "style": "satellite",
+ "pitch": 30,
+ "admin1_borders": [
+  "USA"
+ ],
+ "min_pause": 0.4,
+ "outro_hold": 1.5,
+ "cuts": [
+  6.18,
+  10.52,
+  16.52,
+  22.21,
+  31.61,
+  36.44,
+  43.09,
+  50.85,
+  56.73,
+  63.5
+ ],
+ "cover": {
+  "lines": [
+   {
+    "text": "BLACK FRIDAY",
+    "size": 140
+   },
+   {
+    "text": "COPS",
+    "size": 380,
+    "color": "accent"
+   },
+   {
+    "text": "NAMED IT",
+    "size": 150
+   }
+  ],
+  "badge": "NOT STORES. PHILLY POLICE.",
+  "camera": {
+   "center": [
+    -75.25,
+    41.0
+   ],
+   "zoom": 220,
+   "pitch": 30
+  },
+  "y": 640
+ },
+ "scenes": [
+  {
+   "vo": "Black Friday wasn't named by stores. It was named by Philadelphia's traffic cops, who dreaded it.",
+   "camera": {
+    "center": [
+     -75.3,
+     39.6
+    ],
+    "zoom": 220,
+    "pitch": 32,
+    "bearing": -4
+   },
+   "highlight": [
+    {
+     "admin1": [
+      "US-PA"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "pulse": true,
+     "label": "PENNSYLVANIA",
+     "label_at": [
+      -76.0,
+      40.45
+     ],
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "blue",
+     "fill": 0.38,
+     "label": "NEW JERSEY",
+     "label_at": [
+      -74.55,
+      39.75
+     ],
+     "delay": 0.6,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-DE"
+     ],
+     "color": "purple",
+     "fill": 0.4,
+     "label": "DELAWARE",
+     "label_at": [
+      -75.5,
+      39.05
+     ],
+     "delay": 1.0,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-MD"
+     ],
+     "color": "orange",
+     "fill": 0.38,
+     "label": "MARYLAND",
+     "label_at": [
+      -76.6,
+      39.45
+     ],
+     "delay": 1.4,
+     "draw": 0.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -75.1636,
+      39.9526
+     ],
+     "label": "PHILADELPHIA",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.2
+    }
+   ],
+   "word": {
+    "text": "BLACK FRIDAY",
+    "sub": "NAMED BY PHILLY COPS",
+    "delay": 0.4,
+    "size": 150
+   }
+  },
+  {
+   "vo": "And stores hated that name so much, they tried to change it.",
+   "camera": {
+    "center": [
+     -75.16,
+     39.97
+    ],
+    "zoom": 700,
+    "pitch": 34,
+    "bearing": 6
+   },
+   "camera_move": 1.0,
+   "highlight": [
+    {
+     "admin1": [
+      "US-PA"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "pulse": true,
+     "label": "PENNSYLVANIA",
+     "label_at": [
+      -76.0,
+      40.45
+     ],
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "blue",
+     "fill": 0.38,
+     "label": "NEW JERSEY",
+     "label_at": [
+      -74.55,
+      39.75
+     ],
+     "delay": 0.6,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-DE"
+     ],
+     "color": "purple",
+     "fill": 0.4,
+     "label": "DELAWARE",
+     "label_at": [
+      -75.5,
+      39.05
+     ],
+     "delay": 1.0,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-MD"
+     ],
+     "color": "orange",
+     "fill": 0.38,
+     "label": "MARYLAND",
+     "label_at": [
+      -76.6,
+      39.45
+     ],
+     "delay": 1.4,
+     "draw": 0.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -75.1636,
+      39.9526
+     ],
+     "label": "PHILADELPHIA",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.2
+    }
+   ],
+   "word": {
+    "text": "HATED IT",
+    "sub": "STORES",
+    "delay": 1.0,
+    "size": 160
+   }
+  },
+  {
+   "vo": "In the early 1960s, the day after Thanksgiving meant chaos in Center City Philadelphia.",
+   "camera": {
+    "center": [
+     -75.16,
+     39.955
+    ],
+    "zoom": 1400,
+    "pitch": 36,
+    "bearing": -6
+   },
+   "highlight": [
+    {
+     "admin1": [
+      "US-PA"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "pulse": true,
+     "label": "PENNSYLVANIA",
+     "label_at": [
+      -76.0,
+      40.45
+     ],
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "blue",
+     "fill": 0.38,
+     "label": "NEW JERSEY",
+     "label_at": [
+      -74.55,
+      39.75
+     ],
+     "delay": 0.6,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-DE"
+     ],
+     "color": "purple",
+     "fill": 0.4,
+     "label": "DELAWARE",
+     "label_at": [
+      -75.5,
+      39.05
+     ],
+     "delay": 1.0,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-MD"
+     ],
+     "color": "orange",
+     "fill": 0.38,
+     "label": "MARYLAND",
+     "label_at": [
+      -76.6,
+      39.45
+     ],
+     "delay": 1.4,
+     "draw": 0.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -75.1636,
+      39.9526
+     ],
+     "label": "CENTER CITY",
+     "side": "left",
+     "color": "red",
+     "delay": 0.4
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -75.05,
+      39.97
+     ],
+     "text": "NEW JERSEY",
+     "size": 40,
+     "delay": 1.2
+    },
+    {
+     "at": [
+      -75.25,
+      39.99
+     ],
+     "text": "PHILADELPHIA",
+     "size": 40,
+     "delay": 1.6
+    }
+   ],
+   "stamp": {
+    "text": "1960s",
+    "delay": 0.8,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "CHAOS",
+    "sub": "THE DAY AFTER THANKSGIVING",
+    "delay": 2.6,
+    "size": 170
+   }
+  },
+  {
+   "vo": "Shoppers poured in from the suburbs to start Christmas shopping, all on one day.",
+   "camera": {
+    "center": [
+     -75.2,
+     39.85
+    ],
+    "zoom": 420,
+    "pitch": 32,
+    "bearing": 4
+   },
+   "camera_move": 1.1,
+   "highlight": [
+    {
+     "admin1": [
+      "US-PA"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "pulse": true,
+     "label": "PENNSYLVANIA",
+     "label_at": [
+      -76.0,
+      40.45
+     ],
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "blue",
+     "fill": 0.38,
+     "label": "NEW JERSEY",
+     "label_at": [
+      -74.55,
+      39.75
+     ],
+     "delay": 0.6,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-DE"
+     ],
+     "color": "purple",
+     "fill": 0.4,
+     "label": "DELAWARE",
+     "label_at": [
+      -75.5,
+      39.05
+     ],
+     "delay": 1.0,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-MD"
+     ],
+     "color": "orange",
+     "fill": 0.38,
+     "label": "MARYLAND",
+     "label_at": [
+      -76.6,
+      39.45
+     ],
+     "delay": 1.4,
+     "draw": 0.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -75.1636,
+      39.9526
+     ],
+     "label": "CENTER CITY",
+     "side": "left",
+     "color": "red",
+     "delay": 0.2
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -75.3963,
+       40.0893
+      ],
+      [
+       -75.27995,
+       40.04095
+      ],
+      [
+       -75.1636,
+       39.9526
+      ]
+     ],
+     "color": "accent",
+     "delay": 0.3,
+     "draw": 1.2,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -75.0307,
+       39.9348
+      ],
+      [
+       -75.09715,
+       39.9637
+      ],
+      [
+       -75.1636,
+       39.9526
+      ]
+     ],
+     "color": "white",
+     "delay": 0.8,
+     "draw": 1.2,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -75.3877,
+       39.9168
+      ],
+      [
+       -75.27565,
+       39.9547
+      ],
+      [
+       -75.1636,
+       39.9526
+      ]
+     ],
+     "color": "accent",
+     "delay": 1.3,
+     "draw": 1.2,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -75.1179,
+       40.1007
+      ],
+      [
+       -75.14075,
+       40.04665000000001
+      ],
+      [
+       -75.1636,
+       39.9526
+      ]
+     ],
+     "color": "white",
+     "delay": 1.8,
+     "draw": 1.2,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -75.1196,
+       39.9259
+      ],
+      [
+       -75.14160000000001,
+       39.959250000000004
+      ],
+      [
+       -75.1636,
+       39.9526
+      ]
+     ],
+     "color": "accent",
+     "delay": 2.3,
+     "draw": 1.2,
+     "scene_only": true
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -75.45,
+      40.17
+     ],
+     "text": "SUBURBS",
+     "size": 46,
+     "delay": 0.5
+    },
+    {
+     "at": [
+      -74.98,
+      39.87
+     ],
+     "text": "SUBURBS",
+     "size": 46,
+     "delay": 0.9
+    }
+   ],
+   "word": {
+    "text": "ALL ON ONE DAY",
+    "sub": "SHOPPERS POURED IN",
+    "delay": 3.0,
+    "size": 140
+   }
+  },
+  {
+   "vo": "That weekend, the Army-Navy game was usually played in Philadelphia, so fans from West Point and Annapolis came too.",
+   "camera": {
+    "center": [
+     -74.9,
+     40.15
+    ],
+    "zoom": 140,
+    "pitch": 28,
+    "bearing": 0
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "admin1": [
+      "US-PA"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "pulse": true,
+     "label": "PENNSYLVANIA",
+     "label_at": [
+      -76.0,
+      40.45
+     ],
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "blue",
+     "fill": 0.38,
+     "label": "NEW JERSEY",
+     "label_at": [
+      -74.55,
+      39.75
+     ],
+     "delay": 0.6,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-DE"
+     ],
+     "color": "purple",
+     "fill": 0.4,
+     "label": "DELAWARE",
+     "label_at": [
+      -75.5,
+      39.05
+     ],
+     "delay": 1.0,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-MD"
+     ],
+     "color": "orange",
+     "fill": 0.38,
+     "label": "MARYLAND",
+     "label_at": [
+      -76.6,
+      39.45
+     ],
+     "delay": 1.4,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NY"
+     ],
+     "color": "teal",
+     "fill": 0.38,
+     "label": "NEW YORK",
+     "label_at": [
+      -74.9,
+      42.3
+     ],
+     "delay": 0.3,
+     "draw": 0.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -75.1636,
+      39.9526
+     ],
+     "label": "PHILADELPHIA",
+     "side": "left",
+     "color": "accent",
+     "delay": 0.2
+    },
+    {
+     "at": [
+      -73.956,
+      41.3915
+     ],
+     "label": "WEST POINT (ARMY)",
+     "side": "left",
+     "color": "teal",
+     "delay": 5.6
+    },
+    {
+     "at": [
+      -76.4922,
+      38.9784
+     ],
+     "label": "ANNAPOLIS (NAVY)",
+     "side": "left",
+     "color": "orange",
+     "delay": 6.6
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -73.956,
+       41.3915
+      ],
+      [
+       -74.5598,
+       40.69205
+      ],
+      [
+       -75.1636,
+       39.9526
+      ]
+     ],
+     "color": "teal",
+     "delay": 6.0,
+     "draw": 1.4,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -76.4922,
+       38.9784
+      ],
+      [
+       -75.8279,
+       39.4855
+      ],
+      [
+       -75.1636,
+       39.9526
+      ]
+     ],
+     "color": "orange",
+     "delay": 7.0,
+     "draw": 1.4,
+     "scene_only": true
+    }
+   ],
+   "word": {
+    "text": "ARMY-NAVY",
+    "sub": "GAME WEEKEND",
+    "delay": 1.2,
+    "size": 160
+   }
+  },
+  {
+   "vo": "No traffic cop could take the day off. They worked twelve-hour shifts in gridlock and called it Black Friday.",
+   "camera": {
+    "center": [
+     -75.165,
+     39.95
+    ],
+    "zoom": 1100,
+    "pitch": 36,
+    "bearing": 10
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "admin1": [
+      "US-PA"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "pulse": true,
+     "label": "PENNSYLVANIA",
+     "label_at": [
+      -76.0,
+      40.45
+     ],
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "blue",
+     "fill": 0.38,
+     "label": "NEW JERSEY",
+     "label_at": [
+      -74.55,
+      39.75
+     ],
+     "delay": 0.6,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-DE"
+     ],
+     "color": "purple",
+     "fill": 0.4,
+     "label": "DELAWARE",
+     "label_at": [
+      -75.5,
+      39.05
+     ],
+     "delay": 1.0,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-MD"
+     ],
+     "color": "orange",
+     "fill": 0.38,
+     "label": "MARYLAND",
+     "label_at": [
+      -76.6,
+      39.45
+     ],
+     "delay": 1.4,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NY"
+     ],
+     "color": "teal",
+     "fill": 0.38,
+     "label": "NEW YORK",
+     "label_at": [
+      -74.9,
+      42.3
+     ],
+     "delay": 0.3,
+     "draw": 0.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -75.1636,
+      39.9526
+     ],
+     "label": "CENTER CITY",
+     "side": "left",
+     "color": "red",
+     "delay": 0.2
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -75.1,
+      39.9
+     ],
+     "text": "GRIDLOCK",
+     "size": 56,
+     "color": "red",
+     "delay": 2.8
+    }
+   ],
+   "stamp": {
+    "text": "NO DAYS OFF",
+    "delay": 0.6,
+    "x": 800,
+    "y": 600
+   },
+   "word": {
+    "text": "12-HOUR SHIFTS",
+    "sub": "FOR EVERY TRAFFIC COP",
+    "delay": 2.0,
+    "size": 140
+   }
+  },
+  {
+   "vo": "By 1961, city merchants were pushing to rename it Big Friday. The new name flopped.",
+   "camera": {
+    "center": [
+     -75.15,
+     40.0
+    ],
+    "zoom": 520,
+    "pitch": 30,
+    "bearing": -6
+   },
+   "camera_move": 1.1,
+   "highlight": [
+    {
+     "admin1": [
+      "US-PA"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "pulse": true,
+     "label": "PENNSYLVANIA",
+     "label_at": [
+      -76.0,
+      40.45
+     ],
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "blue",
+     "fill": 0.38,
+     "label": "NEW JERSEY",
+     "label_at": [
+      -74.55,
+      39.75
+     ],
+     "delay": 0.6,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-DE"
+     ],
+     "color": "purple",
+     "fill": 0.4,
+     "label": "DELAWARE",
+     "label_at": [
+      -75.5,
+      39.05
+     ],
+     "delay": 1.0,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-MD"
+     ],
+     "color": "orange",
+     "fill": 0.38,
+     "label": "MARYLAND",
+     "label_at": [
+      -76.6,
+      39.45
+     ],
+     "delay": 1.4,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NY"
+     ],
+     "color": "teal",
+     "fill": 0.38,
+     "label": "NEW YORK",
+     "label_at": [
+      -74.9,
+      42.3
+     ],
+     "delay": 0.3,
+     "draw": 0.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -75.1636,
+      39.9526
+     ],
+     "label": "PHILADELPHIA",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.2
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -75.05,
+      40.12
+     ],
+     "text": "FLOPPED",
+     "size": 70,
+     "color": "red",
+     "delay": 5.0
+    }
+   ],
+   "stamp": {
+    "text": "1961",
+    "delay": 0.3,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "BIG FRIDAY",
+    "sub": "THE NEW NAME",
+    "delay": 2.2,
+    "size": 160
+   }
+  },
+  {
+   "vo": "For years, it stayed a Philly thing. As late as 1985, stores in Cincinnati and Los Angeles hadn't heard of it.",
+   "camera": {
+    "center": [
+     -88,
+     37.5
+    ],
+    "zoom": 15,
+    "pitch": 24,
+    "bearing": 0
+   },
+   "camera_move": 1.6,
+   "highlight": [
+    {
+     "admin1": [
+      "US-PA"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "pulse": true,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "blue",
+     "fill": 0.38,
+     "delay": 0.6,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-DE"
+     ],
+     "color": "purple",
+     "fill": 0.4,
+     "delay": 1.0,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-MD"
+     ],
+     "color": "orange",
+     "fill": 0.38,
+     "delay": 1.4,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NY"
+     ],
+     "color": "teal",
+     "fill": 0.38,
+     "delay": 0.3,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-OH"
+     ],
+     "color": "red",
+     "fill": 0.45,
+     "label": "OHIO",
+     "label_at": [
+      -82.7,
+      40.4
+     ],
+     "delay": 3.6,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-CA"
+     ],
+     "color": "#ff7ab8",
+     "fill": 0.45,
+     "label": "CALIFORNIA",
+     "label_at": [
+      -119.5,
+      37.3
+     ],
+     "delay": 4.6,
+     "draw": 0.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -75.1636,
+      39.9526
+     ],
+     "label": "PHILADELPHIA",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.2
+    },
+    {
+     "at": [
+      -84.512,
+      39.1031
+     ],
+     "label": "CINCINNATI",
+     "side": "left",
+     "color": "red",
+     "delay": 3.8
+    },
+    {
+     "at": [
+      -118.2437,
+      34.0522
+     ],
+     "label": "LOS ANGELES",
+     "side": "right",
+     "color": "#ff7ab8",
+     "delay": 4.8
+    }
+   ],
+   "stamp": {
+    "text": "1985",
+    "delay": 3.0,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "NEVER HEARD",
+    "sub": "STORES IN CINCINNATI & LA",
+    "delay": 5.6,
+    "size": 150
+   }
+  },
+  {
+   "vo": "The happy story, that stores finally go into the black, only shows up in the 1980s.",
+   "camera": {
+    "center": [
+     -79,
+     38.5
+    ],
+    "zoom": 32,
+    "pitch": 30,
+    "bearing": 5
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "admin1": [
+      "US-PA"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "pulse": true,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "blue",
+     "fill": 0.38,
+     "delay": 0.6,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-DE"
+     ],
+     "color": "purple",
+     "fill": 0.4,
+     "delay": 1.0,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-MD"
+     ],
+     "color": "orange",
+     "fill": 0.38,
+     "delay": 1.4,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NY"
+     ],
+     "color": "teal",
+     "fill": 0.38,
+     "delay": 0.3,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-OH"
+     ],
+     "color": "red",
+     "fill": 0.45,
+     "label": "OHIO",
+     "label_at": [
+      -82.7,
+      40.4
+     ],
+     "delay": 3.6,
+     "draw": 0.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -75.1636,
+      39.9526
+     ],
+     "label": "PHILADELPHIA",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.2
+    }
+   ],
+   "word": {
+    "text": "IN THE BLACK",
+    "sub": "A STORY FROM LATER",
+    "delay": 1.5,
+    "size": 150
+   },
+   "stamp": {
+    "text": "1980s",
+    "delay": 4.2,
+    "x": 830,
+    "y": 600
+   }
+  },
+  {
+   "vo": "Then it spread nationwide. Now the whole country uses a nickname from fed-up Philly cops.",
+   "camera": {
+    "center": [
+     -94,
+     38.5
+    ],
+    "zoom": 14,
+    "pitch": 24,
+    "bearing": -3
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "green",
+     "fill": 0.22,
+     "delay": 2.6,
+     "draw": 1.4
+    },
+    {
+     "admin1": [
+      "US-PA"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "pulse": true,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "blue",
+     "fill": 0.38,
+     "delay": 0.6,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-DE"
+     ],
+     "color": "purple",
+     "fill": 0.4,
+     "delay": 1.0,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-MD"
+     ],
+     "color": "orange",
+     "fill": 0.38,
+     "delay": 1.4,
+     "draw": 0.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -75.1636,
+      39.9526
+     ],
+     "label": "PHILADELPHIA",
+     "side": "left",
+     "color": "accent",
+     "delay": 0.2
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -75.1636,
+       39.9526
+      ],
+      [
+       -81.39670000000001,
+       40.93535000000001
+      ],
+      [
+       -87.6298,
+       41.8781
+      ]
+     ],
+     "color": "accent",
+     "delay": 0.4,
+     "draw": 1.3,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -75.1636,
+       39.9526
+      ],
+      [
+       -79.7758,
+       36.8708
+      ],
+      [
+       -84.388,
+       33.749
+      ]
+     ],
+     "color": "accent",
+     "delay": 0.7,
+     "draw": 1.3,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -75.1636,
+       39.9526
+      ],
+      [
+       -85.9803,
+       36.38465
+      ],
+      [
+       -96.797,
+       32.7767
+      ]
+     ],
+     "color": "accent",
+     "delay": 1.0,
+     "draw": 1.3,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -75.1636,
+       39.9526
+      ],
+      [
+       -90.07679999999999,
+       39.8663
+      ],
+      [
+       -104.99,
+       39.74
+      ]
+     ],
+     "color": "accent",
+     "delay": 1.2999999999999998,
+     "draw": 1.3,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -75.1636,
+       39.9526
+      ],
+      [
+       -98.74680000000001,
+       43.801300000000005
+      ],
+      [
+       -122.33,
+       47.61
+      ]
+     ],
+     "color": "accent",
+     "delay": 1.6,
+     "draw": 1.3,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -75.1636,
+       39.9526
+      ],
+      [
+       -96.70365000000001,
+       37.0224
+      ],
+      [
+       -118.2437,
+       34.0522
+      ]
+     ],
+     "color": "accent",
+     "delay": 1.9,
+     "draw": 1.3,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -75.1636,
+       39.9526
+      ],
+      [
+       -77.6768,
+       32.8763
+      ],
+      [
+       -80.19,
+       25.76
+      ]
+     ],
+     "color": "accent",
+     "delay": 2.1999999999999997,
+     "draw": 1.3,
+     "scene_only": true
+    }
+   ],
+   "word": {
+    "text": "NATIONWIDE",
+    "sub": "A PHILLY COP NICKNAME",
+    "delay": 3.4,
+    "size": 160
+   }
+  },
+  {
+   "vo": "Follow for more places where the map got weird.",
+   "camera": {
+    "center": [
+     -75.5,
+     39.95
+    ],
+    "zoom": 180,
+    "pitch": 28,
+    "bearing": 0
+   },
+   "camera_move": 1.5,
+   "highlight": [
+    {
+     "admin1": [
+      "US-PA"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "pulse": true,
+     "label": "PENNSYLVANIA",
+     "label_at": [
+      -76.0,
+      40.45
+     ],
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "blue",
+     "fill": 0.38,
+     "label": "NEW JERSEY",
+     "label_at": [
+      -74.55,
+      39.75
+     ],
+     "delay": 0.6,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-DE"
+     ],
+     "color": "purple",
+     "fill": 0.4,
+     "label": "DELAWARE",
+     "label_at": [
+      -75.5,
+      39.05
+     ],
+     "delay": 1.0,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-MD"
+     ],
+     "color": "orange",
+     "fill": 0.38,
+     "label": "MARYLAND",
+     "label_at": [
+      -76.6,
+      39.45
+     ],
+     "delay": 1.4,
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NY"
+     ],
+     "color": "teal",
+     "fill": 0.38,
+     "label": "NEW YORK",
+     "label_at": [
+      -74.9,
+      42.3
+     ],
+     "delay": 0.3,
+     "draw": 0.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -75.1636,
+      39.9526
+     ],
+     "label": "PHILADELPHIA",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.2
+    }
+   ]
+  }
+ ]
+}
