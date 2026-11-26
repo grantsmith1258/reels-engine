@@ -15,7 +15,7 @@ for f in ne_50m_admin_0_countries ne_10m_admin_0_countries ne_10m_admin_1_states
   [ -s data/$f.geojson ] || curl -sSfL -o data/$f.geojson $NE/$f.geojson
 done
 [ -s fonts/Anton-Regular.ttf ] || curl -sSfL -o fonts/Anton-Regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf
-fc-list | grep -qi "Noto Color Emoji" || [ -s fonts/NotoColorEmoji.ttf ] || curl -sSfL -o fonts/NotoColorEmoji.ttf https://raw.githubusercontent.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf
+fc-list | grep -qi "Noto Color Emoji" || [ -s fonts/NotoColorEmoji.ttf ] || curl -sSfL -o fonts/NotoColorEmoji.ttf https://raw.githubusercontent.com/googlefonts/noto-emoji/v2.047/fonts/NotoColorEmoji.ttf   # CBDT build: PIL cannot draw the newer COLRv1 font
 cp fonts/Anton-Regular.ttf ~/.fonts/ && fc-cache -f >/dev/null
 fc-list : family | grep -i "inter" >/dev/null || echo "WARNING: Inter font missing; captions will fall back to a default sans font"
 

@@ -14,3 +14,6 @@ bash publish_media.sh build/x.mp4 2026-11-12-x.mp4   # puts it on the media bran
 - `STORYBOARD_GUIDE.md`: how to write a storyboard. Read it before writing one.
 - `storyboards/`: every video's storyboard; `storyboards/examples/` has reference ones.
 - `media` branch: finished videos from the last 7 days, so vidIQ can import them from a public link.
+
+## Chat-demo style (everyday-AI account)
+`engine/chat.py` renders AI-setup explainers (phone chat + connection-flow diagrams, Apple-style `"look": "clean"`). Read `CHAT_GUIDE.md`; storyboards live in `storyboards/ai/`.

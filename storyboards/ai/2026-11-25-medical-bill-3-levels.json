@@ -1,0 +1,214 @@
+{
+  "title": "3 levels of using AI to catch medical bill errors",
+  "style": "chat",
+  "look": "clean",
+  "app_name": "AI Assistant",
+  "outro_hold": 0.5,
+  "cover": {
+    "icon": "doc",
+    "eyebrow": "Medical bills",
+    "title": [
+      "Your bill",
+      {
+        "text": "might be wrong.",
+        "grad": true
+      }
+    ],
+    "size": 140,
+    "sub": "3 levels of AI to catch it.",
+    "y": 860
+  },
+  "scenes": [
+    {
+      "vo": "Your medical bills might be wrong. Here are three ways AI catches it, from thirty seconds to fully automatic.",
+      "card": {
+        "icon": "doc",
+        "eyebrow": "Medical bills",
+        "title": [
+          "Your bill",
+          {
+            "text": "might be wrong.",
+            "grad": true
+          }
+        ],
+        "size": 130,
+        "sub": "30 seconds → fully automatic.",
+        "y": 900,
+        "dur": 7.4
+      }
+    },
+    {
+      "vo": "Level one. Get an itemised bill from the billing office, black out your name, and upload it to any AI chat app.",
+      "card": {
+        "eyebrow": "Level 1",
+        "title": [
+          "Thirty seconds."
+        ],
+        "size": 130,
+        "sub": "Any free AI chat app.",
+        "y": 920,
+        "dur": 1.8
+      },
+      "image": {
+        "icon": "doc",
+        "label": "itemized_bill.pdf"
+      },
+      "user": "Here's my itemized hospital bill. Check every line. Flag duplicate charges, items billed twice and anything that looks wrong.",
+      "user_delay": 2.0,
+      "type_cps": 34,
+      "zoom": 1.04,
+      "zoom_delay": 1.8,
+      "focus_y": 1450
+    },
+    {
+      "vo": "Ask it to check every line. It flags things like the same blood test charged twice, then writes your dispute letter.",
+      "ai": "I found 3 things worth asking about:\n\n1. **Duplicate charge**: \"CBC blood test\" appears twice on 3/14 ($48 each). Unless you had two blood draws, one is likely an error.\n2. **Billed twice**: the \"IV kit\" is listed on its own and again inside \"IV therapy setup.\"\n3. **Wrong date**: the chest X-ray is dated 3/16, but you were discharged on 3/15.\n\nWant me to write a dispute letter for these?",
+      "ai_delay": 0.0,
+      "think": 0.5,
+      "stream": 2.4,
+      "highlight": [
+        {
+          "text": "appears twice on 3/14",
+          "delay": 2.6
+        }
+      ],
+      "word": {
+        "text": "Dispute letter, written for you",
+        "sub": "Then",
+        "delay": 4.8,
+        "y": 600
+      },
+      "zoom": 1.06,
+      "zoom_delay": 2.2,
+      "focus_y": 1000
+    },
+    {
+      "vo": "But stick around, because level three does all of this without you lifting a finger.",
+      "card": {
+        "eyebrow": "Stick around",
+        "title": [
+          "Level 3 runs",
+          {
+            "text": "on autopilot.",
+            "grad": true
+          }
+        ],
+        "size": 125,
+        "y": 900
+      }
+    },
+    {
+      "vo": "Level two takes a bit of setup. With a tool like Zapier, connect a photo folder to AI. Snap any bill, and it texts you what looks wrong.",
+      "card": {
+        "eyebrow": "Level 2",
+        "title": [
+          "A bit of setup."
+        ],
+        "size": 130,
+        "sub": "Much less effort after.",
+        "y": 920,
+        "dur": 1.8
+      },
+      "flow": {
+        "delay": 1.8,
+        "eyebrow": "Level 2",
+        "title": "Photo → AI → Text",
+        "subtitle": "Connected with a tool like Zapier.",
+        "steps": [
+          {
+            "icon": "camera",
+            "label": "Snap your bill",
+            "sub": "Saved to a photo folder",
+            "delay": 2.6
+          },
+          {
+            "icon": "ai",
+            "label": "AI checks every line",
+            "sub": "Same prompt as level 1",
+            "delay": 4.2
+          },
+          {
+            "icon": "message",
+            "label": "It texts you",
+            "sub": "What looks wrong",
+            "delay": 6.0
+          }
+        ],
+        "notify": {
+          "text": "Possible error: CBC test billed twice",
+          "app": "Messages",
+          "delay": 7.0,
+          "y": 1430
+        }
+      }
+    },
+    {
+      "vo": "Level three, the master version. Bills and insurance statements that land in your email get checked against each other automatically.",
+      "card": {
+        "eyebrow": "Level 3",
+        "title": [
+          {
+            "text": "The master version.",
+            "grad": true
+          }
+        ],
+        "size": 120,
+        "sub": "Fully automatic.",
+        "y": 920,
+        "dur": 1.9
+      },
+      "flow": {
+        "delay": 1.9,
+        "scenes": 2,
+        "eyebrow": "Level 3",
+        "title": "Fully automatic",
+        "subtitle": "Runs every time a bill arrives.",
+        "steps": [
+          {
+            "icon": "mail",
+            "label": "Bill + insurance statement",
+            "sub": "Arrive in your inbox",
+            "delay": 2.8
+          },
+          {
+            "icon": "ai",
+            "label": "AI compares them",
+            "sub": "Flags any mismatch",
+            "delay": 4.8
+          },
+          {
+            "icon": "sheet",
+            "label": "Logged in a spreadsheet",
+            "sub": "Every error, every bill",
+            "delay": 9.0
+          },
+          {
+            "icon": "doc",
+            "label": "Dispute letter drafted",
+            "sub": "Waiting in your drafts",
+            "delay": 11.6
+          }
+        ]
+      }
+    },
+    {
+      "vo": "Every mismatch is logged in a spreadsheet, and a dispute letter is already waiting in your drafts."
+    },
+    {
+      "vo": "Save this, and follow for more AI setups most people don't know.",
+      "card": {
+        "icon": "check",
+        "eyebrow": "Save this",
+        "title": [
+          "Follow for more",
+          {
+            "text": "AI setups.",
+            "grad": true
+          }
+        ],
+        "size": 115,
+        "y": 920
+      }
+    }
+  ]
+}
