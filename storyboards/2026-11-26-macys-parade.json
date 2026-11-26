@@ -2,9 +2,7 @@
  "title": "Macy's parade postponed for the first time ever",
  "style": "satellite",
  "pitch": 30,
- "admin1_borders": [
-  "USA"
- ],
+ "admin1_borders": [],
  "min_pause": 0.25,
  "outro_hold": 1.8,
  "cuts": [
@@ -38,9 +36,9 @@
   "camera": {
    "center": [
     -73.985,
-    40.74
+    40.745
    ],
-   "zoom": 1400,
+   "zoom": 5000,
    "pitch": 32,
    "bearing": 20
   },
@@ -51,60 +49,47 @@
    "vo": "For the first time ever, the Macy's Thanksgiving Day Parade has been postponed.",
    "camera": {
     "center": [
-     -73.985,
-     40.758
+     -73.988,
+     40.752
     ],
-    "zoom": 2600,
+    "zoom": 7500,
     "pitch": 38,
     "bearing": 24
    },
-   "highlight": [
-    {
-     "admin1": [
-      "US-NY"
-     ],
-     "color": "teal",
-     "fill": 0.4,
-     "draw": 0.8,
-     "delay": 0.3,
-     "pulse": true,
-     "label": "NEW YORK",
-     "label_at": [
-      -73.95,
-      40.79
-     ]
-    },
-    {
-     "admin1": [
-      "US-NJ"
-     ],
-     "color": "blue",
-     "fill": 0.4,
-     "draw": 0.8,
-     "delay": 0.6,
-     "label": "NEW JERSEY",
-     "label_at": [
-      -74.04,
-      40.77
-     ]
-    }
-   ],
    "pins": [
     {
      "at": [
       -73.9893,
       40.7508
      ],
-     "label": "MACY'S PARADE",
+     "label": "MACY'S, HERALD SQUARE",
      "side": "right",
      "color": "accent",
      "delay": 0.1
     }
    ],
+   "pictures": [
+    {
+     "emoji": "🎈",
+     "x": 300,
+     "y": 820,
+     "size": 220,
+     "motion": "bob",
+     "delay": 0.2
+    },
+    {
+     "emoji": "❌",
+     "x": 300,
+     "y": 820,
+     "size": 260,
+     "motion": "pulse",
+     "delay": 2.6
+    }
+   ],
    "word": {
     "text": "POSTPONED",
     "sub": "FIRST TIME EVER",
-    "delay": 0.3,
+    "delay": 0.4,
     "size": 170
    }
   },
@@ -112,106 +97,69 @@
    "vo": "A storm with gusts up to 60 miles an hour pushed it to Saturday. The balloons can't fly in gusts over 34.",
    "camera": {
     "center": [
-     -74.3,
-     40.7
+     -73.988,
+     40.752
     ],
-    "zoom": 130,
-    "pitch": 30,
-    "bearing": 4
+    "zoom": 6000,
+    "pitch": 36,
+    "bearing": 14
    },
-   "camera_move": 1.2,
-   "highlight": [
-    {
-     "admin1": [
-      "US-NY"
-     ],
-     "color": "teal",
-     "fill": 0.4,
-     "draw": 0.8,
-     "delay": 0.3,
-     "label": "NEW YORK",
-     "label_at": [
-      -75.0,
-      42.3
-     ]
-    },
-    {
-     "admin1": [
-      "US-NJ"
-     ],
-     "color": "blue",
-     "fill": 0.4,
-     "draw": 0.8,
-     "delay": 0.6,
-     "label": "NEW JERSEY",
-     "label_at": [
-      -74.55,
-      39.9
-     ]
-    },
-    {
-     "admin1": [
-      "US-CT"
-     ],
-     "color": "purple",
-     "fill": 0.4,
-     "draw": 0.8,
-     "delay": 0.9,
-     "label": "CONNECTICUT",
-     "label_at": [
-      -72.7,
-      41.65
-     ]
-    },
-    {
-     "admin1": [
-      "US-PA"
-     ],
-     "color": "orange",
-     "fill": 0.4,
-     "draw": 0.8,
-     "delay": 1.2,
-     "label": "PENNSYLVANIA",
-     "label_at": [
-      -76.8,
-      40.9
-     ]
-    }
-   ],
+   "camera_move": 1.0,
    "pins": [
     {
      "at": [
       -73.9893,
       40.7508
      ],
-     "label": "MACY'S PARADE",
+     "label": "MACY'S, HERALD SQUARE",
      "side": "right",
      "color": "accent",
-     "delay": 0.2
+     "delay": 0.1
     }
    ],
-   "labels": [
+   "pictures": [
     {
-     "at": [
-      -72.9,
-      40.2
+     "emoji": "⛈️",
+     "x": 780,
+     "y": 700,
+     "size": 230,
+     "motion": "shake",
+     "delay": 0.3
+    },
+    {
+     "emoji": "💨",
+     "x": 120,
+     "y": 900,
+     "to": [
+      960,
+      900
      ],
-     "text": "BALLOONS GROUNDED OVER 34 MPH",
-     "size": 40,
-     "color": "accent",
-     "delay": 5.0
+     "motion": "move",
+     "move_time": 2.5,
+     "size": 200,
+     "delay": 1.6
+    },
+    {
+     "emoji": "🎈",
+     "x": 420,
+     "y": 820,
+     "size": 200,
+     "motion": "shake",
+     "label": "GROUNDED OVER 34 MPH",
+     "label_size": 44,
+     "delay": 4.6
     }
    ],
    "stamp": {
-    "text": "SAT NOV 28",
+    "text": "SATURDAY",
     "delay": 3.4,
     "x": 800,
-    "y": 600
+    "y": 1100
    },
    "word": {
     "text": "60 MPH",
     "sub": "STORM GUSTS",
-    "delay": 1.4,
+    "delay": 1.8,
     "size": 200
    }
   },
@@ -219,68 +167,30 @@
    "vo": "But wait until the end for an even crazier Thanksgiving fact.",
    "camera": {
     "center": [
-     -100,
-     39
+     -73.985,
+     40.754
     ],
-    "zoom": 17.5,
-    "pitch": 24,
-    "bearing": 0
+    "zoom": 7000,
+    "pitch": 38,
+    "bearing": -6
    },
-   "camera_move": 1.5,
-   "highlight": [
+   "camera_move": 1.2,
+   "pictures": [
     {
-     "admin1": [
-      "US-IL"
-     ],
-     "color": "red",
-     "fill": 0.35,
-     "draw": 0.8,
+     "emoji": "🦃",
+     "x": 540,
+     "y": 850,
+     "size": 260,
+     "motion": "pulse",
+     "label": "AN EVEN CRAZIER FACT IS COMING",
+     "label_size": 44,
      "delay": 0.4
-    },
-    {
-     "admin1": [
-      "US-MO"
-     ],
-     "color": "orange",
-     "fill": 0.35,
-     "draw": 0.8,
-     "delay": 0.7
-    },
-    {
-     "admin1": [
-      "US-WA"
-     ],
-     "color": "purple",
-     "fill": 0.35,
-     "draw": 0.8,
-     "delay": 1.0
-    },
-    {
-     "admin1": [
-      "US-CA"
-     ],
-     "color": "#ff7ab8",
-     "fill": 0.35,
-     "draw": 0.8,
-     "delay": 1.3
-    }
-   ],
-   "pins": [
-    {
-     "at": [
-      -73.9893,
-      40.7508
-     ],
-     "label": "NEW YORK",
-     "side": "left",
-     "color": "teal",
-     "delay": 0.2
     }
    ],
    "word": {
     "text": "WAIT FOR IT",
-    "sub": "AN EVEN CRAZIER FACT",
-    "delay": 0.6,
+    "sub": "STAY TO THE END",
+    "delay": 1.2,
     "size": 160
    }
   },
@@ -288,64 +198,34 @@
    "vo": "The first parade, in 1924, marched six miles from Harlem to Herald Square, with animals from the Central Park Zoo.",
    "camera": {
     "center": [
-     -73.965,
-     40.79
+     -73.968,
+     40.787
     ],
-    "zoom": 1500,
+    "zoom": 4200,
     "pitch": 34,
     "bearing": -10
    },
    "camera_move": 1.5,
-   "highlight": [
-    {
-     "admin1": [
-      "US-NY"
-     ],
-     "color": "teal",
-     "fill": 0.4,
-     "draw": 0.8,
-     "delay": 0.3,
-     "label": "NEW YORK",
-     "label_at": [
-      -73.85,
-      40.7
-     ]
-    },
-    {
-     "admin1": [
-      "US-NJ"
-     ],
-     "color": "blue",
-     "fill": 0.4,
-     "draw": 0.8,
-     "delay": 0.6,
-     "label": "NEW JERSEY",
-     "label_at": [
-      -74.06,
-      40.76
-     ]
-    }
-   ],
    "pins": [
     {
      "at": [
       -73.947,
       40.824
      ],
-     "label": "HARLEM",
+     "label": "START: HARLEM",
      "side": "right",
      "color": "green",
-     "delay": 1.6
+     "delay": 3.2
     },
     {
      "at": [
       -73.9893,
       40.7508
      ],
-     "label": "HERALD SQUARE",
+     "label": "FINISH: HERALD SQUARE",
      "side": "right",
      "color": "accent",
-     "delay": 3.2
+     "delay": 4.2
     },
     {
      "at": [
@@ -355,7 +235,7 @@
      "label": "CENTRAL PARK ZOO",
      "side": "left",
      "color": "orange",
-     "delay": 5.0
+     "delay": 5.2
     }
    ],
    "routes": [
@@ -379,21 +259,53 @@
       ]
      ],
      "color": "accent",
-     "delay": 1.8,
-     "draw": 2.4,
+     "delay": 3.3,
+     "draw": 2.2,
      "scene_only": true
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "🐘",
+     "at": [
+      -73.9718,
+      40.7678
+     ],
+     "to": [
+      -73.9893,
+      40.7508
+     ],
+     "motion": "move",
+     "move_time": 2.0,
+     "size": 150,
+     "delay": 5.6
+    },
+    {
+     "emoji": "🐪",
+     "at": [
+      -73.966,
+      40.795
+     ],
+     "to": [
+      -73.982,
+      40.768
+     ],
+     "motion": "move",
+     "move_time": 2.0,
+     "size": 140,
+     "delay": 5.9
     }
    ],
    "stamp": {
     "text": "1924",
-    "delay": 0.3,
+    "delay": 0.6,
     "x": 830,
     "y": 600
    },
    "word": {
     "text": "6 MILES",
-    "sub": "THE FIRST PARADE",
-    "delay": 3.4,
+    "sub": "THE FIRST PARADE MARCHED",
+    "delay": 2.4,
     "size": 190
    }
   },
@@ -401,44 +313,14 @@
    "vo": "Balloons arrived in 1927. After the parade, Macy's let them fly away and paid up to 100 dollars to whoever brought one back.",
    "camera": {
     "center": [
-     -73.9,
+     -73.92,
      40.76
     ],
-    "zoom": 650,
-    "pitch": 30,
+    "zoom": 3200,
+    "pitch": 32,
     "bearing": 6
    },
-   "camera_move": 1.2,
-   "highlight": [
-    {
-     "admin1": [
-      "US-NY"
-     ],
-     "color": "teal",
-     "fill": 0.4,
-     "draw": 0.8,
-     "delay": 0.3,
-     "label": "NEW YORK",
-     "label_at": [
-      -73.65,
-      40.95
-     ]
-    },
-    {
-     "admin1": [
-      "US-NJ"
-     ],
-     "color": "blue",
-     "fill": 0.4,
-     "draw": 0.8,
-     "delay": 0.6,
-     "label": "NEW JERSEY",
-     "label_at": [
-      -74.35,
-      40.9
-     ]
-    }
-   ],
+   "camera_move": 1.3,
    "pins": [
     {
      "at": [
@@ -448,172 +330,145 @@
      "label": "HERALD SQUARE",
      "side": "right",
      "color": "accent",
-     "delay": 0.2
+     "delay": 0.1
     }
    ],
-   "routes": [
+   "pictures": [
     {
-     "points": [
-      [
-       -73.9893,
-       40.7508
-      ],
-      [
-       -73.9,
-       40.79
-      ],
-      [
-       -73.75,
-       40.83
-      ]
-     ],
-     "color": "white",
-     "delay": 2.4,
-     "draw": 2.0,
-     "scene_only": true
-    },
-    {
-     "points": [
-      [
-       -73.9893,
-       40.7508
-      ],
-      [
-       -73.88,
-       40.73
-      ],
-      [
-       -73.72,
-       40.7
-      ]
-     ],
-     "color": "white",
-     "delay": 3.0,
-     "draw": 2.0,
-     "scene_only": true
-    },
-    {
-     "points": [
-      [
-       -73.9893,
-       40.7508
-      ],
-      [
-       -73.93,
-       40.82
-      ],
-      [
-       -73.85,
-       40.92
-      ]
-     ],
-     "color": "white",
-     "delay": 3.6,
-     "draw": 2.0,
-     "scene_only": true
-    }
-   ],
-   "labels": [
-    {
+     "emoji": "🎈",
      "at": [
-      -73.62,
-      40.63
+      -73.9893,
+      40.7508
      ],
-     "text": "FLOWN AWAY",
-     "size": 44,
-     "color": "white",
-     "delay": 3.4
+     "size": 180,
+     "motion": "bob",
+     "delay": 1.0
+    },
+    {
+     "emoji": "🎈",
+     "at": [
+      -73.9893,
+      40.7508
+     ],
+     "to": [
+      -73.86,
+      40.8
+     ],
+     "motion": "move",
+     "move_time": 3.0,
+     "size": 160,
+     "delay": 3.6
+    },
+    {
+     "emoji": "🎈",
+     "at": [
+      -73.9893,
+      40.7508
+     ],
+     "to": [
+      -73.87,
+      40.72
+     ],
+     "motion": "move",
+     "move_time": 3.0,
+     "size": 150,
+     "delay": 4.0
+    },
+    {
+     "emoji": "💵",
+     "x": 800,
+     "y": 1080,
+     "size": 200,
+     "motion": "bob",
+     "label": "UP TO $100 REWARD",
+     "label_size": 46,
+     "delay": 5.4
     }
    ],
    "stamp": {
     "text": "1927",
-    "delay": 0.3,
+    "delay": 0.6,
     "x": 830,
     "y": 600
    },
    "word": {
-    "text": "$100",
-    "sub": "TO BRING ONE BACK",
-    "delay": 5.2,
-    "size": 220
+    "text": "FLY AWAY",
+    "sub": "BALLOONS WERE SET FREE",
+    "delay": 1.6,
+    "size": 180
    }
   },
   {
    "vo": "In 1932, a student pilot flew into a 60-foot cat balloon over Queens. Her plane spun until her instructor landed it. The releases stopped.",
    "camera": {
     "center": [
-     -73.86,
-     40.72
+     -73.7949,
+     40.7027
     ],
-    "zoom": 1000,
+    "zoom": 4500,
     "pitch": 34,
-    "bearing": -6
+    "bearing": -4
    },
-   "camera_move": 1.2,
-   "highlight": [
+   "camera_move": 1.4,
+   "pictures": [
     {
-     "admin1": [
-      "US-NY"
-     ],
-     "color": "teal",
-     "fill": 0.4,
-     "draw": 0.8,
-     "delay": 0.3,
-     "label": "NEW YORK",
-     "label_at": [
-      -73.75,
-      40.78
-     ]
-    },
-    {
-     "admin1": [
-      "US-NJ"
-     ],
-     "color": "blue",
-     "fill": 0.4,
-     "draw": 0.8,
-     "delay": 0.6,
-     "label": "NEW JERSEY",
-     "label_at": [
-      -74.15,
-      40.82
-     ]
-    }
-   ],
-   "pins": [
-    {
+     "emoji": "🐈",
      "at": [
       -73.7949,
       40.7027
      ],
-     "label": "QUEENS",
-     "side": "right",
-     "color": "red",
-     "delay": 0.8
+     "size": 230,
+     "motion": "bob",
+     "label": "60-FOOT CAT BALLOON, QUEENS",
+     "label_size": 42,
+     "delay": 2.6
+    },
+    {
+     "emoji": "✈️",
+     "x": 110,
+     "y": 600,
+     "to": [
+      430,
+      840
+     ],
+     "motion": "move",
+     "move_time": 2.6,
+     "size": 160,
+     "delay": 1.2
+    },
+    {
+     "emoji": "💫",
+     "x": 470,
+     "y": 820,
+     "size": 190,
+     "motion": "spin",
+     "speed": 1.5,
+     "stop_after": 3.0,
+     "delay": 5.6
     }
    ],
    "labels": [
     {
      "at": [
-      -73.95,
-      40.66
+      -73.795,
+      40.682
      ],
-     "text": "RELEASES STOPPED",
-     "size": 48,
+     "text": "NO MORE RELEASES",
+     "size": 52,
      "color": "red",
-     "delay": 8.6
+     "delay": 8.2
     }
    ],
    "stamp": {
     "text": "1932",
-    "delay": 0.3,
+    "delay": 0.4,
     "x": 830,
     "y": 600
    },
    "word": {
-    "text": "60-FOOT CAT",
-    "sub": "A PLANE FLEW INTO A",
-    "delay": 2.4,
+    "text": "PLANE vs CAT",
+    "sub": "STUDENT PILOT, MID-AIR CRASH",
+    "delay": 3.4,
     "size": 160
    }
   },
@@ -621,44 +476,14 @@
    "vo": "In 1942, Macy's deflated a balloon at City Hall and gave its rubber to the war. No parade until 1945.",
    "camera": {
     "center": [
-     -74.0,
-     40.715
+     -74.006,
+     40.711
     ],
-    "zoom": 1800,
+    "zoom": 7500,
     "pitch": 36,
     "bearing": 8
    },
-   "camera_move": 1.2,
-   "highlight": [
-    {
-     "admin1": [
-      "US-NY"
-     ],
-     "color": "teal",
-     "fill": 0.4,
-     "draw": 0.8,
-     "delay": 0.3,
-     "label": "NEW YORK",
-     "label_at": [
-      -73.93,
-      40.66
-     ]
-    },
-    {
-     "admin1": [
-      "US-NJ"
-     ],
-     "color": "blue",
-     "fill": 0.4,
-     "draw": 0.8,
-     "delay": 0.6,
-     "label": "NEW JERSEY",
-     "label_at": [
-      -74.09,
-      40.75
-     ]
-    }
-   ],
+   "camera_move": 1.4,
    "pins": [
     {
      "at": [
@@ -668,44 +493,66 @@
      "label": "CITY HALL",
      "side": "right",
      "color": "accent",
-     "delay": 0.6
+     "delay": 2.4
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "🎈",
+     "x": 300,
+     "y": 800,
+     "size": 200,
+     "motion": "pulse",
+     "label": "DEFLATED",
+     "label_size": 44,
+     "delay": 1.2
+    },
+    {
+     "emoji": "🪖",
+     "x": 780,
+     "y": 800,
+     "size": 200,
+     "motion": "bob",
+     "label": "RUBBER FOR THE WAR",
+     "label_size": 44,
+     "delay": 3.8
     }
    ],
    "labels": [
     {
      "at": [
-      -73.99,
-      40.68
+      -74.006,
+      40.703
      ],
-     "text": "NO PARADE UNTIL 1945",
-     "size": 46,
+     "text": "NO PARADE 1942-1944",
+     "size": 48,
      "color": "accent",
-     "delay": 5.6
+     "delay": 6.0
     }
    ],
    "stamp": {
     "text": "1942",
-    "delay": 0.3,
+    "delay": 0.4,
     "x": 830,
     "y": 600
    },
    "word": {
-    "text": "TO THE WAR",
-    "sub": "BALLOON RUBBER WENT",
-    "delay": 2.6,
-    "size": 170
+    "text": "BACK IN 1945",
+    "sub": "THE PARADE RETURNED",
+    "delay": 6.2,
+    "size": 160
    }
   },
   {
    "vo": "Now the crazier part. Thanksgiving used to be Halloween.",
    "camera": {
     "center": [
-     -100,
+     -98,
      39
     ],
     "zoom": 17.5,
     "pitch": 24,
-    "bearing": 2
+    "bearing": 0
    },
    "camera_move": 1.6,
    "highlight": [
@@ -714,27 +561,41 @@
       "USA"
      ],
      "color": "green",
-     "fill": 0.25,
+     "fill": 0.22,
      "draw": 1.0,
      "delay": 0.2
     }
    ],
-   "pins": [
+   "pictures": [
     {
-     "at": [
-      -73.9893,
-      40.7508
-     ],
-     "label": "NEW YORK",
-     "side": "left",
-     "color": "teal",
-     "delay": 0.2
+     "emoji": "🦃",
+     "x": 330,
+     "y": 880,
+     "size": 230,
+     "motion": "bob",
+     "delay": 0.6
+    },
+    {
+     "emoji": "➡️",
+     "x": 540,
+     "y": 880,
+     "size": 140,
+     "motion": "pulse",
+     "delay": 2.4
+    },
+    {
+     "emoji": "🎃",
+     "x": 750,
+     "y": 880,
+     "size": 240,
+     "motion": "shake",
+     "delay": 2.8
     }
    ],
    "word": {
     "text": "HALLOWEEN",
     "sub": "THANKSGIVING USED TO BE",
-    "delay": 1.8,
+    "delay": 2.8,
     "size": 170
    }
   },
@@ -742,8 +603,8 @@
    "vo": "In Chicago, Los Angeles, Missouri and Washington State, people paraded in masks. In New York, kids went door to door asking, anything for Thanksgiving?",
    "camera": {
     "center": [
-     -100,
-     39
+     -98,
+     39.5
     ],
     "zoom": 17.5,
     "pitch": 24,
@@ -756,7 +617,7 @@
       "USA"
      ],
      "color": "green",
-     "fill": 0.25,
+     "fill": 0.22,
      "draw": 1.0,
      "delay": 0.2
     },
@@ -767,7 +628,7 @@
      "color": "red",
      "fill": 0.45,
      "draw": 0.8,
-     "delay": 0.2
+     "delay": 0.4
     },
     {
      "admin1": [
@@ -776,7 +637,7 @@
      "color": "#ff7ab8",
      "fill": 0.45,
      "draw": 0.8,
-     "delay": 0.9
+     "delay": 1.2
     },
     {
      "admin1": [
@@ -785,12 +646,7 @@
      "color": "orange",
      "fill": 0.45,
      "draw": 0.8,
-     "delay": 1.6,
-     "label": "MISSOURI",
-     "label_at": [
-      -92.5,
-      38.3
-     ]
+     "delay": 2.0
     },
     {
      "admin1": [
@@ -799,12 +655,16 @@
      "color": "purple",
      "fill": 0.45,
      "draw": 0.8,
-     "delay": 2.4,
-     "label": "WASHINGTON",
-     "label_at": [
-      -120.5,
-      47.4
-     ]
+     "delay": 2.8
+    },
+    {
+     "admin1": [
+      "US-NY"
+     ],
+     "color": "teal",
+     "fill": 0.45,
+     "draw": 0.8,
+     "delay": 5.6
     }
    ],
    "pins": [
@@ -816,7 +676,7 @@
      "label": "CHICAGO",
      "side": "above",
      "color": "red",
-     "delay": 0.3
+     "delay": 0.4
     },
     {
      "at": [
@@ -824,9 +684,29 @@
       34.0522
      ],
      "label": "LOS ANGELES",
-     "side": "right",
+     "side": "above",
      "color": "#ff7ab8",
-     "delay": 1.0
+     "delay": 1.2
+    },
+    {
+     "at": [
+      -92.5,
+      38.4
+     ],
+     "label": "MISSOURI",
+     "side": "above",
+     "color": "orange",
+     "delay": 2.0
+    },
+    {
+     "at": [
+      -120.5,
+      47.3
+     ],
+     "label": "WASHINGTON STATE",
+     "side": "above",
+     "color": "purple",
+     "delay": 2.8
     },
     {
      "at": [
@@ -834,83 +714,219 @@
       40.7508
      ],
      "label": "NEW YORK",
-     "side": "left",
+     "side": "below",
      "color": "teal",
-     "delay": 5.4
+     "delay": 5.6
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "🎭",
+     "at": [
+      -86.1298,
+      36.8781
+     ],
+     "size": 120,
+     "motion": "bob",
+     "delay": 4.0
+    },
+    {
+     "emoji": "🎭",
+     "at": [
+      -116.7437,
+      29.0522
+     ],
+     "size": 120,
+     "motion": "bob",
+     "delay": 4.15
+    },
+    {
+     "emoji": "🎭",
+     "at": [
+      -91.0,
+      33.4
+     ],
+     "size": 120,
+     "motion": "bob",
+     "delay": 4.3
+    },
+    {
+     "emoji": "🎭",
+     "at": [
+      -119.0,
+      42.3
+     ],
+     "size": 120,
+     "motion": "bob",
+     "delay": 4.45
+    },
+    {
+     "emoji": "🚪",
+     "x": 540,
+     "y": 1080,
+     "size": 170,
+     "motion": "shake",
+     "label": "\"ANYTHING FOR THANKSGIVING?\"",
+     "label_size": 46,
+     "delay": 7.6
     }
    ],
    "labels": [
     {
      "at": [
-      -90,
-      27.5
+      -96,
+      28.5
      ],
      "text": "PARADES IN MASKS",
-     "size": 48,
+     "size": 50,
      "color": "accent",
-     "delay": 3.4
+     "delay": 4.2
     }
    ],
    "word": {
-    "text": "ANYTHING FOR",
-    "sub": "NYC KIDS ASKED DOOR TO DOOR",
-    "delay": 6.2,
-    "size": 150
+    "text": "DOOR TO DOOR",
+    "sub": "NEW YORK KIDS WENT",
+    "delay": 5.8,
+    "size": 150,
+    "y": 1500
    }
   },
   {
    "vo": "Follow for more places where the map got weird.",
    "camera": {
     "center": [
-     -74.05,
-     40.75
+     -97,
+     39
     ],
-    "zoom": 420,
-    "pitch": 28,
-    "bearing": 0
+    "zoom": 16,
+    "pitch": 24,
+    "bearing": 2
    },
-   "camera_move": 1.5,
+   "camera_move": 1.2,
    "highlight": [
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "green",
+     "fill": 0.22,
+     "draw": 1.0,
+     "delay": 0.2
+    },
+    {
+     "admin1": [
+      "US-IL"
+     ],
+     "color": "red",
+     "fill": 0.45,
+     "draw": 0.8,
+     "delay": 0.4
+    },
+    {
+     "admin1": [
+      "US-CA"
+     ],
+     "color": "#ff7ab8",
+     "fill": 0.45,
+     "draw": 0.8,
+     "delay": 1.2
+    },
+    {
+     "admin1": [
+      "US-MO"
+     ],
+     "color": "orange",
+     "fill": 0.45,
+     "draw": 0.8,
+     "delay": 2.0
+    },
+    {
+     "admin1": [
+      "US-WA"
+     ],
+     "color": "purple",
+     "fill": 0.45,
+     "draw": 0.8,
+     "delay": 2.8
+    },
     {
      "admin1": [
       "US-NY"
      ],
      "color": "teal",
-     "fill": 0.4,
+     "fill": 0.45,
      "draw": 0.8,
-     "delay": 0.3,
-     "pulse": true,
-     "label": "NEW YORK",
-     "label_at": [
-      -73.75,
-      40.95
-     ]
-    },
-    {
-     "admin1": [
-      "US-NJ"
-     ],
-     "color": "blue",
-     "fill": 0.4,
-     "draw": 0.8,
-     "delay": 0.6,
-     "label": "NEW JERSEY",
-     "label_at": [
-      -74.35,
-      40.85
-     ]
+     "delay": 5.6
     }
    ],
    "pins": [
     {
      "at": [
+      -87.6298,
+      41.8781
+     ],
+     "label": "CHICAGO",
+     "side": "above",
+     "color": "red",
+     "delay": 0.4
+    },
+    {
+     "at": [
+      -118.2437,
+      34.0522
+     ],
+     "label": "LOS ANGELES",
+     "side": "above",
+     "color": "#ff7ab8",
+     "delay": 1.2
+    },
+    {
+     "at": [
+      -92.5,
+      38.4
+     ],
+     "label": "MISSOURI",
+     "side": "above",
+     "color": "orange",
+     "delay": 2.0
+    },
+    {
+     "at": [
+      -120.5,
+      47.3
+     ],
+     "label": "WASHINGTON STATE",
+     "side": "above",
+     "color": "purple",
+     "delay": 2.8
+    },
+    {
+     "at": [
       -73.9893,
       40.7508
      ],
-     "label": "MACY'S PARADE",
-     "side": "right",
-     "color": "accent",
+     "label": "NEW YORK",
+     "side": "below",
+     "color": "teal",
+     "delay": 5.6
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "🎃",
+     "x": 380,
+     "y": 1150,
+     "size": 200,
+     "motion": "bob",
      "delay": 0.2
+    },
+    {
+     "emoji": "🦃",
+     "x": 700,
+     "y": 1150,
+     "size": 200,
+     "motion": "bob",
+     "delay": 0.4
     }
    ]
   }
