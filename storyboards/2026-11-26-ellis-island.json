@@ -1,0 +1,935 @@
+{
+ "title": "Most of Ellis Island is in New Jersey",
+ "style": "satellite",
+ "pitch": 30,
+ "admin1_borders": [
+  "USA"
+ ],
+ "min_pause": 0.25,
+ "outro_hold": 1.8,
+ "cuts": [
+  4.8,
+  8.43,
+  13.6,
+  21.0,
+  25.15,
+  32.7,
+  43.03,
+  47.49,
+  56.56,
+  61.83
+ ],
+ "cover": {
+  "lines": [
+   {
+    "text": "MOST OF ELLIS",
+    "size": 140
+   },
+   {
+    "text": "ISLAND IS IN",
+    "size": 140
+   },
+   {
+    "text": "NEW JERSEY",
+    "size": 250,
+    "color": "accent"
+   }
+  ],
+  "badge": "THE SUPREME COURT SAID SO",
+  "camera": {
+   "center": [
+    -74.06,
+    40.73
+   ],
+   "zoom": 1500,
+   "pitch": 30
+  },
+  "y": 640
+ },
+ "scenes": [
+  {
+   "vo": "Most of Ellis Island isn't in New York. The Supreme Court gave it to New Jersey.",
+   "camera": {
+    "center": [
+     -74.07,
+     40.69
+    ],
+    "zoom": 1500,
+    "pitch": 32,
+    "bearing": -4
+   },
+   "highlight": [
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "label": "NEW JERSEY",
+     "label_at": [
+      -74.22,
+      40.74
+     ],
+     "draw": 0.8,
+     "pulse": true
+    },
+    {
+     "admin1": [
+      "US-NY"
+     ],
+     "color": "teal",
+     "fill": 0.4,
+     "label": "NEW YORK",
+     "label_at": [
+      -73.88,
+      40.66
+     ],
+     "draw": 0.8,
+     "delay": 0.4
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -74.0396,
+      40.6994
+     ],
+     "label": "ELLIS ISLAND",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.1
+    }
+   ],
+   "word": {
+    "text": "NEW JERSEY",
+    "sub": "MOST OF ELLIS ISLAND IS IN",
+    "delay": 0.3,
+    "size": 160
+   }
+  },
+  {
+   "vo": "And the state line between them runs right through some of its buildings.",
+   "camera": {
+    "center": [
+     -74.0396,
+     40.6994
+    ],
+    "zoom": 8000,
+    "pitch": 40,
+    "bearing": 12
+   },
+   "camera_move": 1.0,
+   "pins": [
+    {
+     "at": [
+      -74.0396,
+      40.6994
+     ],
+     "label": "ELLIS ISLAND",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.1
+    }
+   ],
+   "word": {
+    "text": "SPLIT",
+    "sub": "THROUGH ITS BUILDINGS",
+    "delay": 0.4,
+    "size": 190
+   },
+   "labels": [
+    {
+     "at": [
+      -74.0396,
+      40.688
+     ],
+     "text": "ELLIS ISLAND TODAY",
+     "size": 40,
+     "delay": 1.4
+    }
+   ]
+  },
+  {
+   "vo": "Ellis Island sits in New York Harbor, much closer to the New Jersey shore than to Manhattan.",
+   "camera": {
+    "center": [
+     -74.035,
+     40.7
+    ],
+    "zoom": 2600,
+    "pitch": 34,
+    "bearing": -8
+   },
+   "camera_move": 1.1,
+   "highlight": [
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "label": "NEW JERSEY",
+     "label_at": [
+      -74.13,
+      40.745
+     ],
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NY"
+     ],
+     "color": "teal",
+     "fill": 0.4,
+     "label": "NEW YORK",
+     "label_at": [
+      -73.93,
+      40.645
+     ],
+     "draw": 0.8,
+     "delay": 0.4
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -74.0396,
+      40.6994
+     ],
+     "label": "ELLIS ISLAND",
+     "side": "below",
+     "color": "accent",
+     "delay": 0.2
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -73.995,
+      40.735
+     ],
+     "text": "MANHATTAN",
+     "size": 40,
+     "color": "teal",
+     "delay": 3.6
+    }
+   ],
+   "lines": [
+    {
+     "points": [
+      [
+       -74.0418,
+       40.6996
+      ],
+      [
+       -74.0475,
+       40.7005
+      ]
+     ],
+     "color": "green",
+     "delay": 2.6,
+     "draw": 0.6
+    },
+    {
+     "points": [
+      [
+       -74.0372,
+       40.6996
+      ],
+      [
+       -74.0165,
+       40.7033
+      ]
+     ],
+     "color": "teal",
+     "delay": 3.6,
+     "draw": 0.9
+    }
+   ],
+   "word": {
+    "text": "CLOSER TO NJ",
+    "sub": "THAN TO MANHATTAN",
+    "delay": 3.0,
+    "size": 150
+   }
+  },
+  {
+   "vo": "In 1834, the two states made a deal. New York got the island. New Jersey got the water, and the land under it.",
+   "camera": {
+    "center": [
+     -74.05,
+     40.69
+    ],
+    "zoom": 1100,
+    "pitch": 30,
+    "bearing": 4
+   },
+   "camera_move": 1.1,
+   "highlight": [
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "label": "NEW JERSEY",
+     "label_at": [
+      -74.3,
+      40.85
+     ],
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NY"
+     ],
+     "color": "teal",
+     "fill": 0.4,
+     "label": "NEW YORK",
+     "label_at": [
+      -73.85,
+      40.65
+     ],
+     "draw": 0.8,
+     "delay": 0.4
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -74.0396,
+      40.6994
+     ],
+     "label": "NEW YORK: THE ISLAND",
+     "side": "left",
+     "color": "teal",
+     "delay": 2.7
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -74.06,
+      40.66
+     ],
+     "text": "NEW JERSEY: THE WATER",
+     "size": 42,
+     "color": "green",
+     "delay": 4.6
+    }
+   ],
+   "stamp": {
+    "text": "1834",
+    "delay": 0.3,
+    "x": 830,
+    "y": 560
+   },
+   "word": {
+    "text": "THE DEAL",
+    "sub": "NEW YORK + NEW JERSEY",
+    "delay": 1.0,
+    "size": 170
+   }
+  },
+  {
+   "vo": "Back then, Ellis Island was tiny. Only about three acres.",
+   "camera": {
+    "center": [
+     -74.0396,
+     40.6994
+    ],
+    "zoom": 8200,
+    "pitch": 38,
+    "bearing": -10
+   },
+   "camera_move": 1.0,
+   "pins": [
+    {
+     "at": [
+      -74.0396,
+      40.6994
+     ],
+     "label": "ELLIS ISLAND",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.1
+    }
+   ],
+   "word": {
+    "text": "3 ACRES",
+    "sub": "ONLY ABOUT",
+    "delay": 2.0,
+    "size": 190
+   },
+   "stamp": {
+    "text": "1834",
+    "delay": 0.4,
+    "x": 830,
+    "y": 600
+   }
+  },
+  {
+   "vo": "Then came the immigrants. From 1892 to 1954, almost 12 million people passed through here.",
+   "camera": {
+    "center": [
+     -36,
+     44
+    ],
+    "zoom": 9,
+    "pitch": 24,
+    "bearing": 0
+   },
+   "camera_move": 1.5,
+   "highlight": [
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "teal",
+     "fill": 0.3,
+     "draw": 0.8,
+     "delay": 0.2
+    },
+    {
+     "iso": [
+      "ITA"
+     ],
+     "color": "orange",
+     "fill": 0.55,
+     "draw": 0.8,
+     "delay": 1.6
+    },
+    {
+     "iso": [
+      "IRL"
+     ],
+     "color": "green",
+     "fill": 0.55,
+     "draw": 0.8,
+     "delay": 1.9
+    },
+    {
+     "iso": [
+      "DEU"
+     ],
+     "color": "purple",
+     "fill": 0.5,
+     "draw": 0.8,
+     "delay": 2.2
+    },
+    {
+     "iso": [
+      "POL"
+     ],
+     "color": "red",
+     "fill": 0.5,
+     "draw": 0.8,
+     "delay": 2.5
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -74.0396,
+      40.6994
+     ],
+     "label": "ELLIS ISLAND",
+     "side": "above",
+     "color": "accent",
+     "delay": 0.3
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      3,
+      47
+     ],
+     "text": "EUROPE",
+     "size": 46,
+     "delay": 1.4
+    },
+    {
+     "at": [
+      -40,
+      38
+     ],
+     "text": "ATLANTIC OCEAN",
+     "size": 44,
+     "delay": 0.8
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       14.27,
+       40.85
+      ],
+      [
+       5,
+       38.2
+      ],
+      [
+       -5.6,
+       36.0
+      ],
+      [
+       -30,
+       38.5
+      ],
+      [
+       -60,
+       40.0
+      ],
+      [
+       -74.0396,
+       40.6994
+      ]
+     ],
+     "color": "accent",
+     "delay": 1.8,
+     "draw": 1.6,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       9.99,
+       53.55
+      ],
+      [
+       4,
+       52.5
+      ],
+      [
+       -1,
+       50.3
+      ],
+      [
+       -6,
+       49.5
+      ],
+      [
+       -30,
+       46
+      ],
+      [
+       -60,
+       42
+      ],
+      [
+       -74.0396,
+       40.6994
+      ]
+     ],
+     "color": "white",
+     "delay": 2.4,
+     "draw": 1.6,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -3.0,
+       53.4
+      ],
+      [
+       -5.5,
+       51.6
+      ],
+      [
+       -10,
+       50.5
+      ],
+      [
+       -30,
+       47.5
+      ],
+      [
+       -60,
+       42.5
+      ],
+      [
+       -74.0396,
+       40.6994
+      ]
+     ],
+     "color": "accent",
+     "delay": 3.0,
+     "draw": 1.6,
+     "scene_only": true
+    }
+   ],
+   "stamp": {
+    "text": "1892",
+    "delay": 1.6,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "12 MILLION",
+    "sub": "IMMIGRANTS, 1892-1954",
+    "delay": 3.6,
+    "size": 160
+   }
+  },
+  {
+   "vo": "To make room, the government dumped landfill into the harbor. Again and again. Until the island grew to 27.5 acres. About nine times bigger.",
+   "camera": {
+    "center": [
+     -74.0396,
+     40.6994
+    ],
+    "zoom": 7800,
+    "pitch": 40,
+    "bearing": 14
+   },
+   "camera_move": 1.5,
+   "pins": [
+    {
+     "at": [
+      -74.0396,
+      40.6994
+     ],
+     "label": "ELLIS ISLAND",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.1
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -74.06,
+      40.69
+     ],
+     "text": "LANDFILL",
+     "size": 48,
+     "color": "orange",
+     "delay": 1.2
+    },
+    {
+     "at": [
+      -74.02,
+      40.713
+     ],
+     "text": "AGAIN",
+     "size": 46,
+     "color": "orange",
+     "delay": 3.2
+    },
+    {
+     "at": [
+      -74.02,
+      40.686
+     ],
+     "text": "AND AGAIN",
+     "size": 46,
+     "color": "orange",
+     "delay": 4.2
+    },
+    {
+     "at": [
+      -74.0396,
+      40.722
+     ],
+     "text": "9X BIGGER",
+     "size": 64,
+     "color": "accent",
+     "delay": 8.4
+    }
+   ],
+   "word": {
+    "text": "27.5 ACRES",
+    "sub": "THE ISLAND GREW TO",
+    "delay": 5.6,
+    "size": 160
+   }
+  },
+  {
+   "vo": "But every single new acre was built on New Jersey's underwater land.",
+   "camera": {
+    "center": [
+     -74.045,
+     40.695
+    ],
+    "zoom": 2600,
+    "pitch": 34,
+    "bearing": -6
+   },
+   "camera_move": 1.1,
+   "highlight": [
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "label": "NEW JERSEY",
+     "label_at": [
+      -74.13,
+      40.745
+     ],
+     "draw": 0.8,
+     "pulse": true
+    },
+    {
+     "admin1": [
+      "US-NY"
+     ],
+     "color": "teal",
+     "fill": 0.4,
+     "label": "NEW YORK",
+     "label_at": [
+      -73.93,
+      40.645
+     ],
+     "draw": 0.8,
+     "delay": 0.4
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -74.0396,
+      40.6994
+     ],
+     "label": "ELLIS ISLAND",
+     "side": "below",
+     "color": "accent",
+     "delay": 0.2
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      -74.1,
+      40.672
+     ],
+     "text": "NEW JERSEY'S WATER",
+     "size": 42,
+     "color": "white",
+     "delay": 1.0
+    }
+   ],
+   "word": {
+    "text": "NEW JERSEY'S",
+    "sub": "EVERY NEW ACRE SAT ON",
+    "delay": 2.2,
+    "size": 150
+   }
+  },
+  {
+   "vo": "In 1998, New Jersey sued, and won. Six votes to three. The original island stayed in New York. The landfill went to New Jersey.",
+   "camera": {
+    "center": [
+     -75.4,
+     39.9
+    ],
+    "zoom": 150,
+    "pitch": 30,
+    "bearing": 0
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "label": "NEW JERSEY",
+     "label_at": [
+      -74.55,
+      39.8
+     ],
+     "draw": 0.8
+    },
+    {
+     "admin1": [
+      "US-NY"
+     ],
+     "color": "teal",
+     "fill": 0.4,
+     "label": "NEW YORK",
+     "label_at": [
+      -74.9,
+      42.2
+     ],
+     "draw": 0.8,
+     "delay": 0.2,
+     "pulse": true
+    },
+    {
+     "admin1": [
+      "US-PA"
+     ],
+     "color": "purple",
+     "fill": 0.4,
+     "label": "PENNSYLVANIA",
+     "label_at": [
+      -76.6,
+      40.6
+     ],
+     "draw": 0.8,
+     "delay": 0.6
+    },
+    {
+     "admin1": [
+      "US-MD"
+     ],
+     "color": "orange",
+     "fill": 0.4,
+     "label": "MARYLAND",
+     "label_at": [
+      -76.9,
+      39.4
+     ],
+     "draw": 0.8,
+     "delay": 0.8
+    },
+    {
+     "admin1": [
+      "US-DE"
+     ],
+     "color": "red",
+     "fill": 0.45,
+     "draw": 0.8,
+     "delay": 1.0
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -77.0044,
+      38.8906
+     ],
+     "label": "SUPREME COURT",
+     "side": "right",
+     "color": "white",
+     "delay": 0.4
+    },
+    {
+     "at": [
+      -74.0396,
+      40.6994
+     ],
+     "label": "ELLIS ISLAND",
+     "side": "right",
+     "color": "accent",
+     "delay": 4.6
+    }
+   ],
+   "stamp": {
+    "text": "1998",
+    "delay": 0.3,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "6-3",
+    "sub": "NEW JERSEY WON",
+    "delay": 1.6,
+    "size": 220
+   }
+  },
+  {
+   "vo": "So today, the old hospital buildings, where sick immigrants were treated, are in New Jersey.",
+   "camera": {
+    "center": [
+     -74.0396,
+     40.6994
+    ],
+    "zoom": 8000,
+    "pitch": 40,
+    "bearing": -14
+   },
+   "camera_move": 1.4,
+   "pins": [
+    {
+     "at": [
+      -74.0396,
+      40.6994
+     ],
+     "label": "ELLIS ISLAND",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.1
+    }
+   ],
+   "word": {
+    "text": "NEW JERSEY",
+    "sub": "OLD HOSPITAL: NOW IN",
+    "delay": 2.8,
+    "size": 160
+   },
+   "labels": [
+    {
+     "at": [
+      -74.0396,
+      40.688
+     ],
+     "text": "SICK IMMIGRANTS TREATED HERE",
+     "size": 38,
+     "delay": 1.0
+    }
+   ]
+  },
+  {
+   "vo": "Follow for more places where the map got weird.",
+   "camera": {
+    "center": [
+     -74.1,
+     40.72
+    ],
+    "zoom": 700,
+    "pitch": 28,
+    "bearing": 0
+   },
+   "camera_move": 1.5,
+   "highlight": [
+    {
+     "admin1": [
+      "US-NJ"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "label": "NEW JERSEY",
+     "label_at": [
+      -74.45,
+      40.86
+     ],
+     "draw": 0.8,
+     "pulse": true
+    },
+    {
+     "admin1": [
+      "US-NY"
+     ],
+     "color": "teal",
+     "fill": 0.4,
+     "label": "NEW YORK",
+     "label_at": [
+      -73.8,
+      40.86
+     ],
+     "draw": 0.8,
+     "delay": 0.4
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -74.0396,
+      40.6994
+     ],
+     "label": "ELLIS ISLAND",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.2
+    }
+   ]
+  }
+ ]
+}
