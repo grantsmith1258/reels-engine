@@ -1063,6 +1063,31 @@ class SatRenderer(Renderer):
         ctx.set_source_rgba(1, 1, 1, a); ctx.fill()
         ctx.restore()
 
+    def pill(self, ctx, text, x, y, col, a, size=40, pop=1.0):
+        """Solid rounded badge in the place's own colour with white text, centred on (x, y)."""
+        if a <= 0:
+            return
+        ctx.save()
+        ctx.select_font_face("Inter", cairo.FONT_SLANT_NORMAL, cairo.FONT_WEIGHT_BOLD); ctx.set_font_size(size)
+        tw = ctx.text_extents(text).x_advance
+        bw, bh = tw + size * 1.0, size * 1.55
+        bx, by = x - bw / 2, y - bh / 2
+        ctx.translate(x, y); ctx.scale(pop, pop); ctx.translate(-x, -y)
+        r = bh * 0.22
+
+        def rr(x0, y0, w0, h0):
+            ctx.new_path()
+            ctx.arc(x0 + w0 - r, y0 + r, r, -math.pi / 2, 0); ctx.arc(x0 + w0 - r, y0 + h0 - r, r, 0, math.pi / 2)
+            ctx.arc(x0 + r, y0 + h0 - r, r, math.pi / 2, math.pi); ctx.arc(x0 + r, y0 + r, r, math.pi, 3 * math.pi / 2)
+            ctx.close_path()
+        rr(bx + 3, by + 6, bw, bh); ctx.set_source_rgba(0, 0, 0, 0.4 * a); ctx.fill()
+        rr(bx, by, bw, bh); ctx.set_source_rgba(*[c * 0.85 for c in col], 0.95 * a); ctx.fill_preserve()
+        ctx.set_source_rgba(1, 1, 1, 0.85 * a); ctx.set_line_width(3); ctx.stroke()
+        ctx.move_to(x - tw / 2, y + size * 0.36); ctx.text_path(text)
+        ctx.set_source_rgba(0, 0, 0, 0.35 * a); ctx.set_line_width(size * 0.08); ctx.stroke_preserve()
+        ctx.set_source_rgba(1, 1, 1, a); ctx.fill()
+        ctx.restore()
+
     def place_text(self, ctx, text, x, y, size, col, a, pop=1.0):
         """Place-name text on the map: letter-spaced, soft shadow."""
         if a <= 0:
@@ -1080,6 +1105,11 @@ class SatRenderer(Renderer):
                 continue
             la = window(t, h["t_in"] + 0.5, h["t_out"], 0.35, 0.35)
             X, Y, f = self.S(*merc(*it["label_at"]))
+            if it.get("pill"):
+                self.pill(ctx, it["label"], X, Y, hexc(it.get("color", "accent")), la,
+                          size=40 * it.get("label_scale", 1) * (0.8 + 0.2 * f),
+                          pop=0.8 + 0.2 * ease_back((t - h["t_in"] - 0.5) / 0.4))
+                continue
             self.place_text(ctx, it["label"], X, Y, 44 * it.get("label_scale", 1) * (0.75 + 0.25 * f),
                             (1, 1, 1), la, pop=0.85 + 0.15 * ease_back((t - h["t_in"] - 0.5) / 0.4))
         # route heads
@@ -1155,7 +1185,7 @@ class SatRenderer(Renderer):
                 acc = lay if acc is None else acc + lay
             scr = (acc / nsub).astype(np.uint8)
         self.set_view(self.tl.camera(t))
-        scr = np.ascontiguousarray(scr)
+        scr = self.apply_tint(np.ascontiguousarray(scr), t)
         surf = arr_surface(scr)
         ctx = cairo.Context(surf)
         cam = self.tl.camera(t)
@@ -1170,6 +1200,43 @@ class SatRenderer(Renderer):
         surf.flush()
         out = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H)
         c2 = cairo.Context(out); c2.set_source_surface(surf, 0, 0); c2.paint()
+        return out
+
+    def tint_amount(self, t):
+        """0..1: how much of the scene's "tint" applies at t (fades over 0.45 s at scene edges)."""
+        i = self.tl.scene_at(t)
+        if not self.tl.scenes[i].get("tint"):
+            return 0.0, None
+        s0, s1 = self.tl.starts[i], self.tl.ends[i]
+        prev = self.tl.scenes[i - 1].get("tint") if i > 0 else None
+        nxt = self.tl.scenes[i + 1].get("tint") if i + 1 < len(self.tl.scenes) else None
+        a = 1.0
+        if prev != self.tl.scenes[i]["tint"]:
+            a = min(a, clamp((t - s0) / 0.45))
+        if nxt != self.tl.scenes[i]["tint"]:
+            a = min(a, clamp((s1 - t) / 0.45))
+        return a, self.tl.scenes[i]["tint"]
+
+    def apply_tint(self, scr, t):
+        """Scene "tint": "parchment" turns the map into an old paper map for history flashbacks."""
+        a, kind = self.tint_amount(t)
+        if a <= 0 or kind != "parchment":
+            return scr
+        import cv2
+        f = scr[..., :3].astype(np.float32)          # BGRA in memory
+        lum = f[..., 0] * 0.114 + f[..., 1] * 0.587 + f[..., 2] * 0.299
+        lum = 0.5 * lum + 0.5 * 185                    # flatten contrast like ink on paper
+        sep = np.stack([lum * 0.66, lum * 0.88, lum * 1.06], -1)
+        if not hasattr(self, "_paper"):
+            rng = np.random.default_rng(7)
+            n = rng.normal(0, 1, (H // 8, W // 8)).astype(np.float32)
+            n = cv2.resize(cv2.GaussianBlur(n, (0, 0), 2.5), (W, H))
+            yy, xx = np.mgrid[0:H, 0:W]
+            edge = ((xx - W / 2) / (W / 2)) ** 2 + ((yy - H / 2) / (H / 2)) ** 2
+            self._paper = (n * 9 - np.clip(edge - 0.35, 0, None) * 70).astype(np.float32)[..., None]
+        sep = np.clip(sep + self._paper, 0, 255)
+        out = scr.copy()
+        out[..., :3] = (f * (1 - a) + sep * a).astype(np.uint8)
         return out
 
     def draw_vignette(self, ctx):
@@ -1304,6 +1371,9 @@ def mix_audio(tl, voice, path):
     for h in tl.pins + tl.labels:
         tt = np.arange(int(0.09 * SR)) / SR
         add(np.sin(2 * np.pi * (900 + 600 * tt / 0.09) * tt) * np.exp(-tt / 0.025) * 0.08, h["t_in"])
+    for h in tl.pictures:                      # bubbly "pop" when a picture appears
+        tt = np.arange(int(0.14 * SR)) / SR
+        add(np.sin(2 * np.pi * np.cumsum(380 + 900 * (tt / 0.14) ** 0.5) / SR) * np.exp(-tt / 0.035) * 0.22, h["t_in"])
     for h in tl.highlights:
         tt = np.arange(int(0.6 * SR)) / SR
         add(bandnoise(len(tt), 3000, 9000, rng) * np.sin(np.pi * tt / 0.6) * 0.02, h["t_in"])

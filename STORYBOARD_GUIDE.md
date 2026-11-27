@@ -87,3 +87,16 @@ Use a picture ONLY for that comparison, when it adds to it: the fan that spins a
 | `label` | optional short caption under it |
 | `delay` | time it to the words |
 Keep it out of the caption zone (y < 450), the bottom 250 px and the word card (y ≈ 1300-1500).
+
+## 8. Story style (owner, 2026-11-27): model reel "France and the Netherlands share a land border... in the Caribbean"
+The owner liked an 81 s Saint Martin reel and wants every video to feel more like it. Apply on top of sections 0-7.
+**Topic and script**
+- Hook = a paradox about two famous things: "This is X, and this is Y. They share a border, just not where you think." Show both places, colored and labeled, in the first 2 seconds, then reveal where it really happens.
+- One clear story arc: hook paradox, reveal on the map, flashback (how it happened, with dates), the funny legend or human story, then "but here's what really happened" (the real treaty, ruling or number), then today's map. Myth first, fact second, when the topic has a legend.
+- Casual, lighthearted narration with short punchy clauses; names and dates the map can show.
+**Visuals (all built into the engine)**
+- Country / state names as solid colored badges: add `"pill": true` to a highlight (label drawn in the highlight's own color). Use saturated, clearly different colors for the two sides (e.g. blue vs red) and keep them all video.
+- History flashbacks on an old paper map: add `"tint": "parchment"` to each scene set in the past (it fades in and out at scene edges). Go back to normal satellite color for "today".
+- Characters as flag emojis (🇫🇷 🇳🇱 🇪🇸 🇬🇧 ...) in `pictures`: they face off (`shake`), march (`move`), or appear one by one when the script names them. Story objects too: ⚔️ fighting, 📜 treaty, ✍️ signing, 🔪 or ✂️ splitting land, 🍷/🥃 a legend's drinks, 📸 tourists, 🤝 a deal. Every picture now plays a pop sound.
+- Something new on screen every 1.5-2.5 s: a badge, a flag, a route, a picture, a stamp. Routes for journeys (who walked or sailed where).
+- Camera rule unchanged (section 3 and Channel Settings "Show what the script says"): only go to places the line names.
