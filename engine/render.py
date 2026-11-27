@@ -12,6 +12,7 @@ import json, math, os, sys, subprocess, re, hashlib
 from multiprocessing import Pool
 import numpy as np
 import cairo
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import soundfile as sf
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -713,11 +714,24 @@ class Renderer:
                 f = ease_io(clamp(dt / it.get("move_time", 2.0)))
                 dx, dy = (tx - X) * f, (ty - Y) * f
             pop = 0.55 + 0.45 * ease_back(dt / 0.4)
-            src = self.emoji_surface(it["emoji"])
-            sc = size / src.get_height() * pop * k
-            ctx.save(); ctx.translate(X + dx, Y + dy); ctx.rotate(rot); ctx.scale(sc, sc)
-            ctx.set_source_surface(src, -src.get_width() / 2, -src.get_height() / 2)
-            ctx.paint_with_alpha(a); ctx.restore()
+            if it.get("ball"):
+                from countryballs import draw_ball, draw_bubble
+                if motion == "bob":                       # countryballs hop instead of floating
+                    dy = -abs(math.sin(dt * 4.2)) * size * 0.12
+                blink = (dt % 3.1) > 2.95
+                ctx.save(); ctx.translate(X + dx, Y + dy); ctx.rotate(rot); ctx.scale(pop * k, pop * k)
+                ctx.push_group()
+                draw_ball(ctx, it["ball"], size, it.get("mood", "happy"), it.get("look", "ahead"), blink)
+                ctx.pop_group_to_source(); ctx.paint_with_alpha(a); ctx.restore()
+                if it.get("say") and dt >= it.get("say_delay", 0.3):
+                    ba = a * clamp((dt - it.get("say_delay", 0.3)) / 0.2)
+                    draw_bubble(ctx, it["say"], X + dx + size * 0.2, Y + dy - size * 0.5, ba, it.get("say_size", 46))
+            else:
+                src = self.emoji_surface(it["emoji"])
+                sc = size / src.get_height() * pop * k
+                ctx.save(); ctx.translate(X + dx, Y + dy); ctx.rotate(rot); ctx.scale(sc, sc)
+                ctx.set_source_surface(src, -src.get_width() / 2, -src.get_height() / 2)
+                ctx.paint_with_alpha(a); ctx.restore()
             if it.get("label"):
                 self.text(ctx, it["label"], X + dx, Y + dy + size * 0.5 + 44, it.get("label_size", 52), "Anton",
                           hexc(it.get("label_color", "white")), a, spacing=3, outline=(0, 0, 0, 0.6), maxw=1000)
