@@ -1,0 +1,1212 @@
+{
+ "title": "In the Middle East, Black Friday is called White Friday",
+ "style": "satellite",
+ "pitch": 28,
+ "min_pause": 0.25,
+ "outro_hold": 1.2,
+ "cuts": [
+  6.28,
+  10.68,
+  16.37,
+  22.77,
+  28.95,
+  34.43,
+  41.59,
+  49.66,
+  55.95,
+  64.28
+ ],
+ "cover": {
+  "lines": [
+   {
+    "text": "IN DUBAI IT'S",
+    "size": 130
+   },
+   {
+    "text": "WHITE",
+    "size": 360,
+    "color": "accent"
+   },
+   {
+    "text": "FRIDAY",
+    "size": 160
+   }
+  ],
+  "badge": "NOT BLACK FRIDAY",
+  "camera": {
+   "center": [
+    54.0,
+    27.3
+   ],
+   "zoom": 95,
+   "pitch": 30
+  },
+  "y": 640
+ },
+ "scenes": [
+  {
+   "vo": "Today is Black Friday. But in Dubai, nobody calls it that. Here, it's White Friday.",
+   "camera": {
+    "center": [
+     53.2,
+     25.3
+    ],
+    "zoom": 62,
+    "pitch": 30,
+    "bearing": -4
+   },
+   "highlight": [
+    {
+     "iso": [
+      "ARE"
+     ],
+     "color": "white",
+     "fill": 0.45,
+     "delay": 0.1,
+     "draw": 0.8,
+     "label": "UAE",
+     "label_at": [
+      54.3,
+      23.7
+     ],
+     "pill": true,
+     "pulse": true
+    },
+    {
+     "iso": [
+      "SAU"
+     ],
+     "color": "green",
+     "fill": 0.38,
+     "delay": 0.9,
+     "draw": 0.8,
+     "label": "SAUDI ARABIA",
+     "label_at": [
+      48.6,
+      24.0
+     ],
+     "pill": true
+    },
+    {
+     "iso": [
+      "OMN"
+     ],
+     "color": "teal",
+     "fill": 0.38,
+     "delay": 1.3,
+     "draw": 0.8,
+     "label": "OMAN",
+     "label_at": [
+      56.6,
+      23.0
+     ],
+     "pill": true
+    },
+    {
+     "iso": [
+      "QAT"
+     ],
+     "color": "purple",
+     "fill": 0.5,
+     "delay": 1.7,
+     "draw": 0.8,
+     "label": "QATAR",
+     "label_at": [
+      51.2,
+      25.4
+     ],
+     "pill": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      55.2708,
+      25.2048
+     ],
+     "label": "DUBAI",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.3
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "🛍️",
+     "at": [
+      56.8,
+      26.9
+     ],
+     "size": 190,
+     "motion": "bob",
+     "delay": 0.5
+    },
+    {
+     "emoji": "🇦🇪",
+     "at": [
+      51.6,
+      22.6
+     ],
+     "size": 140,
+     "motion": "pulse",
+     "delay": 2.4
+    }
+   ],
+   "word": {
+    "text": "WHITE FRIDAY",
+    "sub": "NOT BLACK FRIDAY",
+    "delay": 4.4,
+    "size": 150
+   }
+  },
+  {
+   "vo": "Because across the Arab world, Friday is the special day of the week, for prayer and family.",
+   "camera": {
+    "center": [
+     22,
+     25
+    ],
+    "zoom": 12,
+    "pitch": 24,
+    "bearing": 0
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "SAU",
+      "ARE",
+      "OMN",
+      "YEM",
+      "QAT",
+      "BHR",
+      "KWT",
+      "IRQ",
+      "JOR",
+      "SYR",
+      "LBN",
+      "EGY",
+      "LBY",
+      "SDN",
+      "TUN",
+      "DZA",
+      "MAR",
+      "MRT"
+     ],
+     "color": "accent",
+     "fill": 0.22,
+     "delay": 0.2,
+     "draw": 1.2
+    },
+    {
+     "iso": [
+      "ARE"
+     ],
+     "color": "white",
+     "fill": 0.6,
+     "delay": 0.0,
+     "draw": 0.8,
+     "pulse": true
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      22,
+      34.5
+     ],
+     "text": "THE ARAB WORLD",
+     "size": 56,
+     "color": "accent",
+     "delay": 0.9
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "🕌",
+     "at": [
+      44.5,
+      22.5
+     ],
+     "size": 190,
+     "motion": "bob",
+     "delay": 2.6
+    },
+    {
+     "emoji": "👨‍👩‍👧",
+     "at": [
+      2,
+      21
+     ],
+     "size": 190,
+     "motion": "bob",
+     "delay": 3.8
+    }
+   ],
+   "word": {
+    "text": "FRIDAY",
+    "sub": "FOR PRAYER AND FAMILY",
+    "delay": 2.0,
+    "size": 170
+   }
+  },
+  {
+   "vo": "But wait until the end for an even crazier shopping day.",
+   "camera": {
+    "center": [
+     55.28,
+     25.17
+    ],
+    "zoom": 190,
+    "pitch": 34,
+    "bearing": 8
+   },
+   "camera_move": 1.2,
+   "highlight": [
+    {
+     "iso": [
+      "ARE"
+     ],
+     "color": "white",
+     "fill": 0.12,
+     "delay": 0.0,
+     "draw": 0.8,
+     "pulse": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      55.2708,
+      25.2048
+     ],
+     "label": "DUBAI",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.1
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "⏳",
+     "x": 540,
+     "y": 820,
+     "size": 230,
+     "motion": "shake",
+     "delay": 0.4
+    }
+   ],
+   "word": {
+    "text": "WAIT...",
+    "sub": "A CRAZIER SHOPPING DAY",
+    "delay": 1.4,
+    "size": 170
+   }
+  },
+  {
+   "vo": "Black Friday got its name from Philadelphia's traffic cops in the 1960s. Then it spread worldwide.",
+   "camera": {
+    "center": [
+     -25,
+     27
+    ],
+    "zoom": 4.6,
+    "pitch": 22,
+    "bearing": 0
+   },
+   "camera_move": 1.6,
+   "highlight": [
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "red",
+     "fill": 0.4,
+     "delay": 0.2,
+     "draw": 0.8,
+     "label": "USA",
+     "label_at": [
+      -100,
+      40
+     ],
+     "pill": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -75.1636,
+      39.9526
+     ],
+     "label": "PHILADELPHIA",
+     "side": "right",
+     "color": "red",
+     "delay": 0.4
+    },
+    {
+     "at": [
+      55.2708,
+      25.2048
+     ],
+     "label": "DUBAI",
+     "side": "right",
+     "color": "accent",
+     "delay": 5.4
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "👮",
+     "at": [
+      -82,
+      60
+     ],
+     "size": 170,
+     "motion": "bob",
+     "delay": 1.2
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       -75.1636,
+       39.9526
+      ],
+      [
+       -37.6456,
+       53.7299
+      ],
+      [
+       -0.1276,
+       51.5072
+      ]
+     ],
+     "color": "red",
+     "delay": 3.6,
+     "draw": 1.3,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -75.1636,
+       39.9526
+      ],
+      [
+       -60.8968,
+       16.201299999999996
+      ],
+      [
+       -46.63,
+       -23.55
+      ]
+     ],
+     "color": "red",
+     "delay": 4.1,
+     "draw": 1.3,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -75.1636,
+       39.9526
+      ],
+      [
+       -87.1468,
+       37.6913
+      ],
+      [
+       -99.13,
+       19.43
+      ]
+     ],
+     "color": "red",
+     "delay": 4.6,
+     "draw": 1.3,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       -75.1636,
+       39.9526
+      ],
+      [
+       -9.9464,
+       40.5787
+      ],
+      [
+       55.2708,
+       25.2048
+      ]
+     ],
+     "color": "red",
+     "delay": 5.1,
+     "draw": 1.3,
+     "scene_only": true
+    }
+   ],
+   "stamp": {
+    "text": "1960s",
+    "delay": 2.4,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "WORLDWIDE",
+    "sub": "A PHILLY COP NICKNAME",
+    "delay": 4.4,
+    "size": 160
+   }
+  },
+  {
+   "vo": "In 2014, online store Souq.com brought it to the Middle East, but renamed it White Friday.",
+   "camera": {
+    "center": [
+     53.5,
+     25.4
+    ],
+    "zoom": 50,
+    "pitch": 30,
+    "bearing": -6
+   },
+   "camera_move": 1.6,
+   "highlight": [
+    {
+     "iso": [
+      "ARE"
+     ],
+     "color": "white",
+     "fill": 0.45,
+     "delay": 0.0,
+     "draw": 0.8,
+     "label": "UAE",
+     "label_at": [
+      54.3,
+      23.7
+     ],
+     "pill": true,
+     "pulse": true
+    },
+    {
+     "iso": [
+      "SAU"
+     ],
+     "color": "green",
+     "fill": 0.3,
+     "delay": 0.4,
+     "draw": 0.8
+    },
+    {
+     "iso": [
+      "OMN"
+     ],
+     "color": "teal",
+     "fill": 0.3,
+     "delay": 0.6,
+     "draw": 0.8
+    },
+    {
+     "iso": [
+      "QAT"
+     ],
+     "color": "purple",
+     "fill": 0.45,
+     "delay": 0.8,
+     "draw": 0.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      55.2708,
+      25.2048
+     ],
+     "label": "SOUQ.COM",
+     "side": "right",
+     "color": "accent",
+     "delay": 1.2
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "🖤",
+     "at": [
+      52.2,
+      26.6
+     ],
+     "size": 170,
+     "motion": "shake",
+     "delay": 2.2
+    },
+    {
+     "emoji": "🤍",
+     "at": [
+      54.0,
+      26.6
+     ],
+     "size": 170,
+     "motion": "pulse",
+     "delay": 4.4
+    }
+   ],
+   "stamp": {
+    "text": "2014",
+    "delay": 0.3,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "WHITE FRIDAY",
+    "sub": "RENAMED",
+    "delay": 4.6,
+    "size": 150
+   }
+  },
+  {
+   "vo": "Now shoppers in Saudi Arabia, Kuwait, Qatar and Egypt get White Friday too.",
+   "camera": {
+    "center": [
+     42,
+     26.5
+    ],
+    "zoom": 26,
+    "pitch": 28,
+    "bearing": 0
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "ARE"
+     ],
+     "color": "white",
+     "fill": 0.5,
+     "delay": 0.0,
+     "draw": 0.8,
+     "pulse": true
+    },
+    {
+     "iso": [
+      "SAU"
+     ],
+     "color": "green",
+     "fill": 0.42,
+     "delay": 1.2,
+     "draw": 0.8,
+     "label": "SAUDI ARABIA",
+     "label_at": [
+      43.5,
+      21.5
+     ],
+     "pill": true
+    },
+    {
+     "iso": [
+      "KWT"
+     ],
+     "color": "teal",
+     "fill": 0.6,
+     "delay": 2.0,
+     "draw": 0.8,
+     "label": "KUWAIT",
+     "label_at": [
+      47.5,
+      30.6
+     ],
+     "pill": true
+    },
+    {
+     "iso": [
+      "QAT"
+     ],
+     "color": "purple",
+     "fill": 0.65,
+     "delay": 2.6,
+     "draw": 0.8,
+     "label": "QATAR",
+     "label_at": [
+      51.0,
+      27.2
+     ],
+     "pill": true
+    },
+    {
+     "iso": [
+      "EGY"
+     ],
+     "color": "orange",
+     "fill": 0.42,
+     "delay": 3.3,
+     "draw": 0.8,
+     "label": "EGYPT",
+     "label_at": [
+      29.5,
+      26.5
+     ],
+     "pill": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      55.2708,
+      25.2048
+     ],
+     "label": "DUBAI",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.1
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       55.2708,
+       25.2048
+      ],
+      [
+       50.97305,
+       27.4592
+      ],
+      [
+       46.6753,
+       24.7136
+      ]
+     ],
+     "color": "white",
+     "delay": 1.0,
+     "draw": 1.0,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       55.2708,
+       25.2048
+      ],
+      [
+       51.62455,
+       29.79035
+      ],
+      [
+       47.9783,
+       29.3759
+      ]
+     ],
+     "color": "white",
+     "delay": 1.7,
+     "draw": 1.0,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       55.2708,
+       25.2048
+      ],
+      [
+       53.4009,
+       27.7451
+      ],
+      [
+       51.531,
+       25.2854
+      ]
+     ],
+     "color": "white",
+     "delay": 2.4,
+     "draw": 1.0,
+     "scene_only": true
+    },
+    {
+     "points": [
+      [
+       55.2708,
+       25.2048
+      ],
+      [
+       43.25325,
+       30.1246
+      ],
+      [
+       31.2357,
+       30.0444
+      ]
+     ],
+     "color": "white",
+     "delay": 3.0999999999999996,
+     "draw": 1.0,
+     "scene_only": true
+    }
+   ],
+   "word": {
+    "text": "WHITE FRIDAY",
+    "sub": "ACROSS THE REGION",
+    "delay": 4.2,
+    "size": 150
+   }
+  },
+  {
+   "vo": "In 2015, a store in Pakistan copied it with a cheeky slogan: in Pakistan, Friday is never black.",
+   "camera": {
+    "center": [
+     63,
+     27.5
+    ],
+    "zoom": 36,
+    "pitch": 28,
+    "bearing": 4
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "ARE"
+     ],
+     "color": "white",
+     "fill": 0.5,
+     "delay": 0.0,
+     "draw": 0.8,
+     "label": "UAE",
+     "label_at": [
+      54.3,
+      23.4
+     ],
+     "pill": true,
+     "pulse": true
+    },
+    {
+     "iso": [
+      "OMN"
+     ],
+     "color": "teal",
+     "fill": 0.3,
+     "delay": 0.0,
+     "draw": 0.8
+    },
+    {
+     "iso": [
+      "PAK"
+     ],
+     "color": "blue",
+     "fill": 0.45,
+     "delay": 0.6,
+     "draw": 0.8,
+     "label": "PAKISTAN",
+     "label_at": [
+      69.0,
+      28.0
+     ],
+     "pill": true,
+     "pulse": true
+    }
+   ],
+   "routes": [
+    {
+     "points": [
+      [
+       55.2708,
+       25.2048
+      ],
+      [
+       62,
+       29.5
+      ],
+      [
+       69.3,
+       29.9
+      ]
+     ],
+     "color": "white",
+     "delay": 1.0,
+     "draw": 1.2,
+     "scene_only": true
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "🇵🇰",
+     "at": [
+      71.5,
+      31.8
+     ],
+     "size": 150,
+     "motion": "pulse",
+     "delay": 1.8
+    },
+    {
+     "emoji": "😏",
+     "at": [
+      66.5,
+      32.5
+     ],
+     "size": 170,
+     "motion": "bob",
+     "delay": 3.0
+    }
+   ],
+   "stamp": {
+    "text": "2015",
+    "delay": 0.3,
+    "x": 830,
+    "y": 600
+   },
+   "word": {
+    "text": "NEVER BLACK",
+    "sub": "\"IN PAKISTAN, FRIDAY IS...\"",
+    "delay": 4.4,
+    "size": 150
+   }
+  },
+  {
+   "vo": "Then Dubai got more colorful. Noon calls its sale Yellow Friday, after its logo. A phone company runs Green Friday.",
+   "camera": {
+    "center": [
+     55.3,
+     25.15
+    ],
+    "zoom": 160,
+    "pitch": 32,
+    "bearing": -8
+   },
+   "camera_move": 1.4,
+   "highlight": [
+    {
+     "iso": [
+      "ARE"
+     ],
+     "color": "white",
+     "fill": 0.12,
+     "delay": 0.0,
+     "draw": 0.8,
+     "pulse": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      55.2708,
+      25.2048
+     ],
+     "label": "DUBAI",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.1
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "🌈",
+     "x": 540,
+     "y": 760,
+     "size": 200,
+     "motion": "bob",
+     "delay": 0.6
+    },
+    {
+     "emoji": "💛",
+     "at": [
+      54.95,
+      25.35
+     ],
+     "size": 180,
+     "motion": "pulse",
+     "delay": 2.6
+    },
+    {
+     "emoji": "💚",
+     "at": [
+      55.6,
+      24.95
+     ],
+     "size": 180,
+     "motion": "pulse",
+     "delay": 5.8
+    }
+   ],
+   "labels": [
+    {
+     "at": [
+      55.6,
+      24.8
+     ],
+     "text": "GREEN FRIDAY",
+     "size": 60,
+     "color": "green",
+     "delay": 6.0
+    }
+   ],
+   "word": {
+    "text": "YELLOW FRIDAY",
+    "sub": "NOON'S BIG SALE",
+    "delay": 3.0,
+    "size": 140,
+    "color": "accent"
+   }
+  },
+  {
+   "vo": "But the world's biggest shopping day isn't a Friday. It's November 11th in China: Singles' Day.",
+   "camera": {
+    "center": [
+     108,
+     33
+    ],
+    "zoom": 20,
+    "pitch": 26,
+    "bearing": 0
+   },
+   "camera_move": 1.8,
+   "highlight": [
+    {
+     "iso": [
+      "CHN"
+     ],
+     "color": "#ff7ab8",
+     "fill": 0.45,
+     "delay": 0.2,
+     "draw": 0.8,
+     "label": "CHINA",
+     "label_at": [
+      100,
+      35
+     ],
+     "pill": true,
+     "pulse": true
+    }
+   ],
+   "pictures": [
+    {
+     "ball": "CHN",
+     "x": 780,
+     "y": 1080,
+     "size": 220,
+     "mood": "smug",
+     "look": "left",
+     "motion": "bob",
+     "delay": 2.0
+    },
+    {
+     "emoji": "🛍️",
+     "at": [
+      100,
+      28
+     ],
+     "size": 170,
+     "motion": "bob",
+     "delay": 3.0
+    }
+   ],
+   "stamp": {
+    "text": "11.11",
+    "delay": 3.6,
+    "x": 300,
+    "y": 620
+   },
+   "word": {
+    "text": "SINGLES' DAY",
+    "sub": "NOVEMBER 11TH",
+    "delay": 4.6,
+    "size": 150
+   }
+  },
+  {
+   "vo": "The story goes it began as a joke by students in Nanjing. Now its sales dwarf Black Friday and Cyber Monday combined.",
+   "camera": {
+    "center": [
+     118.8,
+     32.2
+    ],
+    "zoom": 110,
+    "pitch": 32,
+    "bearing": 6
+   },
+   "camera_move": 1.3,
+   "highlight": [
+    {
+     "iso": [
+      "CHN"
+     ],
+     "color": "#ff7ab8",
+     "fill": 0.18,
+     "delay": 0.0,
+     "draw": 0.8,
+     "pulse": true
+    },
+    {
+     "admin1": [
+      "CN-JS"
+     ],
+     "color": "#ff7ab8",
+     "fill": 0.25,
+     "label": "JIANGSU",
+     "label_at": [
+      120.2,
+      33.5
+     ],
+     "pill": true,
+     "delay": 0.3,
+     "draw": 0.8
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      118.7969,
+      32.0603
+     ],
+     "label": "NANJING",
+     "side": "right",
+     "color": "accent",
+     "delay": 0.3
+    }
+   ],
+   "pictures": [
+    {
+     "emoji": "🎓",
+     "at": [
+      117.6,
+      33.0
+     ],
+     "size": 170,
+     "motion": "bob",
+     "delay": 1.0
+    },
+    {
+     "emoji": "😂",
+     "at": [
+      119.9,
+      31.0
+     ],
+     "size": 150,
+     "motion": "shake",
+     "delay": 2.0
+    },
+    {
+     "ball": "USA",
+     "x": 280,
+     "y": 1100,
+     "size": 200,
+     "mood": "shock",
+     "look": "right",
+     "motion": "bob",
+     "delay": 4.6
+    },
+    {
+     "ball": "CHN",
+     "x": 800,
+     "y": 1100,
+     "size": 200,
+     "mood": "smug",
+     "look": "left",
+     "motion": "bob",
+     "delay": 4.2
+    }
+   ],
+   "word": {
+    "text": "BIGGER",
+    "sub": "THAN BLACK FRIDAY + CYBER MONDAY",
+    "delay": 5.0,
+    "size": 170
+   }
+  },
+  {
+   "vo": "Follow for more places where the map got weird.",
+   "camera": {
+    "center": [
+     18,
+     28
+    ],
+    "zoom": 3.7,
+    "pitch": 22,
+    "bearing": 0
+   },
+   "camera_move": 1.6,
+   "highlight": [
+    {
+     "iso": [
+      "USA"
+     ],
+     "color": "red",
+     "fill": 0.4,
+     "delay": 0.0,
+     "draw": 0.8
+    },
+    {
+     "iso": [
+      "ARE"
+     ],
+     "color": "white",
+     "fill": 0.7,
+     "delay": 0.0,
+     "draw": 0.8,
+     "label": "WHITE FRIDAY",
+     "label_at": [
+      54,
+      20
+     ],
+     "pill": true,
+     "pulse": true
+    },
+    {
+     "iso": [
+      "SAU"
+     ],
+     "color": "green",
+     "fill": 0.4,
+     "delay": 0.0,
+     "draw": 0.8
+    },
+    {
+     "iso": [
+      "PAK"
+     ],
+     "color": "blue",
+     "fill": 0.45,
+     "delay": 0.0,
+     "draw": 0.8
+    },
+    {
+     "iso": [
+      "EGY"
+     ],
+     "color": "orange",
+     "fill": 0.4,
+     "delay": 0.0,
+     "draw": 0.8
+    },
+    {
+     "iso": [
+      "CHN"
+     ],
+     "color": "#ff7ab8",
+     "fill": 0.45,
+     "delay": 0.0,
+     "draw": 0.8,
+     "label": "SINGLES' DAY",
+     "label_at": [
+      103,
+      38
+     ],
+     "pill": true,
+     "pulse": true
+    }
+   ],
+   "pins": [
+    {
+     "at": [
+      -75.1636,
+      39.9526
+     ],
+     "label": "BLACK FRIDAY",
+     "side": "right",
+     "color": "red",
+     "delay": 0.2
+    }
+   ]
+  }
+ ]
+}
