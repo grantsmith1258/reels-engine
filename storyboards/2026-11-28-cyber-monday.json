@@ -1,0 +1,997 @@
+{
+  "title": "Cyber Monday was invented by a press release (2005)",
+  "style": "satellite",
+  "pitch": 28,
+  "min_pause": 0.25,
+  "outro_hold": 1.2,
+  "admin1_borders": [
+    "USA"
+  ],
+  "cuts": [
+    7.6,
+    11.5,
+    15.4,
+    25.1,
+    34.7,
+    39.5,
+    45.5,
+    53.6,
+    65.4
+  ],
+  "cover": {
+    "lines": [
+      {
+        "text": "CYBER MONDAY",
+        "size": 135
+      },
+      {
+        "text": "MADE UP",
+        "size": 300,
+        "color": "accent"
+      },
+      {
+        "text": "IN 2005",
+        "size": 150
+      }
+    ],
+    "badge": "BY A PRESS RELEASE",
+    "camera": {
+      "center": [
+        -77.05,
+        39.75
+      ],
+      "zoom": 230,
+      "pitch": 30
+    },
+    "y": 640
+  },
+  "scenes": [
+    {
+      "vo": "Cyber Monday isn't an old holiday. A trade group in Washington, DC, made it up in a press release in 2005.",
+      "camera": {
+        "center": [
+          -77.05,
+          38.95
+        ],
+        "zoom": 240,
+        "pitch": 32,
+        "bearing": 6
+      },
+      "highlight": [
+        {
+          "admin1": [
+            "US-DC"
+          ],
+          "color": "red",
+          "fill": 0.7,
+          "pulse": true,
+          "draw": 0.6
+        },
+        {
+          "admin1": [
+            "US-MD"
+          ],
+          "color": "orange",
+          "fill": 0.35,
+          "delay": 0.5,
+          "draw": 0.8,
+          "label": "MARYLAND",
+          "label_at": [
+            -76.75,
+            39.45
+          ],
+          "pill": true
+        },
+        {
+          "admin1": [
+            "US-VA"
+          ],
+          "color": "blue",
+          "fill": 0.35,
+          "delay": 0.9,
+          "draw": 0.8,
+          "label": "VIRGINIA",
+          "label_at": [
+            -77.55,
+            38.55
+          ],
+          "pill": true
+        }
+      ],
+      "pins": [
+        {
+          "at": [
+            -77.0369,
+            38.9072
+          ],
+          "label": "WASHINGTON, DC",
+          "side": "right",
+          "color": "accent",
+          "delay": 0.2
+        }
+      ],
+      "pictures": [
+        {
+          "emoji": "📄",
+          "at": [
+            -78.0,
+            39.3
+          ],
+          "size": 200,
+          "motion": "pulse",
+          "delay": 4.0
+        }
+      ],
+      "word": {
+        "text": "CYBER MONDAY",
+        "sub": "NOT AN OLD HOLIDAY",
+        "delay": 0.4,
+        "size": 150
+      },
+      "stamp": {
+        "text": "2005",
+        "delay": 6.3,
+        "x": 830,
+        "y": 640
+      }
+    },
+    {
+      "vo": "And the whole idea? Americans shopping on their work computers.",
+      "camera": {
+        "center": [
+          -97,
+          38.5
+        ],
+        "zoom": 15,
+        "pitch": 26,
+        "bearing": 0
+      },
+      "camera_move": 1.2,
+      "highlight": [
+        {
+          "iso": [
+            "USA"
+          ],
+          "color": "red",
+          "fill": 0.38,
+          "draw": 0.8,
+          "label": "USA",
+          "label_at": [
+            -99,
+            40
+          ],
+          "pill": true,
+          "pulse": true
+        },
+        {
+          "iso": [
+            "CAN"
+          ],
+          "color": "blue",
+          "fill": 0.28,
+          "delay": 0.4,
+          "draw": 0.8,
+          "label": "CANADA",
+          "label_at": [
+            -105,
+            56
+          ],
+          "pill": true
+        },
+        {
+          "iso": [
+            "MEX"
+          ],
+          "color": "green",
+          "fill": 0.28,
+          "delay": 0.6,
+          "draw": 0.8,
+          "label": "MEXICO",
+          "label_at": [
+            -102,
+            24
+          ],
+          "pill": true
+        }
+      ],
+      "pictures": [
+        {
+          "emoji": "🏢",
+          "x": 330,
+          "y": 1080,
+          "size": 190,
+          "motion": "bob",
+          "delay": 1.3
+        },
+        {
+          "emoji": "🖥️",
+          "x": 750,
+          "y": 1080,
+          "size": 190,
+          "motion": "bob",
+          "delay": 2.0
+        }
+      ],
+      "word": {
+        "text": "AT WORK",
+        "sub": "SHOPPING ON THE JOB",
+        "delay": 2.4,
+        "size": 160
+      }
+    },
+    {
+      "vo": "But wait until the end for an even crazier number.",
+      "camera": {
+        "center": [
+          -95,
+          38.5
+        ],
+        "zoom": 18,
+        "pitch": 28,
+        "bearing": 4
+      },
+      "camera_move": 1.0,
+      "highlight": [
+        {
+          "iso": [
+            "USA"
+          ],
+          "color": "red",
+          "fill": 0.38,
+          "draw": 0.8,
+          "label": "USA",
+          "label_at": [
+            -99,
+            40
+          ],
+          "pill": true,
+          "pulse": true
+        }
+      ],
+      "pictures": [
+        {
+          "emoji": "⏳",
+          "x": 540,
+          "y": 850,
+          "size": 230,
+          "motion": "shake",
+          "delay": 0.9
+        }
+      ],
+      "word": {
+        "text": "WAIT...",
+        "sub": "AN EVEN CRAZIER NUMBER",
+        "delay": 1.8,
+        "size": 170
+      }
+    },
+    {
+      "vo": "In 2004, Shop.org, the online arm of the National Retail Federation, saw most online stores get a big sales jump the Monday after Thanksgiving.",
+      "camera": {
+        "center": [
+          -77.1,
+          38.95
+        ],
+        "zoom": 150,
+        "pitch": 32,
+        "bearing": -6
+      },
+      "camera_move": 1.4,
+      "highlight": [
+        {
+          "admin1": [
+            "US-DC"
+          ],
+          "color": "red",
+          "fill": 0.7,
+          "pulse": true,
+          "draw": 0.6
+        },
+        {
+          "admin1": [
+            "US-MD"
+          ],
+          "color": "orange",
+          "fill": 0.3,
+          "delay": 0.2,
+          "draw": 0.8
+        },
+        {
+          "admin1": [
+            "US-VA"
+          ],
+          "color": "blue",
+          "fill": 0.3,
+          "delay": 0.3,
+          "draw": 0.8
+        }
+      ],
+      "pins": [
+        {
+          "at": [
+            -77.0369,
+            38.9072
+          ],
+          "label": "SHOP.ORG / NRF",
+          "side": "right",
+          "color": "accent",
+          "delay": 1.6
+        }
+      ],
+      "stamp": {
+        "text": "2004",
+        "delay": 0.4,
+        "x": 830,
+        "y": 640
+      },
+      "pictures": [
+        {
+          "emoji": "🛒",
+          "at": [
+            -78.7,
+            39.7
+          ],
+          "size": 170,
+          "motion": "bob",
+          "delay": 3.6
+        },
+        {
+          "emoji": "📈",
+          "at": [
+            -75.9,
+            38.25
+          ],
+          "size": 190,
+          "motion": "pulse",
+          "delay": 5.6
+        },
+        {
+          "emoji": "🦃",
+          "at": [
+            -78.5,
+            38.2
+          ],
+          "size": 170,
+          "motion": "bob",
+          "delay": 7.6
+        }
+      ],
+      "word": {
+        "text": "MONDAY",
+        "sub": "SALES JUMP AFTER THANKSGIVING",
+        "delay": 6.4,
+        "size": 160
+      }
+    },
+    {
+      "vo": "Why? Lots of homes didn't have fast internet yet. So people browsed the malls all weekend, went back to the office on Monday, and bought online at work.",
+      "camera": {
+        "center": [
+          -93,
+          38.0
+        ],
+        "zoom": 20,
+        "pitch": 30,
+        "bearing": -5
+      },
+      "camera_move": 1.4,
+      "highlight": [
+        {
+          "iso": [
+            "USA"
+          ],
+          "color": "red",
+          "fill": 0.38,
+          "draw": 0.8,
+          "label": "USA",
+          "label_at": [
+            -99,
+            40
+          ],
+          "pill": true,
+          "pulse": true
+        }
+      ],
+      "pictures": [
+        {
+          "emoji": "🏠",
+          "x": 260,
+          "y": 1000,
+          "size": 170,
+          "motion": "bob",
+          "delay": 0.8
+        },
+        {
+          "emoji": "🐢",
+          "x": 260,
+          "y": 1170,
+          "size": 140,
+          "motion": "move",
+          "to": [
+            400,
+            1170
+          ],
+          "move_time": 2.5,
+          "delay": 1.7
+        },
+        {
+          "emoji": "🛍️",
+          "x": 540,
+          "y": 1000,
+          "size": 170,
+          "motion": "bob",
+          "delay": 3.4
+        },
+        {
+          "emoji": "🏢",
+          "x": 820,
+          "y": 1000,
+          "size": 170,
+          "motion": "bob",
+          "delay": 5.6
+        },
+        {
+          "emoji": "⚡",
+          "x": 820,
+          "y": 1170,
+          "size": 140,
+          "motion": "shake",
+          "delay": 7.4
+        }
+      ],
+      "word": {
+        "text": "SLOW INTERNET",
+        "sub": "AT HOME",
+        "delay": 1.5,
+        "size": 140
+      }
+    },
+    {
+      "vo": "So the group gave that Monday a catchy name in a press release, and the news ran with it.",
+      "camera": {
+        "center": [
+          -77.05,
+          38.95
+        ],
+        "zoom": 320,
+        "pitch": 34,
+        "bearing": 10
+      },
+      "camera_move": 1.4,
+      "highlight": [
+        {
+          "admin1": [
+            "US-DC"
+          ],
+          "color": "red",
+          "fill": 0.7,
+          "pulse": true,
+          "draw": 0.6
+        },
+        {
+          "admin1": [
+            "US-MD"
+          ],
+          "color": "orange",
+          "fill": 0.3,
+          "delay": 0.1,
+          "draw": 0.8
+        },
+        {
+          "admin1": [
+            "US-VA"
+          ],
+          "color": "blue",
+          "fill": 0.3,
+          "delay": 0.2,
+          "draw": 0.8
+        }
+      ],
+      "pictures": [
+        {
+          "emoji": "📄",
+          "at": [
+            -77.45,
+            38.95
+          ],
+          "size": 220,
+          "motion": "pulse",
+          "delay": 1.2
+        },
+        {
+          "emoji": "📰",
+          "x": 230,
+          "y": 1150,
+          "size": 160,
+          "motion": "bob",
+          "delay": 3.3
+        },
+        {
+          "emoji": "📺",
+          "x": 540,
+          "y": 1180,
+          "size": 160,
+          "motion": "bob",
+          "delay": 3.9
+        },
+        {
+          "emoji": "📰",
+          "x": 850,
+          "y": 1150,
+          "size": 160,
+          "motion": "bob",
+          "delay": 4.5
+        }
+      ],
+      "word": {
+        "text": "CYBER MONDAY",
+        "sub": "A CATCHY NAME",
+        "delay": 2.0,
+        "size": 150
+      },
+      "pins": [
+        {
+          "at": [
+            -77.0369,
+            38.9072
+          ],
+          "label": "WASHINGTON, DC",
+          "side": "right",
+          "color": "accent",
+          "delay": 0.1
+        }
+      ]
+    },
+    {
+      "vo": "Funny thing: that first year, it wasn't even the biggest online shopping day. The name just stuck.",
+      "camera": {
+        "center": [
+          -97,
+          38.5
+        ],
+        "zoom": 16,
+        "pitch": 26,
+        "bearing": 3
+      },
+      "camera_move": 1.4,
+      "highlight": [
+        {
+          "iso": [
+            "USA"
+          ],
+          "color": "red",
+          "fill": 0.38,
+          "draw": 0.8,
+          "label": "USA",
+          "label_at": [
+            -99,
+            40
+          ],
+          "pill": true,
+          "pulse": true
+        },
+        {
+          "iso": [
+            "CAN"
+          ],
+          "color": "blue",
+          "fill": 0.28,
+          "draw": 0.8,
+          "label": "CANADA",
+          "label_at": [
+            -105,
+            56
+          ],
+          "pill": true
+        },
+        {
+          "iso": [
+            "MEX"
+          ],
+          "color": "green",
+          "fill": 0.28,
+          "draw": 0.8
+        }
+      ],
+      "stamp": {
+        "text": "2005",
+        "delay": 1.0,
+        "x": 830,
+        "y": 640
+      },
+      "pictures": [
+        {
+          "emoji": "🤷",
+          "x": 800,
+          "y": 880,
+          "size": 220,
+          "motion": "bob",
+          "delay": 2.4
+        },
+        {
+          "emoji": "🏷️",
+          "x": 290,
+          "y": 1010,
+          "size": 190,
+          "motion": "pulse",
+          "delay": 4.6
+        }
+      ],
+      "word": {
+        "text": "NOT #1",
+        "sub": "THAT FIRST YEAR",
+        "delay": 3.0,
+        "size": 170
+      }
+    },
+    {
+      "vo": "Then it went global. Canada joined in around 2008, Amazon brought it to Germany in 2010, then Chile and Japan.",
+      "camera": {
+        "center": [
+          -42,
+          40
+        ],
+        "zoom": 3.4,
+        "pitch": 22,
+        "bearing": 0
+      },
+      "camera_move": 1.6,
+      "highlight": [
+        {
+          "iso": [
+            "USA"
+          ],
+          "color": "red",
+          "fill": 0.45,
+          "draw": 0.8,
+          "pulse": true
+        },
+        {
+          "iso": [
+            "CAN"
+          ],
+          "color": "blue",
+          "fill": 0.45,
+          "delay": 1.5,
+          "draw": 0.8,
+          "label": "CANADA",
+          "label_at": [
+            -105,
+            60
+          ],
+          "pill": true
+        },
+        {
+          "iso": [
+            "DEU"
+          ],
+          "color": "orange",
+          "fill": 0.7,
+          "delay": 3.5,
+          "draw": 0.8,
+          "label": "GERMANY",
+          "label_at": [
+            10.4,
+            56
+          ],
+          "pill": true
+        },
+        {
+          "iso": [
+            "CHL"
+          ],
+          "color": "green",
+          "fill": 0.7,
+          "delay": 5.8,
+          "draw": 0.8,
+          "label": "CHILE",
+          "label_at": [
+            -66,
+            -30
+          ],
+          "pill": true
+        },
+        {
+          "iso": [
+            "JPN"
+          ],
+          "color": "purple",
+          "fill": 0.75,
+          "delay": 6.4,
+          "draw": 0.8,
+          "label": "JAPAN",
+          "label_at": [
+            138,
+            42
+          ],
+          "pill": true
+        }
+      ],
+      "routes": [
+        {
+          "points": [
+            [
+              -77.04,
+              38.9
+            ],
+            [
+              -80,
+              45
+            ],
+            [
+              -79.38,
+              43.65
+            ]
+          ],
+          "color": "blue",
+          "delay": 1.3,
+          "draw": 0.9,
+          "scene_only": true
+        },
+        {
+          "points": [
+            [
+              -77.04,
+              38.9
+            ],
+            [
+              -35,
+              52
+            ],
+            [
+              13.4,
+              52.5
+            ]
+          ],
+          "color": "orange",
+          "delay": 3.3,
+          "draw": 1.0,
+          "scene_only": true
+        },
+        {
+          "points": [
+            [
+              -77.04,
+              38.9
+            ],
+            [
+              -78,
+              5
+            ],
+            [
+              -70.65,
+              -33.45
+            ]
+          ],
+          "color": "green",
+          "delay": 5.6,
+          "draw": 0.9,
+          "scene_only": true
+        },
+        {
+          "points": [
+            [
+              -77.04,
+              38.9
+            ],
+            [
+              -125,
+              42
+            ],
+            [
+              -175,
+              40
+            ]
+          ],
+          "color": "purple",
+          "delay": 6.2,
+          "draw": 1.0,
+          "scene_only": true
+        }
+      ],
+      "pictures": [
+        {
+          "ball": "CAN",
+          "x": 230,
+          "y": 1180,
+          "size": 170,
+          "mood": "happy",
+          "look": "right",
+          "motion": "bob",
+          "delay": 1.8
+        },
+        {
+          "ball": "DEU",
+          "x": 540,
+          "y": 1180,
+          "size": 170,
+          "mood": "happy",
+          "look": "left",
+          "motion": "bob",
+          "delay": 3.9
+        },
+        {
+          "emoji": "📦",
+          "at": [
+            28,
+            36
+          ],
+          "size": 150,
+          "motion": "bob",
+          "delay": 4.2
+        },
+        {
+          "ball": "JPN",
+          "x": 850,
+          "y": 1180,
+          "size": 170,
+          "mood": "happy",
+          "look": "left",
+          "motion": "bob",
+          "delay": 6.8
+        }
+      ],
+      "word": {
+        "text": "GLOBAL",
+        "sub": "THE NAME WENT WORLDWIDE",
+        "delay": 0.4,
+        "y": 1440,
+        "size": 160
+      },
+      "labels": [
+        {
+          "at": [
+            -160,
+            46
+          ],
+          "text": "TO JAPAN",
+          "size": 52,
+          "color": "purple",
+          "delay": 6.6
+        }
+      ]
+    },
+    {
+      "vo": "In 2005, Cyber Monday sales were about 485 million dollars. Last year: a record 14.25 billion. That's about 30 times more.",
+      "camera": {
+        "center": [
+          -96,
+          38.5
+        ],
+        "zoom": 17,
+        "pitch": 28,
+        "bearing": -3
+      },
+      "camera_move": 1.6,
+      "highlight": [
+        {
+          "iso": [
+            "USA"
+          ],
+          "color": "red",
+          "fill": 0.45,
+          "draw": 0.8,
+          "label": "USA",
+          "label_at": [
+            -99,
+            40
+          ],
+          "pill": true,
+          "pulse": true
+        }
+      ],
+      "stamp": {
+        "text": "2005",
+        "delay": 0.3,
+        "x": 830,
+        "y": 640
+      },
+      "labels": [
+        {
+          "at": [
+            -96,
+            33.5
+          ],
+          "text": "$485 MILLION",
+          "size": 84,
+          "color": "white",
+          "delay": 1.8
+        }
+      ],
+      "pictures": [
+        {
+          "emoji": "💵",
+          "x": 540,
+          "y": 800,
+          "size": 150,
+          "motion": "bob",
+          "delay": 2.2
+        },
+        {
+          "emoji": "💰",
+          "x": 830,
+          "y": 780,
+          "size": 200,
+          "motion": "pulse",
+          "delay": 6.4
+        },
+        {
+          "emoji": "🤯",
+          "x": 250,
+          "y": 790,
+          "size": 210,
+          "motion": "shake",
+          "delay": 9.8
+        }
+      ],
+      "word": {
+        "text": "$14.25 BILLION",
+        "sub": "LAST YEAR: A RECORD",
+        "delay": 5.6,
+        "size": 140
+      }
+    },
+    {
+      "vo": "Follow for more places where the map got weird.",
+      "camera": {
+        "center": [
+          -48,
+          40
+        ],
+        "zoom": 3.3,
+        "pitch": 22,
+        "bearing": 0
+      },
+      "camera_move": 1.4,
+      "highlight": [
+        {
+          "iso": [
+            "USA"
+          ],
+          "color": "red",
+          "fill": 0.5,
+          "draw": 0.8,
+          "pulse": true,
+          "label": "CYBER MONDAY",
+          "label_at": [
+            -99,
+            40
+          ],
+          "pill": true
+        },
+        {
+          "iso": [
+            "CAN"
+          ],
+          "color": "blue",
+          "fill": 0.45,
+          "draw": 0.8
+        },
+        {
+          "iso": [
+            "DEU"
+          ],
+          "color": "orange",
+          "fill": 0.7,
+          "draw": 0.8
+        },
+        {
+          "iso": [
+            "CHL"
+          ],
+          "color": "green",
+          "fill": 0.7,
+          "draw": 0.8
+        },
+        {
+          "iso": [
+            "JPN"
+          ],
+          "color": "purple",
+          "fill": 0.75,
+          "draw": 0.8
+        }
+      ]
+    }
+  ]
+}
